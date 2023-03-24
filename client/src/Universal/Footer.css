@@ -1,0 +1,42 @@
+#Footer, #Footer .widget_recent_entries ul li a {
+    color: #08080e;
+}
+#Footer {
+    background-color: rgba(39, 43, 75, 0.03);
+}
+#Footer {
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, strike, strong, tt, var, b, u, i, center, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%; */
+    font: inherit;
+    vertical-align: baseline;
+}
+.clearfix:before, .clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*::selection {
+    background-color: #017fe4;
+    color: white;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}

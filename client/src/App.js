@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+import Header from './Universal/Header';
+import Footer from './Universal/Footer';
 import './App.css';
 
-function App() 
-{
+function App() {
   return (
-    <div className="App">
-      <h1>mii</h1>
+    <div>
+      <Header/>
+      <Footer/>
     </div>
   );
 }
