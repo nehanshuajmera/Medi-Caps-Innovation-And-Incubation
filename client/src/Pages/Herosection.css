@@ -1,0 +1,105 @@
+.dit{
+  display: flex;
+
+  flex: 50%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.left_text {
+  padding: 50px;
+  flex: 50%;
+  text-align: left;
+}
+.button1 {
+    background-color: #4ca5af; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button2{
+    padding: 20px;
+     margin-left: 100px;
+}
+  img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-x: auto ;
+    overflow-y: auto;
+}
+  .button1 {border-radius: 8px;}
+@media (max-width: 780px) {
+  .text {
+    font-size: auto;
+  }
+}
+.right_photo {
+ 
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1500px) {
+    img {
+    width: 80%;
+    }
+    }
+
+
+@media (max-width: 800px) {
+  .container  {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 700px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: inherit;
+  }
+}
+
+
+.simple_text{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.left_simple{
+  padding: 50px;
+  flex: 50%;
+  text-align: left;
+}
+
+.right_simple{
+padding: 50px;
+  flex: 50%;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .simple_text {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 700px) {
+  .simple_text,
+  .simple_text-lg,
+  .simple_text-md,
+  .simple_text-sm,
+  .simple_text-xl {
+    max-width: inherit;
+  }
+}

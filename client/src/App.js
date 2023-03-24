@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+ import './App.css';
+import Herosection from './Pages/Herosection';
+import Header from './Universal/Header';
 
 function App() 
 {
   return (
     <div className="App">
-      <h1>mii</h1>
+      <Header/>
+      <Herosection/>
     </div>
   );
 }
