@@ -1,93 +1,124 @@
-.dit{
-  display: flex;
+/* .herosection{
+    height: 650px;
+} */
 
-  flex: 50%;
+
+.column_heading .title {
+    margin-bottom: 0;
 }
-.container {
+h1, h1 a, h1 a:hover, .text-logo #logo {
+    color: #0c0a1c;
+}
+h1, .text-logo #logo {
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+.left_container {
   display: flex;
   flex-direction: row;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  margin-top: 100px;
+}
+.text {
+  /* background-color: aqua; */
+  padding: 50px;
+  flex: 30%;
+  text-align: left;
+  flex: 0 0 100%;
+    max-width: 100%;
 }
 
+.text_area {
+  display: flex;
+  flex-direction: row;
+}
 .left_text {
+  /* background-color: aqua; */
   padding: 50px;
   flex: 50%;
   text-align: left;
 }
-.button1 {
-    background-color: #4ca5af; /* Green */
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  .button2{
-    padding: 20px;
-     margin-left: 100px;
+.right_text {
+  /* background-color: beige; */
+  padding: 50px;
+  flex: 50%;
 }
-  img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    overflow-x: auto ;
-    overflow-y: auto;
-}
-  .button1 {border-radius: 8px;}
-@media (max-width: 780px) {
-  .text {
-    font-size: auto;
-  }
-}
-.right_photo {
- 
-  flex-wrap: wrap;
-}
-@media only screen and (max-width: 1500px) {
-    img {
-    width: 80%;
-    }
-    }
 
+@media (max-width:767px) {
+    .right_text{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .right_text{
+        max-width: 240px;
+        max-height: 240px;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px)
+{
+.right_text {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 780%;
+    flex-direction: row-reverse;
+}}
 
 @media (max-width: 800px) {
-  .container  {
-    flex-direction: column;
-  }
-}
-
+    .text_area {
+      flex-direction: column;
+     
+    }}
 @media (min-width: 700px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: inherit;
+  .text_area,
+  .text_area-lg,
+  .text_area-md,
+  .text_area-sm,
+  .text_area-xl {
+    max-width: max-content;
+  }
+}
+@media (max-width: 800px) {
+    .left_container {
+      flex-direction: column;
+     
+    }}
+@media (min-width: 700px) {
+  .left_container,
+  .left_container-lg,
+  .left_container-md,
+  .left_container-sm,
+  .left_container-xl {
+    max-width: max-content;
   }
 }
 
-
-.simple_text{
+.simple_text {
   display: flex;
   flex-direction: row;
-  justify-content: end;
 }
-.left_simple{
+.left_simple {
+  /* background-color: aqua; */
+  padding: 50px;
+  flex: 50%;
+  text-align: left;
+}
+.right_simple {
+  /* background-color: beige; */
   padding: 50px;
   flex: 50%;
   text-align: left;
 }
 
-.right_simple{
-padding: 50px;
-  flex: 50%;
-  text-align: left;
-}
 @media (max-width: 800px) {
   .simple_text {
     flex-direction: column;
@@ -100,6 +131,45 @@ padding: 50px;
   .simple_text-md,
   .simple_text-sm,
   .simple_text-xl {
-    max-width: inherit;
+    max-width: max-content;
   }
 }
+
+img.scale-with-grid, #Content img {
+    max-width: 100%;
+    
+    height: auto;
+}
+.image_frame .image_wrapper img:not(.ls-l) {
+    position: relative;
+    top: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.image_frame .image_wrapper img, .image_frame .image_wrapper .mask:after, .image_frame .image_wrapper .image_links {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+img.scale-with-grid, .content_wrapper img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+@media (max-width:767px) {
+    .left_img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.right_img_text{
+    padding: 50px;
+  flex: 50%;
+}
+@media (min-width:768px) {
+    .left_img{
+        padding: auto;
+        max-width: 240px;
+        max-height: 240px;
+    }}

@@ -1,13 +1,14 @@
- import './App.css';
+import logo from './logo.svg';
+import './App.css';
 import Herosection from './Pages/Herosection';
 import Header from './Universal/Header';
 
-function App() 
-{
+function App() {
   return (
     <div className="App">
-      <Header/>
-      <Herosection/>
+        {/* <Header/> */}
+        <Herosection/>
+    
     </div>
   );
 }
