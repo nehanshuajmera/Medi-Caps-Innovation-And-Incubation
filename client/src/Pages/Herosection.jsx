@@ -3,56 +3,48 @@ import "./Herosection.css";
 const Herosection = () => {
   return (
     <>
-      <div className="container">
-        <div className="left_container">
-          <div className="text">
-            <div className="row">
-              <div class="row mcb-wrap_inner">
-                <div class="col-md-8 mcb_item_custom1321 tablet-one mobile-one column_heading">
-                  <div class="mcb-column-inner">
-                    <h1 class="title">MII Foundation</h1>{" "}
-                  </div>
-                </div>
-              </div>
+      <div className="home-section-container">
+        <div className="home-section-1-container">
+          <div className="section-1-text">
+            <div className="section-1-heading">
+              <h3 className="section-1-home-container1">MI</h3>
+              <h3 className="section-1-home-container2">I&nbsp;</h3>
+              <h3 className="section-1-home-container3">Foundation</h3>
+            </div>
+            <div className="section-1-slogan">
+              <h3 className="mii-slogan">
+                "Unlock Your Business Potential"
+              </h3>
+            </div>
+          </div>
+          <div className="section-1-image">
+            <img className="hero-section-1-img" src="./images/miiiii.gif" alt="" />
+          </div>
+        </div>
+
+        <div className="simple_text">
+          <div className="left_simple">
+            <div className="icon-wapper">
+              <img
+                src="https://beantown.website/html/be/html/content/lottie/images/lottie-home-icon1.svg"
+                alt="icon"
+              />
+              <p>Lorem ipsum dolor mit samet et omnia</p>
+            </div>
+          </div>
+          <div className="right_simple">
+            <div className="icon-wapper">
+              <img
+                src="https://beantown.website/html/be/html/content/lottie/images/lottie-home-icon1.svg" alt="icon"/>
+              <p>Lorem ipsum dolor mit samet et omnia</p>
             </div>
           </div>
         </div>
-        <hr class="no_line" style={{ margin: 0 + "20px" }}></hr>
-        <div className="text_area">
-          <div className="left_text">
-            <p>"Unlock Your Business Potential"</p>
-          </div>
-          <div className="right_text">
-            <img
-              src="https://beantown.website/html/be/html/content/lottie/images/Animation.gif"
-              alt=""
-            />
-          </div>
-        </div>
+
       </div>
 
-      <div className="simple_text">
-        <div className="left_simple">
-          <div className="icon-wapper">
-            <img
-              src="https://beantown.website/html/be/html/content/lottie/images/lottie-home-icon1.svg"
-              alt="icon"
-            />
-            <p>Lorem ipsum dolor mit samet et omnia</p>
-          </div>
-        </div>
-        <div className="right_simple">
-		<div className="icon-wapper">
-            <img
-              src="https://beantown.website/html/be/html/content/lottie/images/lottie-home-icon1.svg"
-              alt="icon"
-            />
-            <p>Lorem ipsum dolor mit samet et omnia</p>
-          </div>
-        </div>
-      </div>
 
-      <div className="simple_text">
+      {/* <div className="simple_text">
         <div className="left_img">
           <img
             class="scale-with-grid"
@@ -70,7 +62,7 @@ const Herosection = () => {
             nulla placeat beatae.
           </p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
