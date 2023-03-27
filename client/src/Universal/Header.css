@@ -43,7 +43,7 @@ a {
     font-family: 'Inter', sans-serif;
     letter-spacing: 1px;
     padding: 10px 10px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 12px;
     color: black;
     box-sizing: border-box;
@@ -113,6 +113,7 @@ a {
         margin: 3px 0;
     }
 }
+
 @media only screen and (max-width: 350px) {
 
     .header-bar,
