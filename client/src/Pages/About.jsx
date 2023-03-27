@@ -1,5 +1,7 @@
 import React from 'react'
 import './About.css';
+// import TeamPage from "./TeamPage";
+import SingleTeamMember from "./SingleTeamMember";
 export default function About() {
   return (
     <div className='about-container'>
@@ -21,6 +23,7 @@ export default function About() {
       </div>
       <div className="about-section-3">
         <h2 className="ourteam">Our Team</h2>
+        <SingleTeamMember/>
       </div>
     </div>
   )

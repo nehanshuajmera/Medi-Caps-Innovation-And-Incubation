@@ -10,7 +10,7 @@ const Herosection = () => {
               <div class="row mcb-wrap_inner">
                 <div class="col-md-8 mcb_item_custom1321 tablet-one mobile-one column_heading">
                   <div class="mcb-column-inner">
-                    <h1 class="title">Dive into the world of animation</h1>{" "}
+                    <h1 class="title">MII Foundation</h1>{" "}
                   </div>
                 </div>
               </div>
@@ -20,7 +20,7 @@ const Herosection = () => {
         <hr class="no_line" style={{ margin: 0 + "20px" }}></hr>
         <div className="text_area">
           <div className="left_text">
-            <p>Make your content alive with motion designed illustrations</p>
+            <p>"Unlock Your Business Potential"</p>
           </div>
           <div className="right_text">
             <img

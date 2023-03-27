@@ -63,7 +63,13 @@
     text-align: center;
 }
 
-
+.about-section-3{
+    display: flex;
+    flex-flow: column wrap;
+    border: 2px solid green;
+    padding: 40px;
+    margin: 10px;
+}
 
 .ourteam{
     font-size: 60px;

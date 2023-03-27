@@ -102,8 +102,7 @@ img{
     height: auto;
 }
 
-@media (min-width: 768px)
-{
+@media (min-width: 768px) {
 .right_text {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
@@ -115,7 +114,8 @@ img{
     .text_area {
       flex-direction: column;
      
-    }}
+    }
+  }
 @media (min-width: 700px) {
   .text_area,
   .text_area-lg,
