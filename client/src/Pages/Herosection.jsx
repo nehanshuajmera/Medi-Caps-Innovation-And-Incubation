@@ -19,7 +19,7 @@ const Herosection = () => {
           <div className="section-1-image">
             <img
               className="hero-section-1-img"
-              src="./images/miiiii.gif"
+              src="./images/homesectionChess.gif"
               alt=""
             />
           </div>
