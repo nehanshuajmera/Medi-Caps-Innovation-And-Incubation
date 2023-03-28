@@ -1,4 +1,5 @@
 import React from "react";
+import Ourpartner from "../AboutUs/Ourpartner";
 import "./Herosection.css";
 import ScrollAnimation from "./Home/ScrollAnimation";
 const Herosection = () => {
@@ -36,7 +37,7 @@ const Herosection = () => {
               incubator, MII Foundation provides a collaborative and inclusive 
               environment for entrepreneurs to grow their businesses.</p>
 
-              <p>At MII Foundation, we have a culture that is collaborative,
+              <p style={{margin: "10px 0"}}>At MII Foundation, we have a culture that is collaborative,
               inclusive, and centered around innovation and creativity. We
               believe in fostering a supportive environment where start-ups can
               come together to share ideas, knowledge, and experiences.</p>
@@ -83,6 +84,7 @@ const Herosection = () => {
         </div>
       </div> */}
       <ScrollAnimation/>
+      <Ourpartner/>
     </>
   );
 };
