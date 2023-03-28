@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap');
 
 .home-section-container {
@@ -82,7 +80,19 @@
   text-align: center;
 }
 
-
+.simple_text{
+  display: flex;
+  flex-direction: column;
+}
+.left_simple{
+  padding: 50px;
+  flex:50%;
+  max-width: inherit;
+}
+.right_simple{
+  padding: 50px;
+  flex: 50%;
+}
 
 
 @media (max-width:767px) {
@@ -195,4 +205,3 @@ flex: 50%;
       max-width: 240px;
       max-height: 240px;
   }}
->>>>>>> df54f462f151a40bee28b8730da1c8db8373fa04
