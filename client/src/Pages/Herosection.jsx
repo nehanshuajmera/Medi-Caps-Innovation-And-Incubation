@@ -1,5 +1,6 @@
 import React from "react";
 import "./Herosection.css";
+import ScrollAnimation from "./Home/ScrollAnimation";
 const Herosection = () => {
   return (
     <>
@@ -81,6 +82,7 @@ const Herosection = () => {
           </p>
         </div>
       </div> */}
+      <ScrollAnimation/>
     </>
   );
 };
