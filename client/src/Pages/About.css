@@ -20,19 +20,18 @@
 }
 .section-1-paragraph{
     text-align: center;
-    padding: 2px;
+    padding: 10px;
     margin: 2px;
-    font-size: 50px;
+    font-size: 35px;
 }
 .about-image-container{
-    /* background-image: url('/images/about-section-image-1.png'); */
     background-size: 100% 100%;
 }
 .about-section-2{
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    flex-flow: column wrap;
+    /* flex-flow: column wrap; */
 }
 .divide-and-conquer-2{
     display: flex;

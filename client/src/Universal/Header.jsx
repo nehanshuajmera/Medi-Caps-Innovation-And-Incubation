@@ -33,7 +33,7 @@ export default function Header() {
           <NavLink to="/">Home</NavLink>
             <NavLink to="/About">About</NavLink>
             <NavLink to="/Offering">Offering</NavLink>
-            <NavLink to="/Article">Article</NavLink>
+            <NavLink to="/Article">Blogs</NavLink>
             <NavLink to="/Event">Event</NavLink>
             <NavLink to="/Contact">Contact</NavLink>
           </div>

@@ -13,12 +13,11 @@ export default function About() {
         <img src="https://beantown.website/html/be/html/content/business3/images/biz3-home-bottom-section.png" alt="" />
       </div>
       <div className="about-section-2">
-        <img src="https://beantown.website/html/be/html/content/lottie/images/Animation3.gif" alt="" className="about-image-2" />
+        <img src="https://media.licdn.com/dms/image/C560BAQFVLpC7QtyrAg/company-logo_400_400/0/1676459347608?e=2147483647&v=beta&t=8NlPHtSImrzq0W1AEugSxgD3YlwLjuB6FGVexwzSk-o" alt="" className="about-image-2" />
         <div className="divide-and-conquer-2">
-        <h3 className="section-2-heading-1">MI</h3>
-        <h3 className="section-2-heading-2">I&nbsp;</h3>
-        <h3 className="section-2-heading-3">Foundation</h3>
-        {/* <h3 className="section-2-heading-4">n</h3> */}
+        <p className="about-section-2-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut error numquam quasi repellendus in delectus quibusdam nulla, assumenda ipsum quisquam quo, quae odio quis! Sed perferendis eligendi dolore quos, ea est quia ducimus culpa?
+        </p>
         </div>
       </div>
       <div className="about-section-3">
