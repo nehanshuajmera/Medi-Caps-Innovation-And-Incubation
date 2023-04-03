@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap');
-.about-container{
-    background-color: #e4edf2;
+
+.about-container {
+    background-color: #ffffff;
     font-family: 'Inter', sans-serif;
+    margin-top: 58px;
 }
-.about-section-1{
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-section-1 {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -11,58 +19,67 @@
     padding: 15px;
     margin: 10px;
 }
-.section-1-heading{
+
+.section-1-heading {
     font-weight: 300;
     padding: 2px;
     margin: 2px;
     font-size: 18px;
     letter-spacing: 2px;
 }
-.section-1-paragraph{
+
+.section-1-paragraph {
     text-align: center;
     padding: 10px;
     margin: 2px;
     font-size: 35px;
 }
-.about-image-container{
+
+.about-image-container {
     background-size: 100% 100%;
 }
-.about-section-2{
+
+.about-section-2 {
     background-color: #ffffff;
     display: flex;
     align-items: center;
     /* flex-flow: column wrap; */
 }
-.divide-and-conquer-2{
+
+.divide-and-conquer-2 {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
     text-align: center;
 }
-.section-2-heading-1{
+
+.section-2-heading-1 {
     font-size: 150px;
     font-weight: bold;
     text-align: center;
 }
-.section-2-heading-2{
-    color: #017FE4;
-    font-size: 150px;
-    font-weight: bold;
-    text-align: center;
-}
-.section-2-heading-3{
-    font-size: 150px;
-    font-weight: bold;
-    text-align: center;
-}
-.section-2-heading-4{
+
+.section-2-heading-2 {
     color: #017FE4;
     font-size: 150px;
     font-weight: bold;
     text-align: center;
 }
 
-.about-section-3{
+.section-2-heading-3 {
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-2-heading-4 {
+    color: #017FE4;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-section-3 {
     display: flex;
     flex-flow: column wrap;
     border: 2px solid green;
@@ -70,7 +87,7 @@
     margin: 10px;
 }
 
-.ourteam{
+.ourteam {
     font-size: 60px;
     font-weight: bold;
     text-align: center;

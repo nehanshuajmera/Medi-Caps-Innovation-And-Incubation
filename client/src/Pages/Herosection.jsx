@@ -18,7 +18,7 @@ const Herosection = () => {
             </div>
           </div>
           <div className="section-1-image">
-            <img className="hero-section-1-img" src="./images/miiiii.gif" alt="" />
+            <img className="hero-section-1-img" src="./images/bulb.png" alt="" />
           </div>
         </div>
         <div className="section2-home-page">.
@@ -35,9 +35,9 @@ const Herosection = () => {
             </div>
           </div>
         </div>
-      </div>
       <ScrollAnimation />
       <Ourpartner />
+      </div>
     </>
   );
 };

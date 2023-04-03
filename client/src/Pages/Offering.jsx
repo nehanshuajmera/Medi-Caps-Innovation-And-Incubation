@@ -3,7 +3,26 @@ import "./Offering.css";
 export default function Offering() {
   return (
     <>
-      <div className="offering">
+      <div className="offering-main-container">
+
+        {/* Section - 1 */}
+
+        <div className="offering-section-1">
+          <h6 className='offering-section-1-heading'>Our Offering</h6>
+          <img src="./images/hand-shaking.png" alt="" />
+        </div>
+
+        {/* Section - 2 */}
+
+        <div className="offering-section-2">
+          
+        </div>
+
+      </div>
+
+
+
+      {/* <div className="offering">
         <div className="title" style={{ textAlign: "center", padding: "20px" }}>
           Offering
         </div>
@@ -95,7 +114,7 @@ export default function Offering() {
             life. Get the support you need to grow your business and succeed."
           </h2>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -1,19 +1,27 @@
+/* Imported font from Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap');
 
+/* Full Home section Access Container */
 .home-section-container {
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-top: 58px;
 }
 
+/* Hero Section  */
 .home-section-1-container {
   display: flex;
-  /* flex-wrap: wrap; */
-  height: 80vh;
+  flex-wrap: wrap;
+  height: 90vh;
   margin: 5px;
-  /* margin-top: 20px; */
+  margin-top: 10px;
   box-sizing: border-box;
-  /* padding: 10px; */
+  padding: 10px;
 }
 
+/* Left side Container of herosection */
 .section-1-text {
   display: flex;
   padding: 2px;
@@ -23,6 +31,7 @@
   align-items: center;
 }
 
+/* Left Container Heading (MII Foundation) */
 .section-1-heading {
   display: flex;
   flex-wrap: wrap;
@@ -32,6 +41,7 @@
   /* border: 2px solid black; */
 }
 
+/* MII Slogan Container */
 .section-1-slogan {
   display: flex;
   flex-wrap: wrap;
@@ -42,6 +52,7 @@
   /* border: 2px solid red; */
 }
 
+/* Styling (MII Foundation) h3 tag */
 .section-1-home-container1 {
   display: flex;
   align-items: flex-end;
@@ -56,7 +67,6 @@
   /* color: #7e1327; */
   font-size: 90px;
   font-weight: bold;
-
 }
 
 .section-1-home-container3 {
@@ -66,56 +76,78 @@
   font-weight: bold;
 }
 
+/* Right Side Container of herosection */
 .section-1-image {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  width: 35%;
   padding: 2px;
   margin: 4px;
 }
 
 .hero-section-1-img {
-  width: 100%;
+  /* width: 100%; */
   height: 80%;
 }
 
+/* Styling (MII Slogan) h3 tag*/
 .mii-slogan {
   font-size: 30px;
   text-align: center;
 }
 
+/* Home Section (second) Container after herosection */
 .section2-home-page {
-  height: 80vh;
   background-color: black;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
-  height: 80vh;
+  /* border: 2px solid red; */
 }
 
+/* Container inside second container */
 .section2-container {
   display: flex;
-  /* width: 90%; */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 92vh;
+  width: 94%;
+  /* border: 2px solid green; */
 }
 
-.section2-container .section2-heading h1 {
+/* Left container inside section-2-container */
+.section2-heading {
+  width: 30%;
+  margin: 10px;
+  padding: 8px;
+  /* border: 2px solid rgb(22, 30, 22); */
+
+}
+
+.section2-heading h1 {
   color: white;
-  border-right: 3px solid maroon;
+  border-right: 3px solid #017FE4;
+  font-size: 35px;
+  letter-spacing: 1px;
   line-height: 1.4;
-  padding: 1% 2%;
+  padding: 1% 3%;
+  /* text-align: center; */
 }
 
+/* Right container inside section-2-container */
 .section2-content {
-  padding: 5%;
+  width: 60%;
+  margin: 10px;
+  padding: 8px;
 }
 
 .section2-content p {
   color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
   line-height: 1.3;
+  /* text-align: center; */
 }
-
