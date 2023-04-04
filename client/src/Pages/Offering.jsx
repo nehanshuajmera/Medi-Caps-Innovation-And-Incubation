@@ -9,7 +9,7 @@ export default function Offering() {
 
         <div className="offering-section-1">
           <h6 className='offering-section-1-heading'>Our Offering</h6>
-          <img src="./images/hand-shaking.png" alt="" />
+          <img style={{width: "60%"}} src="./images/hand-shaking.png" alt="" />
         </div>
 
         {/* Section - 2 */}
@@ -22,10 +22,10 @@ export default function Offering() {
 
 
 
-      {/* <div className="offering">
-        <div className="title" style={{ textAlign: "center", padding: "20px" }}>
+      <div className="offering">
+        {/* <div className="title" style={{ textAlign: "center", padding: "20px" }}>
           Offering
-        </div>
+        </div> */}
 
         <div className="main_heading">
           <div className="heading-text">
@@ -114,7 +114,7 @@ export default function Offering() {
             life. Get the support you need to grow your business and succeed."
           </h2>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }

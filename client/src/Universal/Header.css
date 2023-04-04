@@ -51,10 +51,13 @@ a {
     color: black;
     box-sizing: border-box;
 }
+.active{
+    border-bottom: 1px solid #017FE4;
 
+}
 .item1 a:hover {
     color: #017FE4;
-    border-bottom: 1px solid #017FE4;
+    
 }
 
 .item1 a:active {
