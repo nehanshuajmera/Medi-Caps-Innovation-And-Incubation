@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React /*, { useState } */ from "react";
 import Ourpartner from "../AboutUs/Ourpartner";
 import "./Herosection.css";
 import ScrollAnimation from "./Home/ScrollAnimation";
@@ -10,9 +10,7 @@ const Herosection = () => {
         <div className="home-section-1-container">
           <div className="section-1-text" /*onMouseEnter={()=>{setchng("./images/bulb.png")}} onMouseLeave={()=>{setchng("./images/bulbblack.png")}} */>
             <div className="section-1-heading">
-              <h3 className="section-1-home-container1">MI</h3>
-              <h3 className="section-1-home-container2">I&nbsp;</h3>
-              <h3 className="section-1-home-container3">Foundation</h3>
+              <h3 className="section-1-home-container1">MII Foundation</h3>
             </div>
             <div className="section-1-slogan">
               <h3 className="mii-slogan">"Unlock Your Business Potential"</h3>

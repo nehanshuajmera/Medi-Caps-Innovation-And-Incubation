@@ -53,32 +53,6 @@ img {
     text-align: center;
 }
 
-.section-2-heading-1 {
-    font-size: 150px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.section-2-heading-2 {
-    color: #017FE4;
-    font-size: 150px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.section-2-heading-3 {
-    font-size: 150px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.section-2-heading-4 {
-    color: #017FE4;
-    font-size: 150px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .about-section-3 {
     display: flex;
     flex-flow: column wrap;

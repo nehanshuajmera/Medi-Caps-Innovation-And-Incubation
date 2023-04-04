@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   height: 90vh;
-  margin: 5px;
+  /* margin: 5px; */
   margin-top: 10px;
   box-sizing: border-box;
   padding: 10px;
@@ -58,22 +58,7 @@
   align-items: flex-end;
   font-size: 90px;
   font-weight: bold;
-}
-
-.section-1-home-container2 {
-  display: flex;
-  align-items: flex-end;
-  color: #017FE4;
-  /* color: #7e1327; */
-  font-size: 90px;
-  font-weight: bold;
-}
-
-.section-1-home-container3 {
-  display: flex;
-  align-items: flex-end;
-  font-size: 90px;
-  font-weight: bold;
+  text-align: center;
 }
 
 /* Right Side Container of herosection */
@@ -129,7 +114,8 @@
 
 .section2-heading h1 {
   color: white;
-  border-right: 3px solid #017FE4;
+  /* border-right: 3px dotted #017FE4; */
+  border-right: 3px solid #ffffff;
   font-size: 35px;
   letter-spacing: 1px;
   line-height: 1.4;

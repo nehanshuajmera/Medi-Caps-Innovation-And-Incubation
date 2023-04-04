@@ -10,7 +10,7 @@ export default function About() {
         <p className="section-1-paragraph">"Create a perfect ecosystem for your business"</p>
       </div>
       <div className="about-image-container">
-        <img src="https://beantown.website/html/be/html/content/business3/images/biz3-home-bottom-section.png" alt="" />
+        <img src="./images/about-1-mu.jpeg" alt="" />
       </div>
       <div className="about-section-2">
         <img src="https://media.licdn.com/dms/image/C560BAQFVLpC7QtyrAg/company-logo_400_400/0/1676459347608?e=2147483647&v=beta&t=8NlPHtSImrzq0W1AEugSxgD3YlwLjuB6FGVexwzSk-o" alt="" className="about-image-2" />
