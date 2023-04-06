@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css';
 // import TeamPage from "./TeamPage";
 import SingleTeamMember from "./SingleTeamMember";
+import TeamMember from './OurTeam/TeamMember';
 export default function About() {
   return (
     <div className='about-container'>
@@ -24,6 +25,7 @@ export default function About() {
         <h2 className="ourteam">Our Team</h2>
         <SingleTeamMember/>
       </div>
+      <TeamMember/>
     </div>
   )
 }
