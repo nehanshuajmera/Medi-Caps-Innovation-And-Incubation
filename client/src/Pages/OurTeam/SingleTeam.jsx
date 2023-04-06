@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export default function SingleTeam(props) {
     const [accodian, setaccodian] = useState(false);
   return (
-    <div className="zl-staff-items">
+   
     <div onClick={()=>{setaccodian(!accodian)}}
       className={accodian?"zl-staff-item -active":"zl-staff-item"}
       style={{
@@ -19,14 +19,13 @@ export default function SingleTeam(props) {
         <div className="zl-staff-info">
           <div className="zl-staff-item-avatar">
             <img
-              src="/assets/img/staff/1.jpg"
-              srcSet="/assets/img/staff/1@2x.jpg 2x"
+              src={props.img}
               alt=""
             />
           </div>
           <div className="zl-staff-item-name">
-            <h4>Martin Granström</h4>
-            <p>Chief Technical Officer</p>
+            <h4>{props.name}</h4>
+            <p>{props.desc}</p>
           </div>
         </div>
         <div className="zl-staff-item-icon">
@@ -85,6 +84,5 @@ export default function SingleTeam(props) {
       </div>
     </div>
 
-  </div>
     )
 }

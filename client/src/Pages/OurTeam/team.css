@@ -1,5 +1,12 @@
+
 .zl-staff-items{
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.zl-staff-item{
+    width: 80%;
 }
 .zl-stack-header {
     margin: 0 0 30px 0;
