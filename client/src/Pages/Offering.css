@@ -9,15 +9,18 @@
 
 /* Section - 1 */
 .offering-section-1{
+    height: 90vh;
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
 }
 
 .offering-section-1-heading{
-    margin: 30px;
-    font-size: 40px;
-    font-weight: 300;
+
+    margin: 20px;
+    font-size: 60px;
+    font-weight: 1000;
 }
 
 .offering{
