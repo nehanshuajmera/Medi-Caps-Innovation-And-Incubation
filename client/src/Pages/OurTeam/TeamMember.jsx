@@ -4,7 +4,7 @@ import "./team.css"
 export default function TeamMember() {
   return (
     <div style={{marginBottom:"50px"}}>
-        <h1 style={{textAlign:"center"}}>Our Team</h1>
+        <h1 style={{textAlign:"center",margin:"50px"}}>Our Team</h1>
          <div className="zl-staff-items">
             <SingleTeamMember img={"https://media.licdn.com/dms/image/C5603AQE3rSup8NMJAA/profile-displayphoto-shrink_200_200/0/1577668183645?e=1686182400&v=beta&t=1TwXAy2RH4f_kNMBdyX-gDz8IJ4IRYMZvdIgNOSR9Cc"} name={"Palash Garg"} desc={"OSD to Chancellor at Medi-Caps University"} 
             content={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, perferendis eius. Eaque, ipsa voluptate, incidunt numquam, consequatur optio possimus pariatur fugit dignissimos corrupti error maiores a porro ad voluptates minus." }  />
