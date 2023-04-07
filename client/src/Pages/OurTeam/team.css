@@ -288,7 +288,7 @@
     }
   }
   .zl-description-text b {
-    color: #008a6e;
+    color: "red";
   }
   .zl-staff.-inverse {
     background: #0f0f0f;
@@ -485,12 +485,12 @@
     h4,
   .zl-navbar.-open .zl-navbar-toggle button.zl-staff-item .zl-staff-item-name h4,
   .zl-staff-item.-active .zl-staff-item-name h4 {
-    color: #008a6e;
+    color: "red";
   }
   .zl-staff-item-icon {
     position: relative;
     margin: 0 15px 0 0;
-    color: #008a6e;
+    color: "red";
   }
   @media (min-width: 768px) {
     .zl-staff-item-icon {
@@ -604,7 +604,7 @@
     display: inline-block;
     margin: 15px 0 0 0;
     text-decoration: none;
-    color: #008a6e;
+    color: "red";
   }
   .zl-staff-item-text a:before {
     content: "";
