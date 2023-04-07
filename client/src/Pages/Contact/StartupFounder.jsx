@@ -1,0 +1,27 @@
+import React from 'react'
+
+export default function StartupFounder() {
+  return (
+    <div className='who-form'>
+      <div className='left'>
+      <h1 style={{textAlign:"center"}}>Startup Founder</h1>      
+
+      <button>
+        <span class="button_top"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> Submit
+        </span>
+      </button>
+
+      </div>
+      <div className='right'>
+      <input type='text' placeholder='Name' />
+      <input type='text' placeholder='Phone No.' />
+      <input type='text' placeholder='Email' />
+      <input type='text' placeholder='Reason for reaching out' />
+      <input type='text' placeholder='Idea' />
+      <input type='text' placeholder='Message' />
+      </div>
+      
+      
+    </div>
+  )
+}
