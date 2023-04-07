@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Contact.css';
 import MainContactpage from './Contact/MainContactpage';
 import StartupFounder from './Contact/StartupFounder';
@@ -10,6 +10,11 @@ import Mentor from './Contact/Mentor';
 
 export default function Contact() {
   const [section, setsection] = useState("");
+ 
+  useEffect(() => {
+    setsection("")
+  },[])
+  
   return (
     <div className="contactCss">
       {section===""?<MainContactpage setsection={setsection}/>:<></>}
