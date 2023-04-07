@@ -8,6 +8,7 @@ import Article from './Pages/Article';
 import Event from './Pages/Event';
 import Offering from './Pages/Offering';
 import About from './Pages/About';
+import Singleeventpage from './SingleEvent/Singleeventpage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route  path='/Article' element={<Article/> }/>
         <Route  path='/About' element={<About/> }/>
         <Route  path='/Event' element={<Event/> }/>
+        <Route  path='/singleevent' element={<Singleeventpage/> }/>
       </Routes>
       <Footer/>
     </div>

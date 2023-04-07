@@ -1,6 +1,8 @@
 import React from 'react'
 import './Event.css';
+import { useNavigate } from 'react-router-dom';
 export default function Event() {
+  const navigate=useNavigate();
   return (
     <div className="event-main-container">
 
@@ -25,7 +27,7 @@ export default function Event() {
           </div>
         </div>
         <div className="right-container-event-section-2">
-          <div className="section-2-right-sub-container">
+          <div className="section-2-right-sub-container" onClick={()=>{navigate("/singleevent")}}>
             <div className="section-2-right-sub-container-img">
               <img src="./images/upcoming-events-photo.jpg" alt="" />
             </div>
@@ -35,7 +37,7 @@ export default function Event() {
               <p style={{ fontSize: '16px', fontWeight: '300' }}> Lorem, ipsum dolor sit amet consectetur adipisicing. </p>
             </div>
           </div>
-          <div className="section-2-right-sub-container">
+          <div className="section-2-right-sub-container" onClick={()=>{navigate("/singleevent")}}>
             <div className="section-2-right-sub-container-img">
               <img src="./images/upcoming-events-photo.jpg" alt="" />
             </div>
@@ -45,7 +47,7 @@ export default function Event() {
               <p style={{ fontSize: '16px', fontWeight: '300' }}> Lorem, ipsum dolor sit amet consectetur adipisicing. </p>
             </div>
           </div>
-          <div className="section-2-right-sub-container">
+          <div className="section-2-right-sub-container" onClick={()=>{navigate("/singleevent")}}>
             <div className="section-2-right-sub-container-img">
               <img src="./images/upcoming-events-photo.jpg" alt="" />
             </div>
