@@ -1,7 +1,5 @@
 import React from 'react'
 import './About.css';
-// import TeamPage from "./TeamPage";
-import SingleTeamMember from "./SingleTeamMember";
 import TeamMember from './OurTeam/TeamMember';
 import Abouthero from '../AboutUs/Abouthero';
 export default function About() {
