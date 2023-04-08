@@ -65,22 +65,22 @@ img {
     text-align: center;
 }
 
-.about-hero-img{
+.about-hero-img {
     position: relative;
     margin: 0;
     padding: 0%;
 }
 
-.about-hero-img p,h6{
+.about-hero-img p,
+h6 {
     position: absolute;
-     top: 30%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.about-image-container img{
+.about-image-container img {
     width: 100%;
     opacity: 0.6;
     /* height: 90vh; */
 }
-

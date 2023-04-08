@@ -77,7 +77,7 @@ export default function Singleeventpage() {
             <NavLink to='/contact'>
               <span className='single-event-span-link'>Get in Touch</span>
             </NavLink>
-            &nbsp;with us
+            &nbsp;with us.
           </p>
         </div>
 
