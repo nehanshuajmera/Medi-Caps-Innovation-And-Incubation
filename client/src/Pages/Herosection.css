@@ -13,7 +13,9 @@
 /* Hero Section  */
 .home-section-1-container {
   display: flex;
-  flex-wrap: wrap;
+  /* align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; */
   height: 90vh;
   /* margin: 5px; */
   margin-top: 10px;
@@ -54,11 +56,15 @@
 
 /* Styling (MII Foundation) h3 tag */
 .section-1-home-container1 {
-  display: flex;
-  align-items: flex-end;
+ 
+  /* align-items: flex-end; */
   font-size: 90px;
   font-weight: bold;
   text-align: center;
+}
+
+.foundation-text {
+  transform: translate(0px, -40px);
 }
 
 /* Right Side Container of herosection */
@@ -75,6 +81,16 @@
 .hero-section-1-img {
   /* width: 100%; */
   height: 80%;
+}
+
+@media (max-width: 900px) {
+  .section-1-home-container1 {
+    font-size: 60px;
+  }
+
+  .removeonphone {
+    display: none;
+  }
 }
 
 /* Styling (MII Slogan) h3 tag*/
@@ -98,29 +114,36 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 92vh;
-  width: 94%;
+  min-height: 92vh;
+  /* width: 94%; */
   /* border: 2px solid green; */
 }
 
 /* Left container inside section-2-container */
 .section2-heading {
-  width: 30%;
-  margin: 10px;
+  width: 280px;
+  margin: 5px;
   padding: 8px;
   /* border: 2px solid rgb(22, 30, 22); */
 
 }
 
+
+
 .section2-heading h1 {
   color: white;
   /* border-right: 3px dotted #017FE4; */
-  border-right: 3px solid #ffffff;
   font-size: 35px;
   letter-spacing: 1px;
   line-height: 1.4;
-  padding: 1% 3%;
   /* text-align: center; */
+  /* padding: 1% 3%; */
+}
+
+@media (min-width: 900px) {
+  .section2-heading h1 {
+    border-right: 3px solid #ffffff;
+  }
 }
 
 /* Right container inside section-2-container */
@@ -136,4 +159,54 @@
   letter-spacing: 1px;
   line-height: 1.3;
   /* text-align: center; */
+}
+
+
+
+
+
+/* .section-1-home-container1 {
+  animation: showup 10s infinite;
+} */
+
+.text-come-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.text-come-animation {
+  animation: showup 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .text-come-animation {
+   display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .displayonphone {
+   display: none;
+  }
 }
