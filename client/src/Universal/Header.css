@@ -67,7 +67,7 @@ a {
 
 .cross {
     color: black;
-    width: 55px;
+    /* width: 55px; */
     display: none;
 }
 
