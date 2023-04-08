@@ -8,7 +8,6 @@
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 .about-section-1 {
@@ -32,9 +31,19 @@ img {
     text-align: center;
     /* padding: 10px; */
     /* margin: 2px; */
+    width: max-content;
     font-size: 35px;
 }
 
+@media (max-width: 900px) {
+    .section-1-paragraph {
+        width: 100%;
+        font-weight: 500;
+        margin-top: 5px;
+        font-size: 20px;
+        /* color: aqua; */
+    }
+}
 
 
 .about-section-2 {
