@@ -23,7 +23,94 @@
     font-weight: 1000;
 }
 
-.offering{
+.offering-section-2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  
+    justify-content: center;
+    height: 90vh;
+    background-color: black;
+    color: white;
+}
+.offering-section-2-left-container{
+    width: 48%;
+    margin: 4px;
+    padding: 8px;
+   
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.offering-section-2-left-container h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+}
+.offering-section-2-right-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    margin: 4px;
+    padding: 8px;
+    
+    /* background-image: url('https://www.aic-audf.org/wp-content/uploads/2021/10/business-team-discussing-ideas-startup_74855-4380.jpg') center no-repeat cover; */
+}
+.offering-section-2-right-container img{
+    /* object-fit: cover; */
+    width: 80%;
+    height: 80%;
+}
+
+.offering-section-3{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+}
+.offering-section-3-layout{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+.offering-section-3-heading{
+font-size: 50px;
+text-align: center;
+margin: 50px;
+}
+.section-3-layout-items{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+.section-3-layout-items h3{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 1.5;
+    text-align: center;
+     margin: 2px;
+     padding: 6px;
+}
+
+.section-3-layout-items p{
+    font-size: 30px;
+    font-weight: 200;
+     text-align: center;
+     margin: 2px;
+     padding: 6px;
+}
+
+/* .offering{
     margin-top: 58px;
 }
 .Incubation{
@@ -63,25 +150,15 @@
 .img-contain{
     padding: 50px;
     flex: 50%; 
-} 
-/* img{
-    max-width: 100%;
-    height: auto;
-} */
-.textincubation ,.textconsulting{
+}  */
+/* .textincubation ,.textconsulting{
     margin-left: 125px;
     text-align: left;
     font-size: 30px;
     padding: 15px;
     border-left: 7px solid grey; 
-} 
-/* .border{
-    border: 4px solid red;
-  border-radius: 5px;
-  border-spacing: 10px;
-  padding: 10px;
-} */
-.minitext{
+}  */
+/* .minitext{
 margin-left: 170px;
 font-size: 20px;
 padding: 10px;
@@ -93,4 +170,4 @@ padding: 10px;
     margin-left: 125px;
     font-size: 20px;
     padding: 10px;
-}
+} */

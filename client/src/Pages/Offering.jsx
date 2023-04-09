@@ -4,28 +4,86 @@ export default function Offering() {
   return (
     <>
       <div className="offering-main-container">
-
         {/* Section - 1 */}
 
         <div className="offering-section-1">
-          <h6 className='offering-section-1-heading'>Our Offering</h6>
-          <img style={{width: "60%"}} src="./images/hand-shaking.png" alt="" />
+          <h6 className="offering-section-1-heading">Our Offering</h6>
+          <img
+            style={{ width: "60%" }}
+            src="./images/hand-shaking.png"
+            alt=""
+          />
         </div>
 
         {/* Section - 2 */}
 
         <div className="offering-section-2">
-          
+          <div className="offering-section-2-left-container">
+            <h3 style={{fontSize:'35px'}}>MII Foundation offers two main services:</h3>
+            <h3>1. Incubation</h3>
+            <h3>2. Consulting</h3>
+            <h3 style={{fontSize:'35px'}}>To help start-ups grow and succeed.</h3>
+          </div>
+          <div className="offering-section-2-right-container">
+          <img src="./images/offering-img-1.png" alt="icon"/>
+          </div>
         </div>
+        
+        <div className="offering-section-3">  
+        <h3 className="offering-section-3-heading">Incubation</h3>
+          <div className="offering-section-3-layout">
+          
+            <div className="section-3-layout-items">
+              <h3>Mentoring</h3>
+              <p>Receive guidance and support from experienced professionals.</p>
+
+            </div>
+            <div className="section-3-layout-items">
+              <h3>Seed-Fund Investment</h3>
+              <p> Get access to seed-fund investment to help grow your business.</p>
+
+            </div>
+            <div className="section-3-layout-items">
+              <h3>Access to Events</h3>
+              <p>Connect with human resources professionals to help with hiring and
+              HR needs.</p>
+
+            </div>
+            <div className="section-3-layout-items">
+              <h3>Co-working</h3>
+              <p> Work in a collaborative environment with other start-ups.</p>
+
+            </div>
+            <div className="section-3-layout-items">
+              <h3>HR Access</h3>
+              <p>Connect with human resources professionals to help with hiring and HR needs.</p>
+
+            </div>
+            <div className="section-3-layout-items">
+              <h3>Interns</h3>
+              <p> Hire interns to help with your business operations.</p>
+
+            </div>
+            <div className="section-3-layout-items">
+              <h3>Research Support</h3>
+              <p> Receive support with research and market analysis.</p>
+
+            </div>
+            <div className="section-3-layout-items">
+              <h3>Business Plan Development</h3>
+              <p>  Get assistance with developing a solid business plan.</p>
+
+            </div>
+            
+          </div>
+        </div>
+
+
 
       </div>
 
-
-
-      <div className="offering">
-        {/* <div className="title" style={{ textAlign: "center", padding: "20px" }}>
-          Offering
-        </div> */}
+      {/* <div className="offering">
+       
 
         <div className="main_heading">
           <div className="heading-text">
@@ -114,7 +172,7 @@ export default function Offering() {
             life. Get the support you need to grow your business and succeed."
           </h2>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
