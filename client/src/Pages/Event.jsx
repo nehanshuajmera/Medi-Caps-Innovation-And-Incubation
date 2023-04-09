@@ -62,8 +62,26 @@ export default function Event() {
 
       {/* Section - 3 */}
 
-      <div className="event-section-3-container">
+      <div className="event-section-3-container  event-cnt">
+      
         <img src="./images/drawing-slider-bg.jpg" alt="" />
+        <div className='event-cnt-content'>
+            <div>
+              <h1> <i class="fa-solid fa-eye"></i></h1>
+              <h1>Visitor </h1>
+              <h3>6000+</h3>
+            </div>
+            <div>
+            <h1> <i class="fa-solid fa-eye"></i></h1>
+              <h1>Registrations</h1>
+              <h3>6000+</h3>
+            </div>
+            <div>
+            <h1> <i class="fa-solid fa-eye"></i></h1>
+              <h1>Visitor</h1>
+              <h3>6000+</h3>
+            </div>
+        </div>
       </div>
 
       {/* Section - 4 */}
