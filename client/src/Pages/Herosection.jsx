@@ -12,7 +12,9 @@ const Herosection = () => {
           <div className="home-section-1-text" /*onMouseEnter={()=>{setchng("./images/bulb.png")}} onMouseLeave={()=>{setchng("./images/bulbblack.png")}} */>
             <div className="home-section-1-heading" >
               <div className="section-1-home-container1 ">
-                <h3>MII Foundation</h3>
+               
+                <h3 className="removeonphone" >MII Foundation</h3>
+                <img className="removeonlaptop" src="./images/Black logo - no background.png" alt="" />
               </div>
             </div>
             <div className="home-section-1-slogan">

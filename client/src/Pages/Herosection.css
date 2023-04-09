@@ -84,14 +84,28 @@
   height: 80%;
 }
 
-@media (max-width: 900px) {
-  .section-1-home-container1 {
-    font-size: 60px;
-  }
-
+@media (max-width: 800px) {
   .removeonphone {
     display: none;
   }
+
+  .home-section-1-text{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .home-section-1-container{
+     display: flex;
+     justify-content: center;
+    
+    align-items: center;
+  }
+}
+
+@media(min-width: 801px){
+ .removeonlaptop{
+  display: none;
+ }
 }
 
 /* Styling (MII Slogan) h3 tag*/
