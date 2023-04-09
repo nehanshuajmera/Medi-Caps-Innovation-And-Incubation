@@ -8,7 +8,8 @@ export default function Article() {
           <img
             src="https://www.startupindia.gov.in/content/dam/invest-india/PGF/IncubatorPage_banner_v2.gif"
             alt="blog-img"
-          />
+            />
+            <h3>Blogs</h3>
         </div>
         <div className="blog-continer-1">
           <div className="blog-section-1-img">
@@ -37,7 +38,7 @@ export default function Article() {
             />
           </div>
           <div className="blog-section-1-text">
-          <h1>Title of Blog</h1>
+            <h1>Title of Blog</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -56,7 +57,7 @@ export default function Article() {
             />
           </div>
           <div className="blog-section-1-text">
-          <h1>Title of Blog</h1>
+            <h1>Title of Blog</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -75,7 +76,7 @@ export default function Article() {
             />
           </div>
           <div className="blog-section-1-text">
-          <h1>Title of Blog</h1>
+            <h1>Title of Blog</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -94,7 +95,7 @@ export default function Article() {
             />
           </div>
           <div className="blog-section-1-text">
-          <h1>Title of Blog</h1>
+            <h1>Title of Blog</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
