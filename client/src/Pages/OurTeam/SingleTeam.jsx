@@ -51,21 +51,21 @@ export default function SingleTeam(props) {
           </a>
           ), a leading crypto VC and strategic advisory firm.
         </p>
-        <p>
+        {/* <p>
           Martin has over 15 years of experience working with and leading complex
           software architecture and development projects; including system-level,
           data-driven, UI/UX applications; and cryptographic projects in the
           rapidly evolving blockchain market. Martin currently lives in Lulea,
           Sweden.
-        </p>
-        <p>
+        </p> */}
+        {/* <p>
           He is a full-stack software developer who previously worked for
           Netrounds (acquired by Juniper Networks in 2020), where his role was to
           manage the R&amp;D team responsible for a cloud-hosted (AWS)
           microservice application that monitored Tier 1 Telecom Operator networks
           and services.
-        </p>
-        <p>
+        </p> */}
+        {/* <p>
           Martin has been an active OG (original guy) in the blockchain
           development community since 2013 and has advised multiple projects as a
           strategic technology advisor. As a team member of BlockUnify, Inc., one
@@ -73,13 +73,13 @@ export default function SingleTeam(props) {
           provides deep technical insights into the technology and architectures
           of some of the most innovative and ground-breaking crypto projects and
           cross-chain innovations.
-        </p>
-        <p>
+        </p> */}
+        {/* <p>
           Martin is particularly keen on identifying emerging trends and
           technologies in the blockchain universe and is a deeply committed
           proponent of making such innovations readily available to the global
           community.
-        </p>
+        </p> */}
         <a href="mailto:martin@unizen.io">Contact</a>
       </div>
     </div>
