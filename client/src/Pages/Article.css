@@ -2,6 +2,17 @@
     margin-top: 10vh;
     font-family:  'Inter', sans-serif;
 }
+.blog-img{
+    height: 90vh;
+}
+.blog-img h3{
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 40px;
+}
 .blog-img img{
     height: 60vh;
     width: 100%;
