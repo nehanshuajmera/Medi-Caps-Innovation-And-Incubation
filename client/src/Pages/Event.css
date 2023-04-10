@@ -21,7 +21,8 @@ img {
 /* First Container of Event section */
 .event-section-1 {
     height: 90vh;
-    opacity: 0.8;
+    /* height:100vh; */
+    /* opacity: 0.8; */
     background-image: url("F:/mii/client/public/images/event-main-herosection.jpeg");
     background-repeat: no-repeat;
     background-position: center;

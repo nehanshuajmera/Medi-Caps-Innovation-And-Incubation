@@ -30,7 +30,7 @@ export default function Event() {
               <p style={{ fontSize: '16px', fontWeight: '300' }}> Lorem, ipsum dolor sit amet consectetur adipisicing. </p>
             </div>
             <div className="event-section-2-register-button">
-
+              <h5>Register Button</h5>
             </div>
           </div>
         </div>
