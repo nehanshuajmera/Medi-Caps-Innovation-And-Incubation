@@ -10,20 +10,20 @@ import Mentor from './Contact/Mentor';
 
 export default function Contact() {
   const [section, setsection] = useState("");
- 
+
   useEffect(() => {
     setsection("")
-  },[])
-  
+  }, [])
+
   return (
     <div className="contactCss">
-      {section===""?<MainContactpage setsection={setsection}/>:<></>}
-      {section==="startupfounder"?<StartupFounder/>:<></>}
-      {section==="investor"?<Investor/>:<></>}
-      {section==="generalquery"?<GeneralQuery/>:<></>}
-      {section==="ideaowner"?<IdeaOwner/>:<></>}
-      {section==="student"?<Student/>:<></>}
-      {section==="mentor"?<Mentor/>:<></>}
+      {section === "" ? <MainContactpage setsection={setsection} /> : <></>}
+      {section === "startupfounder" ? <StartupFounder /> : <></>}
+      {section === "investor" ? <Investor /> : <></>}
+      {section === "generalquery" ? <GeneralQuery /> : <></>}
+      {section === "ideaowner" ? <IdeaOwner /> : <></>}
+      {section === "student" ? <Student /> : <></>}
+      {section === "mentor" ? <Mentor /> : <></>}
     </div>
   )
 }
