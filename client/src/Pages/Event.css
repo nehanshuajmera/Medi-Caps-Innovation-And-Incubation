@@ -20,35 +20,13 @@ img {
 
 /* First Container of Event section */
 .event-section-1 {
-    /* background-color: #000000;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
     height: 90vh;
-    /* height:100vh; */
-    /* opacity: 0.8; */
+    opacity: 0.8;
     background-image: url("F:/mii/client/public/images/event-main-herosection.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
-/* event written image css */
-/* .image-event-1 {
-    width: 100%;
-} */
-
-/* background image css for section 1 */
-/* .event-section-1::before {
-    content: "";
-    position: absolute;
-    background: url('F:/mii/client/public/images/background-image.jpg') no-repeat center center/cover;
-    height: 90vh;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.6;
-} */
 
 /* -----------x-----------x----------x---------x-------x-----x-----x------------x----------- */
 
@@ -56,7 +34,7 @@ img {
 .event-section-2-container {
     display: flex;
     flex-wrap: wrap;
-    /* height: 90vh; */
+    height: 90vh;
     padding: 8px;
     margin: 40px 0px;
 }
@@ -81,24 +59,34 @@ img {
     overflow: hidden;
 }
 
-.left-event-section-2-img-container img {
+.upcoming-event-container {
+    background-image: url("F:/mii/client/public/images/coming-soon-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 
-.left-event-section-2-img-container img:hover {
+.upcoming-event-container:hover {
     transform: scale(1.1);
+}
+
+.left-event-section-2-after-image-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .left-event-section-2-text-container {
     display: flex;
     margin-top: 5px;
+    margin: 1px;
     padding: 5px 5px;
     width: 70%;
+    height: 100%;
     flex-direction: column;
     border: 1px solid yellowgreen;
 }
@@ -108,30 +96,45 @@ img {
     /* color: #017FE4; */
 }
 
+/* Registration Button Css */
+.event-section-2-register-button {
+    border: 1px solid pink;
+    width: 28%;
+    display: flex;
+    margin-top: 5px;
+    margin: 1px;
+    padding: 5px 5px;
+}
+
 /* right side of event section '2' container */
 .right-container-event-section-2 {
     width: 48%;
     margin-left: 8px;
     padding: 6px 6px 6px 0px;
+    /* display: flex;
+    flex-flow: column wrap; */
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 }
 
 
 @media (max-width: 900px) {
-    .left-container-event-section-2{
-       /* height: 90vh; */
-       width: 100%;
+    .left-container-event-section-2 {
+        /* height: 90vh; */
+        width: 100%;
     }
+
     .right-container-event-section-2 {
         width: 100%;
     }
-  }
+}
+
 /* right side containers attributes */
 .section-2-right-sub-container {
     margin: 2px 2px 2px 0px;
     display: flex;
     flex-wrap: wrap;
+    /* height: 32.5%; */
     /* padding: 3px; */
 }
 
@@ -142,16 +145,51 @@ img {
     border-radius: 10px;
 }
 
-.section-2-right-sub-container-img img {
+.past-event-container1 {
+    background-image: url("F:/mii/client/public/images/Events-small-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 
-.section-2-right-sub-container-img img:hover {
+.past-event-container2 {
+    background-image: url("F:/mii/client/public/images/Events-small-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.past-event-container3 {
+    background-image: url("F:/mii/client/public/images/Events-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.past-event-container1:hover {
+    transform: scale(1.1);
+}
+
+.past-event-container2:hover {
+    transform: scale(1.1);
+}
+
+.past-event-container3:hover {
     transform: scale(1.1);
 }
 

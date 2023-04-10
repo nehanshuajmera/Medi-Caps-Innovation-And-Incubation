@@ -40,7 +40,7 @@ const Herosection = () => {
         </div>
         <ScrollAnimation />
         {/* <Ourpartner /> */}
-        {/* <Testimonials /> */}
+        {/* <Testimonials />*/}
       </div>
     </>
   );
