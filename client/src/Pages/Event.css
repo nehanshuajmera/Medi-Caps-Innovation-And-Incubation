@@ -23,7 +23,7 @@ img {
     height: 90vh;
     /* height:100vh; */
     /* opacity: 0.8; */
-    background-image: url("F:/mii/client/public/images/event-main-herosection.jpeg");
+    background-image: url("F:/mii/client/public/images/single-event-image-2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -326,7 +326,7 @@ img {
 
 /* Heading Container CSS */
 .section-4-heading {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;

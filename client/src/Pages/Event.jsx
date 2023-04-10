@@ -11,7 +11,7 @@ export default function Event() {
       <div className="event-section-1">
         {/* <img className='image-event-1' src="./images/event-main-herosection.jpeg" alt="" /> */}
         {/* <img className='image-event-1' src="./images/events-png-event.png" alt="" /> */}
-        <h2 style={{ fontSize: '50px', color: 'yellow', padding: '20px', textAlign: 'center' }}>Events</h2>
+        <h2 style={{ fontSize: '50px', color: 'Black', padding: '20px', textAlign: 'center' }}>Events</h2>
       </div>
 
       {/* Section - 2 */}
