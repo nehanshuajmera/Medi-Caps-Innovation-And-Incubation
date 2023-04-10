@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap');
 
 /* Offering full page access */
-.offering-main-container{
+.offering-main-container {
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
     margin-top: 58px;
 }
 
 /* Section - 1 */
-.offering-section-1{
+.offering-section-1 {
     height: 90vh;
     display: flex;
     flex-flow: column wrap;
@@ -16,74 +16,85 @@
     align-items: center;
 }
 
-.offering-section-1-heading{
+.offering-section-1-heading {
 
     margin: 20px;
     font-size: 60px;
     font-weight: 1000;
 }
 
-.offering-section-2{
+.offering-section-2 {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-  
+
     justify-content: center;
     height: 90vh;
     background-color: black;
     color: white;
 }
-.offering-section-2-left-container{
+
+.offering-section-2-left-container {
     width: 48%;
     margin: 4px;
     padding: 8px;
-   
+
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
-.offering-section-2-left-container h3{
+
+.offering-section-2-left-container h3 {
     font-size: 40px;
     font-weight: 400;
     line-height: 2;
     text-align: center;
 }
-.offering-section-2-right-container{
+
+.offering-section-2-right-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 48%;
     margin: 4px;
     padding: 8px;
-    
+
     /* background-image: url('https://www.aic-audf.org/wp-content/uploads/2021/10/business-team-discussing-ideas-startup_74855-4380.jpg') center no-repeat cover; */
 }
-.offering-section-2-right-container img{
+
+.offering-section-2-right-container img {
     /* object-fit: cover; */
     width: 80%;
     height: 80%;
 }
 
-.offering-section-3{
+.offering-section-3 {
     display: flex;
     padding: 15px;
     flex-direction: column;
 }
-.offering-section-3-layout{
+
+.offering-section-3-layout {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 20px;
+    /* border: 1px solid red; */
+    justify-content: center;
+    /* padding: 20px;
+    margin: 20px; */
 }
-.offering-section-3-heading{
-font-size: 50px;
-text-align: center;
-margin: 50px;
+
+.offering-section-3-heading {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
 }
-.section-3-layout-items{
-    width: 400px;
+
+.section-3-layout-items {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    /* justify-content: center; */
+    width: 30%;
     border: 2px solid black;
     border-radius: 4px;
     margin: 4px;
@@ -93,21 +104,71 @@ margin: 50px;
     color: white;
     height: 300px;
 }
-.section-3-layout-items h3{
+
+.section-3-layout-items h3 {
     font-size: 35px;
     font-weight: 400;
     letter-spacing: 1.5;
     text-align: center;
-     margin: 2px;
-     padding: 6px;
+    margin: 2px;
+    padding: 6px;
+    cursor: pointer;
 }
 
-.section-3-layout-items p{
+.section-3-layout-items p {
+    display: flex;
+    align-items: center;
     font-size: 30px;
     font-weight: 200;
-     text-align: center;
-     margin: 2px;
-     padding: 6px;
+    text-align: center;
+    margin: 2px;
+    padding: 6px;
+    /* border: 2px solid red; */
+
+}
+
+.offering-section-4-layout {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    /* padding: 20px;
+    margin: 20px; */
+}
+
+.section-4-layout-items {
+    width: 100%;
+    /* border: 2px solid black; */
+    border-radius: 4px;
+    margin: 4px;
+    padding: 12px;
+    margin-bottom: 10px;
+    /* background-color: black; */
+    /* color: white; */
+    /* height: 300px; */
+}
+
+.section-4-layout-items h3 {
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 1.5;
+    text-align: center;
+    margin: 2px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.section-4-layout-items p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    margin: 2px;
+    padding: 6px;
+    /* border: 2px solid red; */
+
 }
 
 /* .offering{
@@ -171,3 +232,10 @@ padding: 10px;
     font-size: 20px;
     padding: 10px;
 } */
+
+.div-imposible{
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
