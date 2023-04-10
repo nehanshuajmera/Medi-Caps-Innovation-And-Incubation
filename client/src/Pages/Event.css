@@ -97,7 +97,7 @@ img {
 .left-event-section-2-text-container {
     display: flex;
     margin-top: 5px;
-    /* padding: 5px 20px; */
+    padding: 5px 5px;
     width: 70%;
     flex-direction: column;
     border: 1px solid yellowgreen;
