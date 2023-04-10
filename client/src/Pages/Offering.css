@@ -33,7 +33,14 @@
     background-color: black;
     color: white;
 }
-
+@media(max-width: 580px){
+    .offering-section-2-left-container{
+        justify-content: start;
+        padding: 0px;
+        width: 100%;
+    
+    }
+}
 .offering-section-2-left-container {
     width: 48%;
     margin: 4px;
@@ -66,6 +73,11 @@
     /* object-fit: cover; */
     width: 80%;
     height: 80%;
+} 
+@media(max-width:900px){
+    .removeonphone{
+        display: none;
+    }
 }
 
 .offering-section-3 {
@@ -102,9 +114,14 @@
     margin-bottom: 10px;
     background-color: black;
     color: white;
-    height: 300px;
+    /* height: 300px; */
+    
 }
-
+@media(max-width: 900px){
+    .section-3-layout-items{
+        width: 250px;
+    }
+}
 .section-3-layout-items h3 {
     font-size: 35px;
     font-weight: 400;
@@ -234,7 +251,7 @@ padding: 10px;
 } */
 
 .div-imposible{
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: aqua; */
     display: flex;
     align-items: center;

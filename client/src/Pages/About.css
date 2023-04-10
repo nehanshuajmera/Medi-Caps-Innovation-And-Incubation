@@ -105,4 +105,9 @@ img {
         justify-content: center;
         align-items: center;
     }
-}
+} 
+@media(max-width: 1170px){
+    .about-section-1-paragraph{
+        top: 15%;
+    }
+} 

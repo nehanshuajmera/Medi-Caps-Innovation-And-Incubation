@@ -24,7 +24,7 @@ export default function Offering() {
             <h3><i class="fa-solid fa-check"></i> Consulting</h3>
             <h3 style={{ fontSize: '35px' }}>To help start-ups grow and succeed.</h3>
           </div>
-          <div className="offering-section-2-right-container">
+          <div className="offering-section-2-right-container removeonphone">
             <img src="./images/offering-img-1.png" alt="icon" />
           </div>
         </div>
