@@ -228,7 +228,8 @@ img {
 /* Section '4' of event section */
 
 .event-section-4-container {
-    margin: 0 10px;
+    height: 90vh;
+    /* margin: 0 10px; */
 }
 
 /* Heading Container CSS */
@@ -255,7 +256,7 @@ img {
 }
 
 .sponsors-image {
-    width: 350px;
+    width: 250px;
     padding: 60px;
     height: 150px;
     display: flex;
