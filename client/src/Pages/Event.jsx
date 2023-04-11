@@ -9,6 +9,10 @@ export default function Event() {
       {/* section - 1 */}
 
       <div className="event-section-1">
+          {/* <video autoplay muted loop id="myVideo">
+            <source src="../../public/images/event-video.mp4" type="video/mp4"/>
+          </video> */}
+
         {/* <img className='image-event-1' src="./images/event-main-herosection.jpeg" alt="" /> */}
         {/* <img className='image-event-1' src="./images/events-png-event.png" alt="" /> */}
         <h2 style={{ fontSize: '50px', color: 'Black', padding: '20px', textAlign: 'center' }}>Events</h2>

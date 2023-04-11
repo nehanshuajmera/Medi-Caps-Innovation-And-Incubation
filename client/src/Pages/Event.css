@@ -23,7 +23,8 @@ img {
     height: 90vh;
     /* height:100vh; */
     /* opacity: 0.8; */
-    background-image: url("F:/mii/client/public/images/single-event-image-2.jpg");
+
+    /* background-image: url("F:/mii/client/public/images/single-event-image-2.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -369,6 +370,7 @@ img {
 }
 .event-cnt img{
     height: 90vh;
+    width: 100%;
 }
 .event-cnt-content{
     position: absolute;
