@@ -20,7 +20,7 @@ export default function ScrollAnimation() {
                   <div style={{ color: "#000000", margin: '0px' }}>
                     <h1 style={{
                       fontSize: "80px"
-                    }} >Incubation  <i class="fa-solid fa-chess-pawn"></i></h1>
+                    }} >Ideation  <i class="fa-solid fa-chess-pawn"></i></h1>
                     <p style={{
                       margin: '0px',
                       fontSize: "24px",
@@ -38,7 +38,7 @@ export default function ScrollAnimation() {
                     <h1 style={{
                       fontSize: "80px",
                       color: '#000000'
-                    }} >Accelaration <i class="fa-solid fa-chess-bishop"></i></h1>
+                    }} >Incubation <i class="fa-solid fa-chess-bishop"></i></h1>
                     <p style={{
                       fontSize: "24px",
                       lineHeight: "35px",
@@ -53,8 +53,8 @@ export default function ScrollAnimation() {
                 <div class="scroll__text">
                   <div style={{ color: "#000000" }}>
                     <h1 style={{
-                      fontSize: "80px"
-                    }} >Adoption <i class="fa-solid fa-chess-queen"></i></h1>
+                      fontSize: "70px"
+                    }} >Acceleration <i class="fa-solid fa-chess-queen"></i></h1>
                     <p style={{
                       fontSize: "24px",
                       lineHeight: "35px",

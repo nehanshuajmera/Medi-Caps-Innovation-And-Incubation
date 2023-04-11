@@ -9,9 +9,11 @@ export default function Event() {
       {/* section - 1 */}
 
       <div className="event-section-1">
+        
+        {/* x */}
         {/* <img className='image-event-1' src="./images/event-main-herosection.jpeg" alt="" /> */}
         {/* <img className='image-event-1' src="./images/events-png-event.png" alt="" /> */}
-        <h2 style={{ fontSize: '50px', color: 'yellow', padding: '20px', textAlign: 'center' }}>Events</h2>
+        <h2 style={{ fontSize: '50px', color: 'Black', padding: '20px', textAlign: 'center' }}>Events</h2>
       </div>
 
       {/* Section - 2 */}
@@ -19,13 +21,13 @@ export default function Event() {
       <div className="event-section-2-container">
         <div className="left-container-event-section-2">
           <div className="left-event-section-2-img-container">
-            <div className="upcoming-event-container" onClick={() => { navigate("/singleevent") }}>
+            <div className="upcoming-event-container" onClick={() => { navigate("/upcomingevent") }}>
               {/* Upcoming Background Image Container */}
             </div>
           </div>
           <div className="left-event-section-2-after-image-container">
             <div className="left-event-section-2-text-container">
-              <h3 style={{ fontSize: '25px', fontWeight: '400' }} onClick={() => { navigate("/singleevent") }}>Event Name</h3>
+              <h3 style={{ fontSize: '25px', fontWeight: '400' }} onClick={() => { navigate("/upcomingevent") }}>Event Name</h3>
               <p style={{ fontSize: '16px', fontWeight: '300' }}>Event short Description or tagline </p>
               <p style={{ fontSize: '16px', fontWeight: '300' }}> Lorem, ipsum dolor sit amet consectetur adipisicing. </p>
             </div>
@@ -87,8 +89,31 @@ export default function Event() {
 
       {/* Section - 3 */}
 
-      <div className="event-section-3-container">
+      <div className="event-section-3-container  event-cnt">
+
         <img src="./images/drawing-slider-bg.jpg" alt="" />
+        <div className='event-cnt-content'>
+          <div>
+            <h1> <i class="fa-solid fa-eye"></i></h1>
+            <h1>Visitor </h1>
+            <h3>6000+</h3>
+          </div>
+          <div>
+            <h1> <i class="fa-solid fa-eye"></i></h1>
+            <h1>Registrations</h1>
+            <h3>6000+</h3>
+          </div>
+          <div>
+            <h1> <i class="fa-solid fa-eye"></i></h1>
+            <h1>Speakers</h1>
+            <h3>6000+</h3>
+          </div>
+          <div>
+            <h1> <i class="fa-solid fa-eye"></i></h1>
+            <h1>Participants</h1>
+            <h3>6000+</h3>
+          </div>
+        </div>
       </div>
 
       {/* Section - 4 */}

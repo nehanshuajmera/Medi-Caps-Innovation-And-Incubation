@@ -7,3 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.scroll-sections{
+  padding-top: 8vh;
+  scroll-snap-align: start;
+}

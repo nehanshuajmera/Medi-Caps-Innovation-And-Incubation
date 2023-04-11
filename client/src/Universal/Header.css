@@ -6,6 +6,7 @@
     align-items: center;
     position: fixed;
     z-index: 5;
+    height: 10vh;
     top: 0;
     background-color: #ffffff;
 }

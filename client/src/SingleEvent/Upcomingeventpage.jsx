@@ -8,7 +8,7 @@ export default function Upcomingeventpage() {
       {/* Section - 1 */}
 
       <div className="single-event-section-1">
-        <img className='single-event-image-one' src="./images/single-event-image.jpg" alt="" />
+        <img className='single-event-image-one' src="./images/single-event-image-3.jpg" alt=" Event Image" />
       </div>
 
       {/* Section - 2 */}
@@ -54,7 +54,7 @@ export default function Upcomingeventpage() {
           </div>
 
           {/* Item - 4 */}
-          <div className="section-2-small-data-items">
+          {/* <div className="section-2-small-data-items">
             <div className="small-data-items-img">
               <img style={{ width: '60px' }} src="./images/participants-event.png" alt="" />
             </div>
@@ -62,7 +62,7 @@ export default function Upcomingeventpage() {
               <h5>Participants</h5>
               <p>700 Participants</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <hr style={{ width: '90%', margin: 'auto' }} />
@@ -88,10 +88,10 @@ export default function Upcomingeventpage() {
           </div>
           <div className="single-sponsor-image">
             <div className="single-event-sponsor-img">
-              <img src="./images/netflix.png" alt="" />
+              <img src="./images/Cisco-Logo.png" alt="" />
             </div>
             <div className="single-event-sponsor-img">
-              <img src="./images/tcs-logo.png" alt="" />
+              <img src="./images/IBM-Logo.png" alt="" />
             </div>
           </div>
         </div>
