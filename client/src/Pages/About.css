@@ -96,4 +96,12 @@ img {
     opacity: 0.8;
     /* height: 90vh; */
     object-fit: center center cover;
+} 
+@media(max-width: 900px){
+    .about-section-2{
+        flex-direction: column;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
 }

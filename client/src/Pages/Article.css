@@ -2,8 +2,20 @@
     margin-top: 10vh;
     font-family:  'Inter', sans-serif;
 }
+.blog-img{
+    height: 90vh;
+}
+.blog-img h3{
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 40px;
+}
 .blog-img img{
     height: 60vh;
+    width: 100%;
 }
 .blog-continer-1{
     display: flex;
@@ -31,18 +43,17 @@
     flex-direction: row-reverse;
     align-items: center;
 }
-.blog-continer-3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.blog-continer-4{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-.blog-continer-5{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+@media(max-width: 900px){
+    .blog-continer-1{
+        flex-direction: column;
+    }
+    .blog-continer-2{
+        flex-direction: column;
+    } 
+    .removeonphone{
+        display: none;
+    }
+    .blog-img{
+        height: 10vh;
+    }
+} 
