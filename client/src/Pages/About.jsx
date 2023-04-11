@@ -5,17 +5,17 @@ import Abouthero from '../AboutUs/Abouthero';
 export default function About() {
   return (
     <div className='about-container'>
-      <Abouthero/>
- 
+      <Abouthero />
+
       <div className="about-section-2">
         <img src="./images/Black logo - no background.png" alt="" width={"35%"} />
         <div className="divide-and-conquer-2">
-        <p className="about-section-2-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut error numquam quasi repellendus in delectus quibusdam nulla, assumenda ipsum quisquam quo, quae odio quis! Sed perferendis eligendi dolore quos, ea est quia ducimus culpa?
-        </p>
+          <p className="about-section-2-paragraph">
+            At MII Foundation, we have a culture that is collaborative, inclusive, and centered around innovation and creativity. We believe in fostering a supportive environment where start-ups can come together to share ideas, knowledge, and experiences.
+          </p>
         </div>
       </div>
-      <TeamMember/>
+      <TeamMember />
     </div>
   )
 }

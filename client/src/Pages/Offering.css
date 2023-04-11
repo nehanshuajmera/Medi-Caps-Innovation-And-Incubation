@@ -4,7 +4,7 @@
 .offering-main-container {
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
-    margin-top: 58px;
+    margin-top: 10vh;
 }
 
 /* Section - 1 */
@@ -35,7 +35,7 @@
 }
 
 .offering-section-2-left-container {
-    width: 48%;
+    width: 60%;
     margin: 4px;
     padding: 8px;
 
@@ -48,14 +48,14 @@
     font-size: 40px;
     font-weight: 400;
     line-height: 2;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .offering-section-2-right-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48%;
+    width: 38%;
     margin: 4px;
     padding: 8px;
 
@@ -95,13 +95,13 @@
     align-items: space-between;
     /* justify-content: center; */
     width: 30%;
-    border: 2px solid black;
+    border: 2px solid #999;
     border-radius: 4px;
     margin: 4px;
     padding: 12px;
     margin-bottom: 10px;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* color: white; */
     height: 300px;
 }
 
@@ -238,4 +238,16 @@ padding: 10px;
     /* background-color: aqua; */
     display: flex;
     align-items: center;
+}
+.consulting-section{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    border: 2px solid #999;
+    padding: 15px;
+    font-size: large;
+    border-radius: 5px;
+    margin: auto auto;
+    margin-bottom: 20px;
+
 }

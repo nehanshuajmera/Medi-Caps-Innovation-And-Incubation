@@ -15,17 +15,32 @@ export default function Offering() {
           />
         </div>
 
+        {/* <video src="F:\mii\client\public\images\event-video.mp4" type="video/mp4"></video> */}
+
         {/* Section - 2 */}
 
+        {/* 
         <div className="offering-section-2">
           <div className="offering-section-2-left-container">
-            <h3 style={{ fontSize: '35px' }}>MII Foundation offers two main services:</h3>
+            <h3 style={{ fontSize: '30px' }}>MII Foundation offers two main services :</h3>
             <h3><i class="fa-solid fa-check"></i> Incubation</h3>
             <h3><i class="fa-solid fa-check"></i> Consulting</h3>
-            <h3 style={{ fontSize: '35px' }}>To help start-ups grow and succeed.</h3>
+            <h3 style={{ fontSize: '30px' }}>To help start-ups grow and succeed.</h3>
           </div>
           <div className="offering-section-2-right-container">
             <img src="./images/offering-img-1.png" alt="icon" />
+          </div>
+        </div> */}
+
+        <div className="event-section-3-container  event-cnt">
+          <img src="./images/single-event-image-2.jpg" alt="" />
+          <div className='event-cnt-content'>
+            <div className="offering-section-2-left-container">
+              <h3 style={{ fontSize: '30px' }}>MII Foundation offers two main services :</h3>
+              <h3><i class="fa-solid fa-check"></i> Incubation</h3>
+              <h3><i class="fa-solid fa-check"></i> Consulting</h3>
+              <h3 style={{ fontSize: '30px' }}>To help start-ups grow and succeed.</h3>
+            </div>
           </div>
         </div>
 
@@ -61,46 +76,53 @@ export default function Offering() {
             <div className="section-3-layout-items">
               <h3>HR Access</h3>
               <div className="div-imposible">
-              <p>Connect with human resources professionals to help with hiring and HR needs.</p>
+                <p>Connect with human resources professionals to help with hiring and HR needs.</p>
+              </div>
             </div>
-          </div>
-          <div className="section-3-layout-items">
-            <h3>Interns</h3>
-            <div className="div-imposible">
-              <p> Hire interns to help with your business operations.</p>
+            <div className="section-3-layout-items">
+              <h3>Interns</h3>
+              <div className="div-imposible">
+                <p> Hire interns to help with your business operations.</p>
+              </div>
             </div>
-          </div>
-          <div className="section-3-layout-items">
-            <h3>Research Support</h3>
-            <div className="div-imposible">
-              <p> Receive support with research and market analysis.</p>
+            <div className="section-3-layout-items">
+              <h3>Research Support</h3>
+              <div className="div-imposible">
+                <p> Receive support with research and market analysis.</p>
+              </div>
             </div>
-          </div>
-          <div className="section-3-layout-items">
-            <h3>Business Plan Development</h3>
-            <div className="div-imposible">
-              <p>  Get assistance with developing a solid business plan.</p>
+            <div className="section-3-layout-items">
+              <h3>Business Plan Development</h3>
+              <div className="div-imposible">
+                <p>  Get assistance with developing a solid business plan.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Section - 4 */}
+        {/* Section - 4 */}
 
-      <div className="offering-section-4-container">
-        <div className="offering-section-4-layout">
-          <div className="section-4-layout-items">
-            <h3>Consulting</h3>
-            <p>Get tailored support by filling out a form to let us know what you need help with.</p>
+        <div className="offering-section-4-container">
+          <div className="offering-section-4-layout">
+            <div className="section-4-layout-items">
+              <h3>Consulting</h3>
+              <p>Get tailored support by filling out a form to let us know what you need help with.</p>
+
+            </div>
+            <div className="consulting-section">
+              <p>
+                "Choose MII Foundation to help bring your entrepreneurial vision to
+                life. Get the support you need to grow your business and succeed."
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
 
 
-    </div >
+      </div >
 
-    {/* <div className="offering">
+      {/* <div className="offering">
        
 
         <div className="main_heading">

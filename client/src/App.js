@@ -10,6 +10,7 @@ import Offering from './Pages/Offering';
 import About from './Pages/About';
 import Singleeventpage from './SingleEvent/Singleeventpage';
 import { useEffect } from 'react';
+import Upcomingeventpage from './SingleEvent/Upcomingeventpage';
 
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
         <Route  path='/About' element={<About/> }/>
         <Route  path='/Event' element={<Event/> }/>
         <Route  path='/singleevent' element={<Singleeventpage/> }/>
+        <Route  path='/upcomingevent' element={<Upcomingeventpage/> }/>
       </Routes>
       <Footer/>
     </div>

@@ -26,6 +26,7 @@ export default function SingleTeam(props) {
           <div className="zl-staff-item-name">
             <h4>{props.name}</h4>
             <p>{props.desc}</p>
+            <p>Medi-Caps University</p>
           </div>
         </div>
         <div className="zl-staff-item-icon">
@@ -43,11 +44,10 @@ export default function SingleTeam(props) {
       </div>
       <div className="zl-staff-item-text">
         <p>
-          Martin Granström is the Chief Technology Officer of Zen innovations Pte
-          Ltd., the operator of the Unizen Smart Exchange Ecosystem
-          (www.unizen.io), and the CTO of JUN Capital Management Ltd. (
-          <a href="//www.juncapital.io" target="_blank" rel="noopener">
-            www.juncapital.io
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sapiente, rem fugiat, distinctio vitae, quod dolores cum obcaecati voluptatibus a porro nisi beatae saepe
+        (
+          <a href="https://www.medicaps.ac.in/" target="_blank" rel="noopener">
+           www.medicaps.ac.in
           </a>
           ), a leading crypto VC and strategic advisory firm.
         </p>
@@ -80,7 +80,7 @@ export default function SingleTeam(props) {
           proponent of making such innovations readily available to the global
           community.
         </p> */}
-        <a href="mailto:martin@unizen.io">Contact</a>
+        <a href="mailto:sharma39vishal@gmail.com">Contact</a>
       </div>
     </div>
 
