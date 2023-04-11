@@ -23,12 +23,9 @@ img {
     height: 90vh;
     /* height:100vh; */
     /* opacity: 0.8; */
-<<<<<<< HEAD
-    background-image: url("C:\Users\HP\OneDrive\Desktop\miiiiiii\client\public\images\event-main-herosection.jpeg");
-=======
 
-    background-image: url("F:/mii/client/public/images/single-event-image-2.jpg");
->>>>>>> 0969ff74bec706ee42df2797ab2a0d553a346a53
+    background-image: url("C:\Users\HP\OneDrive\Desktop\miiiiiii\client\public\images\event-main-herosection.jpeg");
+    background-image: url("C:\Users\HP\OneDrive\Desktop\miiiiiii\client\public\images\Events-small-2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -85,7 +82,12 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
-
+@media(min-width:600px){
+    .left-event-section-2-text-container{
+      font-size: 18px;
+       
+    }
+}
 .left-event-section-2-text-container {
     display: flex;
     justify-content: center;
@@ -110,7 +112,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     margin-top: 5px;
     margin: 1px;
     padding: 5px 5px;
@@ -304,21 +306,28 @@ img {
     cursor: pointer;
     /* color: #017FE4; */
 }
+@media(max-width:900px){
+    .right-container-event-section-2{
+     flex-direction: column-reverse;
+    }
 
+}
 /* -----------x-----------x----------x---------x-------x-----x-----x------------x----------- */
 
 /* Section '3' of event section */
-/* .event-section-3-container{
+.event-section-3-container{
     height: 90vh;
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
 .event-section-3-container img{
     background-size: 100% 100%;
     object-fit: cover;
     width: 100vw;
+    display: flex;
     height: 100vh;
-}  */
+} 
 
 /* -----------x-----------x----------x---------x-------x-----x-----x------------x----------- */
 

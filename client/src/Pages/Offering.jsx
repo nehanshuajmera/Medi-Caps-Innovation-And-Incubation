@@ -6,14 +6,6 @@ export default function Offering() {
       <div className="offering-main-container">
         {/* Section - 1 */}
 
-        <div className="offering-section-1">
-          <h6 className="offering-section-1-heading">Our Offering</h6>
-          <img
-            style={{ width: "60%" }}
-            src="./images/hand-shaking.png"
-            alt=""
-          />
-        </div>
 
         {/* <video src="F:\mii\client\public\images\event-video.mp4" type="video/mp4"></video> */}
 

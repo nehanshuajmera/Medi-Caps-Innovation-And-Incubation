@@ -89,7 +89,7 @@ export default function Event() {
 
       {/* Section - 3 */}
 
-      <div className="event-section-3-container  event-cnt">
+      {/* {/* <div className="event-section-3-container  event-cnt">
 
         <img src="./images/drawing-slider-bg.jpg" alt="" />
         <div className='event-cnt-content'>
@@ -113,30 +113,11 @@ export default function Event() {
             <h1>Participants</h1>
             <h3>6000+</h3>
           </div>
-        </div>
-      </div>
+        </div> 
+      </div> */}
 
       {/* Section - 4 */}
 
-      <div className="event-section-4-container">
-        <div className="section-4-heading">
-          <h3>Event Sponsors</h3>
-        </div>
-        <div className="logo-sponsors-container">
-          <div className="sponsors-image"><img src="./images/apple-logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="./images/tcs-logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="./images/amazon-logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="./images/Cisco-Logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="/images/ford-logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="/images/IBM-Logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="/images/hyundai-logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="/images/cocacola-logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="/images/tech-mahindra-logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="/images/google-logo.png" alt="" /></div>
-          <div className="sponsors-image"><img src="/images/netflix.png" alt="" /></div>
-          <div className="sponsors-image"><img src="/images/reebok-logo.png" alt="" /></div>
-        </div>
-      </div>
 
     </div>
 

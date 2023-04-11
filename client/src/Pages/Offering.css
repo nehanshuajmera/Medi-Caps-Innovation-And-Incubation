@@ -33,14 +33,7 @@
     background-color: black;
     color: white;
 }
-@media(max-width: 580px){
-    .offering-section-2-left-container{
-        justify-content: start;
-        padding: 0px;
-        width: 100%;
-    
-    }
-}
+
 .offering-section-2-left-container {
     width: 60%;
     margin: 4px;
@@ -68,16 +61,16 @@
 
     /* background-image: url('https://www.aic-audf.org/wp-content/uploads/2021/10/business-team-discussing-ideas-startup_74855-4380.jpg') center no-repeat cover; */
 }
-
+@media(min-width: 525px){
+    .offering-section-2-left-container{
+        height: fit-content;
+        display: flex;
+    }
+}
 .offering-section-2-right-container img {
     /* object-fit: cover; */
     width: 80%;
     height: 80%;
-} 
-@media(max-width:900px){
-    .removeonphone{
-        display: none;
-    }
 }
 
 .offering-section-3 {
@@ -112,9 +105,15 @@
     margin: 4px;
     padding: 12px;
     margin-bottom: 10px;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    /* color: white; */
     height: 300px;
+}
+@media(max-width: 1000px){
+    .section-3-layout-items{
+        width: 250px;
+        height: 400px;
+    }
 }
 .section-3-layout-items h3 {
     font-size: 35px;
@@ -245,7 +244,7 @@ padding: 10px;
 } */
 
 .div-imposible{
-    /* height: 100vh; */
+    height: 100vh;
     /* background-color: aqua; */
     display: flex;
     align-items: center;
@@ -262,3 +261,4 @@ padding: 10px;
     margin-bottom: 20px;
 
 }
+

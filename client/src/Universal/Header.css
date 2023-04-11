@@ -79,8 +79,15 @@ a {
     .nav-items {
         flex-direction: column;
         width: 90%;
-        /* border: 2px solid green; */
+       background-color: white;
+       color: black; 
+       border-radius: 4px;
     }
+    @media only screen and (max-width: 1024px) {
+
+        .header-bar{
+            border: 1px solid black;
+        }}
 
     .cross {
         right: 5px;

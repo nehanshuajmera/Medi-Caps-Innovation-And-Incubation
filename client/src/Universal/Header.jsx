@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import './Header.css'
+import "./Header.css";
 export default function Header() {
-  const [display, setDisplay] = useState(window.innerWidth > 1024 ? true : false);
+  const [display, setDisplay] = useState(
+    window.innerWidth > 1024 ? true : false
+  );
   const [naveff, setnaveff] = useState(0);
   useEffect(() => {
     setnaveff(window.pageYOffset);
-    console.log(naveff)
-  }, [naveff])
+    console.log(naveff);
+  }, [naveff]);
 
   return (
-    <div className="nav-header" >
+    <div className="nav-header">
       <div className="header-bar">
         <div className="header-img-container">
           <a href="/">
-          {/* <NavLink to="/"> */}
+            {/* <NavLink to="/"> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -43,7 +45,7 @@ export default function Header() {
                 </g>
               </g>
             </svg>
-          {/* </NavLink> */}
+            {/* </NavLink> */}
           </a>
           {display ? (
             <p className="cross" onClick={() => setDisplay(!display)}>
@@ -51,22 +53,57 @@ export default function Header() {
             </p>
           ) : (
             <div className="burger" onClick={() => setDisplay(!display)}>
-              <div className="line" ></div>
-              <div className="line" ></div>
-              <div className="line" ></div>
+              <div className="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
             </div>
           )}
         </div>
-        {display ? <div className="nav-items">
-          <div className="item1">
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Offering</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Article">Blogs</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">Event</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Contact">Contact</NavLink>
+        {display ? (
+          <div className="nav-items">
+            <div className="item1">
+              <NavLink
+                style={({ isActive }) => ({ color: isActive ? "#000000" : "" })}
+                to="/"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                style={({ isActive }) => ({ color: isActive ? "#000000" : "" })}
+                to="/About"
+              >
+                About
+              </NavLink>
+              <NavLink
+                style={({ isActive }) => ({ color: isActive ? "#000000" : "" })}
+                to="/Offering"
+              >
+                Offering
+              </NavLink>
+              <NavLink
+                style={({ isActive }) => ({ color: isActive ? "#000000" : "" })}
+                to="/Article"
+              >
+                Blogs
+              </NavLink>
+              <NavLink
+                style={({ isActive }) => ({ color: isActive ? "#000000" : "" })}
+                to="/Event"
+              >
+                Event
+              </NavLink>
+              <NavLink
+                style={({ isActive }) => ({ color: isActive ? "#000000" : "" })}
+                to="/Contact"
+              >
+                Contact
+              </NavLink>
+            </div>
           </div>
-        </div> : <></>}
+        ) : (
+          <></>
+        )}
       </div>
-    </div>)
+    </div>
+  );
 }
