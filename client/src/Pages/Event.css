@@ -23,7 +23,7 @@ img {
     height: 90vh;
     /* height:100vh; */
     /* opacity: 0.8; */
-    background-image: url("F:/mii/client/public/images/event-main-herosection.jpeg");
+    background-image: url("C:\Users\HP\OneDrive\Desktop\miiiiiii\client\public\images\event-main-herosection.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,7 +61,7 @@ img {
 }
 
 .upcoming-event-container {
-    background-image: url("F:/mii/client/public/images/coming-soon-background.jpg");
+    background-image: url("C:\Users\HP\OneDrive\Desktop\miiiiiii\client\public\images\coming-soon-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -239,7 +239,7 @@ img {
 }
 
 .past-event-container1 {
-    background-image: url("F:/mii/client/public/images/Events-small-1.jpg");
+    background-image: url("C:\Users\HP\OneDrive\Desktop\miiiiiii\client\public\images\Events-small-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -251,7 +251,7 @@ img {
 }
 
 .past-event-container2 {
-    background-image: url("F:/mii/client/public/images/Events-small-2.jpg");
+    background-image: url("C:\Users\HP\OneDrive\Desktop\miiiiiii\client\public\images\Events-small-2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -263,7 +263,7 @@ img {
 }
 
 .past-event-container3 {
-    background-image: url("F:/mii/client/public/images/Events-1.jpg");
+    background-image: url("C:\Users\HP\OneDrive\Desktop\miiiiiii\client\public\images\Events-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
