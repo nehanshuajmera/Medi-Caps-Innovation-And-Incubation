@@ -20,21 +20,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: row-reverse;
-}
-@media(max-width:701px){
-  .testimonial-image-container{
-    flex-direction: column;
-    display: flex;
-    /* height: 400px; */
-  }
-}
-@media(min-width:700px){
-  .testimonial-image-container{
-    display: flex;
-    flex-direction: row-reverse;
-    /* height: 300px; */
-  }
 }
 .snip1574 {
   /* font-family: 'Lato', Arial, sans-serif; */

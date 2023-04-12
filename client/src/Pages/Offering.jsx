@@ -6,6 +6,14 @@ export default function Offering() {
       <div className="offering-main-container">
         {/* Section - 1 */}
 
+        <div className="offering-section-1">
+          <h6 className="offering-section-1-heading">Our Offering</h6>
+          <img
+            style={{ width: "60%" }}
+            src="./images/hand-shaking.png"
+            alt=""
+          />
+        </div>
 
         {/* <video src="F:\mii\client\public\images\event-video.mp4" type="video/mp4"></video> */}
 
@@ -19,7 +27,7 @@ export default function Offering() {
             <h3><i class="fa-solid fa-check"></i> Consulting</h3>
             <h3 style={{ fontSize: '30px' }}>To help start-ups grow and succeed.</h3>
           </div>
-          <div className="offering-section-2-right-container removeonphone">
+          <div className="offering-section-2-right-container">
             <img src="./images/offering-img-1.png" alt="icon" />
           </div>
         </div> */}

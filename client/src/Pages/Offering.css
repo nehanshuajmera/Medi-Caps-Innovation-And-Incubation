@@ -61,12 +61,7 @@
 
     /* background-image: url('https://www.aic-audf.org/wp-content/uploads/2021/10/business-team-discussing-ideas-startup_74855-4380.jpg') center no-repeat cover; */
 }
-@media(min-width: 525px){
-    .offering-section-2-left-container{
-        height: fit-content;
-        display: flex;
-    }
-}
+
 .offering-section-2-right-container img {
     /* object-fit: cover; */
     width: 80%;
@@ -109,12 +104,7 @@
     /* color: white; */
     height: 300px;
 }
-@media(max-width: 1000px){
-    .section-3-layout-items{
-        width: 250px;
-        height: 400px;
-    }
-}
+
 .section-3-layout-items h3 {
     font-size: 35px;
     font-weight: 400;
@@ -261,4 +251,3 @@ padding: 10px;
     margin-bottom: 20px;
 
 }
-
