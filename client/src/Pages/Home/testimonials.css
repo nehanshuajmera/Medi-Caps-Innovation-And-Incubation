@@ -1,6 +1,6 @@
 .testimonial-main-container-homepage{
     font-family: 'Inter', sans-serif;
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -20,6 +20,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: max-content;
 }
 .snip1574 {
   /* font-family: 'Lato', Arial, sans-serif; */

@@ -10,7 +10,7 @@ export default function Header() {
   }, [naveff])
 
   return (
-    <div className="nav-header" >
+    <div className="nav-header"  >
       <div className="header-bar">
         <div className="header-img-container">
           <a href="/">

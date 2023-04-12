@@ -9,7 +9,7 @@
 
 /* Section - 1 */
 .offering-section-1 {
-    height: 90vh;
+    /* min-height: 90vh; */
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -104,7 +104,11 @@
     /* color: white; */
     height: 300px;
 }
-
+@media (max-width: 700px) {
+    .section-3-layout-items{
+        width: 100%;
+    }
+}
 .section-3-layout-items h3 {
     font-size: 35px;
     font-weight: 400;

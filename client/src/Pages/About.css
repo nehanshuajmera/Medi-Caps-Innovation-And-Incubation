@@ -107,7 +107,7 @@ img {
 @media(max-width: 900px) {
     .about-section-2 {
         flex-direction: column;
-        height: 50vh;
+        height: 60vh;
         justify-content: center;
         align-items: center;
     }
