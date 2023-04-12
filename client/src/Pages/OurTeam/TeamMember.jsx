@@ -3,8 +3,8 @@ import SingleTeamMember from './SingleTeam'
 import "./team.css"
 export default function TeamMember() {
   return (
-    <div style={{marginBottom:"50px"}}>
-      <div  style={{backgroundColor:"black",color:"white",padding:"20px",paddingBottom:"40px"}}>
+    <div style={{marginBottom:"50px",paddingTop:"10vh",marginTop:"10vh"}}>
+      <div className='scroll-sections'  style={{backgroundColor:"black",color:"white",padding:"20px",paddingBottom:"40px"}}>
         <h1 style={{textAlign:"center",margin:"50px"}}>Our Team</h1>
          <div className="zl-staff-items " >
             <SingleTeamMember img={"https://media.licdn.com/dms/image/C5603AQE3rSup8NMJAA/profile-displayphoto-shrink_200_200/0/1577668183645?e=1686182400&v=beta&t=1TwXAy2RH4f_kNMBdyX-gDz8IJ4IRYMZvdIgNOSR9Cc"} name={"Palash Garg"} desc={"Managing Director at MII Foundation"} 
@@ -16,12 +16,14 @@ export default function TeamMember() {
             <hr/>
         </div>
         </div>
+        <div className='scroll-sections' style={{height:"100vh",marginTop:"10vh",paddingTop:"10vh"}}>
         <h1 style={{textAlign:"center",margin:"50px"}}>Our Advisor</h1>
          <div className="zl-staff-items " >
          <SingleTeamMember img={"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"} name={"Advisor Name"} desc={" at Medi-Caps University"}   />
          <SingleTeamMember img={"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"} name={"Advisor Name"} desc={" at Medi-Caps University"}   />
          <SingleTeamMember img={"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"} name={"Advisor Name"} desc={" at Medi-Caps University"}   />
          <hr/>
+        </div>
         </div>
 
 

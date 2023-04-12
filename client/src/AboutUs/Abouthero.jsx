@@ -7,8 +7,8 @@ export default function Abouthero() {
       <div className="about-image-container">
         {/* <img src="./images/about-1-mu(copy).jpeg" alt="" center cover /> */}
       </div>
-      <h6 className='about-section-1-heading'>About Us</h6>
-      <p className="about-section-1-paragraph">"Create a perfect ecosystem for your business"</p>
+      {/* <h6 className='about-section-1-heading'>About Us</h6> */}
+      {/* <p className="about-section-1-paragraph">"Create a perfect ecosystem for your business"</p> */}
     </div>
   )
 }

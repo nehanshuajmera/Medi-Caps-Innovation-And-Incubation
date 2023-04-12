@@ -8,11 +8,23 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
+
 .scroll-sections{
+  margin-top: 10vh;
   padding-top: 8vh;
+  scroll-snap-align: start;
+} */
+
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller .scroll-sections {
   scroll-snap-align: start;
 }

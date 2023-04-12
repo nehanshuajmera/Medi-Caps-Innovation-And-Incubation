@@ -5,9 +5,11 @@ import Abouthero from '../AboutUs/Abouthero';
 export default function About() {
   return (
     <div className='about-container'>
+      <div className='scroll-sections'>
       <Abouthero />
+      </div>
 
-      <div className="about-section-2">
+      <div className="about-section-2 scroll-sections">
         <img src="./images/Black logo - no background.png" alt="" width={"35%"} />
         <div className="divide-and-conquer-2">
           <p className="about-section-2-paragraph">
@@ -15,6 +17,7 @@ export default function About() {
           </p>
         </div>
       </div>
+      
       <TeamMember />
     </div>
   )

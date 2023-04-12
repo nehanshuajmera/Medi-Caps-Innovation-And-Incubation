@@ -1,6 +1,6 @@
 .testimonial-main-container-homepage{
     font-family: 'Inter', sans-serif;
-    min-height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -93,4 +93,8 @@
   text-transform: uppercase;
   color: #bbb;
   letter-spacing: 1px;
+}
+
+.testimonial-box{
+  /* margin-top: 10vh; */
 }

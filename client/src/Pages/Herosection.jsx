@@ -7,7 +7,7 @@ const Herosection = () => {
   // const [chng,setchng]=useState("./images/bulb.png");
   return (
     <>
-      <div className="home-section-container">
+      <div className="home-section-container scroll-sections">
         <div className="home-section-1-container">
           <div className="home-section-1-text" /*onMouseEnter={()=>{setchng("./images/bulb.png")}} onMouseLeave={()=>{setchng("./images/bulbblack.png")}} */>
             <div className="home-section-1-heading" >
@@ -26,7 +26,7 @@ const Herosection = () => {
         </div>
 
 
-        <div className="section2-home-page home-section2-container">.
+        <div className="section2-home-page home-section2-container scroll-sections">
           <div className="home-section2-heading">
             <h1>Create a perfect ecosystem for your business</h1>
           </div>
@@ -38,9 +38,13 @@ const Herosection = () => {
               environment for entrepreneurs to grow their businesses.</p>
           </div>
         </div>
-        <ScrollAnimation />
+        <div className="scroll-sections">
+            <ScrollAnimation />
+        </div>
+        <div className="scroll-sections">
+            <Testimonials />
+        </div>
         {/* <Ourpartner /> */}
-        <Testimonials />
       </div>
     </>
   );

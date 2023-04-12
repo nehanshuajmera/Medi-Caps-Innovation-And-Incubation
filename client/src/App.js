@@ -21,7 +21,7 @@ function App() {
   }, [pathname]);
 
   return (
-    <div>
+    <div className='scroller'>
       <Header/>
       <Routes>
         <Route exact path='/' element={<Home/> }/>
