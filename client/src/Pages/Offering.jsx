@@ -1,12 +1,13 @@
 import React from "react";
 import "./Offering.css";
 export default function Offering() {
+  
   return (
     <>
-      <div className="offering-main-container">
+      <div className="offering-main-container ">
         {/* Section - 1 */}
 
-        <div className="offering-section-1">
+        <div className="offering-section-1 scroll-sections">
           <h6 className="offering-section-1-heading">Our Offering</h6>
           <img
             style={{ width: "60%" }}
@@ -32,7 +33,7 @@ export default function Offering() {
           </div>
         </div> */}
 
-        <div className="event-section-3-container  event-cnt">
+        <div className="scroll-sections event-cnt">
           <img src="./images/single-event-image-2.jpg" alt="" />
           <div className='event-cnt-content'>
             <div className="offering-section-2-left-container">
@@ -46,7 +47,7 @@ export default function Offering() {
 
         {/* Section - 3 */}
 
-        <div className="offering-section-3">
+        <div className="offering-section-3 scroll-sections">
           <h3 className="offering-section-3-heading">Incubation</h3>
           <div className="offering-section-3-layout">
             <div className="section-3-layout-items">
@@ -102,7 +103,7 @@ export default function Offering() {
 
         {/* Section - 4 */}
 
-        <div className="offering-section-4-container">
+        <div className="offering-section-4-container scroll-sections">
           <div className="offering-section-4-layout">
             <div className="section-4-layout-items">
               <h3>Consulting</h3>

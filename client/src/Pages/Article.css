@@ -3,7 +3,8 @@
     font-family:  'Inter', sans-serif;
 }
 .blog-img{
-    height: 90vh;
+    padding-top: 10vh;
+    height: 100vh;
 }
 .blog-img h3{
     font-size: 50px;
@@ -14,10 +15,12 @@
     margin-top: 40px;
 }
 .blog-img img{
-    height: 60vh;
+    height: 90vh;
     width: 100%;
 }
 .blog-continer-1{
+    /* padding-top: 20vh; */
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -39,6 +42,7 @@
     font-size: 18px;
 }
 .blog-continer-2{
+    height: 100vh;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;

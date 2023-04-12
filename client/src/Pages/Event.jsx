@@ -17,7 +17,7 @@ export default function Event() {
   
 
   return (
-    <div className="event-main-container">
+    <div className="event-main-container scroll-sections ">
 
       {/* section - 1 */}
 
