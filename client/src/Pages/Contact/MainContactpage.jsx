@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MainContactpage(props) {
   return (
-    <div className='maincontactpage'>
+    <div className='maincontactpage scroll-sections'>
         <h1>Who Am I ?</h1>
         <div className='main-btn'>
         <button class="button-who-am-i" onClick={()=>{props.setsection("startupfounder")}}> Start-Up Founder</button>

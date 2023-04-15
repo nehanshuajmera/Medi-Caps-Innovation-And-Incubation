@@ -1,9 +1,10 @@
 import React from "react";
 import "./Offering.css";
 export default function Offering() {
+  
   return (
     <>
-      <div className="offering-main-container">
+      <div className="offering-main-container ">
         {/* Section - 1 */}
 
         <div className="offering-section-1 scroll-sections">
@@ -32,7 +33,7 @@ export default function Offering() {
           </div>
         </div> */}
 
-        <div className="event-section-3-container  event-cnt scroll-sections">
+        <div className="event-section-3-container  event-cnt">
           <img src="./images/single-event-image-2.jpg" alt="" />
           <div className='event-cnt-content'>
             <div className="offering-section-2-left-container">
