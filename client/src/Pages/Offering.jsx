@@ -6,7 +6,7 @@ export default function Offering() {
       <div className="offering-main-container">
         {/* Section - 1 */}
 
-        <div className="offering-section-1">
+        <div className="offering-section-1 scroll-sections">
           <h6 className="offering-section-1-heading">Our Offering</h6>
           <img
             style={{ width: "60%" }}
@@ -32,11 +32,11 @@ export default function Offering() {
           </div>
         </div> */}
 
-        <div className="event-section-3-container  event-cnt">
+        <div className="event-section-3-container  event-cnt scroll-sections">
           <img src="./images/single-event-image-2.jpg" alt="" />
           <div className='event-cnt-content'>
             <div className="offering-section-2-left-container">
-              <h3 style={{ fontSize: '30px' }}>MII Foundation offers two main services :</h3>
+              <h3 style={{ fontSize: '30px', color: 'black' }}>MII Foundation offers two main services :</h3>
               <h3><i class="fa-solid fa-check"></i> Incubation</h3>
               <h3><i class="fa-solid fa-check"></i> Consulting</h3>
               <h3 style={{ fontSize: '30px' }}>To help start-ups grow and succeed.</h3>
@@ -46,7 +46,7 @@ export default function Offering() {
 
         {/* Section - 3 */}
 
-        <div className="offering-section-3">
+        <div className="offering-section-3 scroll-sections">
           <h3 className="offering-section-3-heading">Incubation</h3>
           <div className="offering-section-3-layout">
             <div className="section-3-layout-items">
@@ -102,7 +102,7 @@ export default function Offering() {
 
         {/* Section - 4 */}
 
-        <div className="offering-section-4-container">
+        <div className="offering-section-4-container scroll-sections">
           <div className="offering-section-4-layout">
             <div className="section-4-layout-items">
               <h3>Consulting</h3>

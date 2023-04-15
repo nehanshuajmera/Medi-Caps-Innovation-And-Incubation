@@ -21,7 +21,7 @@ export default function Event() {
 
       {/* section - 1 */}
 
-      <div className="event-section-1">
+      <div className="event-section-1 scroll-sections">
         
         {/* x */}
         {/* <img className='image-event-1' src="./images/event-main-herosection.jpeg" alt="" /> */}
@@ -31,7 +31,7 @@ export default function Event() {
 
       {/* Section - 2 */}
 
-      <div className="event-section-2-container">
+      <div className="event-section-2-container scroll-sections">
         <div className="left-container-event-section-2">
           <div className="left-event-section-2-img-container">
             <div className="upcoming-event-container" onClick={() => { navigate("/upcomingevent") }}>
@@ -104,7 +104,7 @@ export default function Event() {
 
       {/* Section - 3 */}
 
-      <div className="event-section-3-container  event-cnt">
+      <div className="event-section-3-container  event-cnt scroll-sections">
 
         <img src="./images/drawing-slider-bg.jpg" alt="" />
         <div className='event-cnt-content'>
@@ -133,7 +133,7 @@ export default function Event() {
 
       {/* Section - 4 */}
 
-      <div className="event-section-4-container">
+      <div className="event-section-4-container scroll-sections">
         <div className="section-4-heading">
           <h3>Event Sponsors</h3>
         </div>
