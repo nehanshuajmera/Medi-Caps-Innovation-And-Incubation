@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3f83f6f.css",
-    "main.js": "/static/js/main.1039cccf.js",
+    "main.css": "/static/css/main.91a11d94.css",
+    "main.js": "/static/js/main.a6274f70.js",
     "static/js/988.6878b1ef.chunk.js": "/static/js/988.6878b1ef.chunk.js",
     "static/media/single-event-image-2.jpg": "/static/media/single-event-image-2.598f8a79b2c6d1bcac2e.jpg",
     "static/media/Events-small-1.jpg": "/static/media/Events-small-1.a1d9ae43ecf58d2fad8f.jpg",
@@ -11,12 +11,12 @@
     "static/media/ourpartnerImg2.png": "/static/media/ourpartnerImg2.f0e0901891f62e8511b8.png",
     "static/media/coming-soon-background.jpg": "/static/media/coming-soon-background.01deb3500ef380188b53.jpg",
     "index.html": "/index.html",
-    "main.a3f83f6f.css.map": "/static/css/main.a3f83f6f.css.map",
-    "main.1039cccf.js.map": "/static/js/main.1039cccf.js.map",
+    "main.91a11d94.css.map": "/static/css/main.91a11d94.css.map",
+    "main.a6274f70.js.map": "/static/js/main.a6274f70.js.map",
     "988.6878b1ef.chunk.js.map": "/static/js/988.6878b1ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3f83f6f.css",
-    "static/js/main.1039cccf.js"
+    "static/css/main.91a11d94.css",
+    "static/js/main.a6274f70.js"
   ]
 }
