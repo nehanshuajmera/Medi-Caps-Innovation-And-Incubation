@@ -1,13 +1,14 @@
 .testimonial-main-container-homepage{
     font-family: 'Inter', sans-serif;
     height: 100vh;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .testimonial-main-heading-text{
     font-size: 50px;
@@ -93,8 +94,4 @@
   text-transform: uppercase;
   color: #bbb;
   letter-spacing: 1px;
-}
-
-.testimonial-box{
-  /* margin-top: 10vh; */
 }

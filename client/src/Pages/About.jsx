@@ -1,7 +1,8 @@
 import React from 'react'
 import './About.css';
 import TeamMember from './OurTeam/TeamMember';
-// import Abouthero from '../AboutUs/Abouthero';
+import Advisors from './OurAdvisors/Advisors';
+import Testimonials from "./Home/Testimonials";
 export default function About() {
   return (
     <div className='about-container'>
@@ -20,8 +21,11 @@ export default function About() {
       <div className="about-team-section-3-container scroll-sections">
         <TeamMember />
       </div>
-      <div className="about-team-section-3-container scroll-sections">
-        <TeamMember />
+      <div className="about-advisor-section-4-container scroll-sections">
+        <Advisors />
+      </div>
+      <div className="about-testimonials-section-5-container scroll-sections">
+        <Testimonials />
       </div>
     </div>
   )

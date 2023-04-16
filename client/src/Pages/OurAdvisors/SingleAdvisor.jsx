@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
 
-export default function SingleTeam(props) {
+export default function SingleAdvisor(props) {
     const [accodian, setaccodian] = useState(false);
   return (
    

@@ -2,7 +2,6 @@ import React /*, { useState } */ from "react";
 import Ourpartner from "../AboutUs/Ourpartner";
 import "./Herosection.css";
 import ScrollAnimation from "./Home/ScrollAnimation";
-// import Testimonials from "./Home/Testimonials";
 const Herosection = () => {
   // const [chng,setchng]=useState("./images/bulb.png");
   return (
@@ -42,7 +41,6 @@ const Herosection = () => {
           <ScrollAnimation />
         </div>
         <div className="scroll-sections">
-          {/* <Testimonials /> */}
           <Ourpartner />
         </div>
       </div>

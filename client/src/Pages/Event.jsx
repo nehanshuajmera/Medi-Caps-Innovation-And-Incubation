@@ -4,28 +4,24 @@ import { useNavigate } from 'react-router-dom';
 export default function Event() {
   const navigate = useNavigate();
   const [visitor, setvisitor] = useState(0);
-  
+
   useEffect(() => {
-    if(visitor!==6000){
-      setvisitor(visitor+1);    
+    if (visitor !== 6000) {
+      setvisitor(visitor + 1);
     }
-  },[visitor])
-  
+  }, [visitor])
+
   useEffect(() => {
-    setvisitor(1000);    
-  },[])
-  
+    setvisitor(1000);
+  }, [])
+
 
   return (
-    <div className="event-main-container scroll-sections ">
+    <div className="event-main-container">
 
       {/* section - 1 */}
 
       <div className="event-section-1 scroll-sections">
-        
-        {/* x */}
-        {/* <img className='image-event-1' src="./images/event-main-herosection.jpeg" alt="" /> */}
-        {/* <img className='image-event-1' src="./images/events-png-event.png" alt="" /> */}
         <h2 style={{ fontSize: '50px', color: 'Black', padding: '20px', textAlign: 'center' }}>Events</h2>
       </div>
 
@@ -116,17 +112,17 @@ export default function Event() {
           <div>
             <h1><i class="fa-solid fa-person"></i></h1>
             <h1>Registrations</h1>
-            <h3>{visitor-932}+</h3>
+            <h3>{visitor - 932}+</h3>
           </div>
           <div>
             <h1><i class="fa-solid fa-microphone"></i></h1>
             <h1>Speakers</h1>
-            <h3>{visitor-1000}+</h3>
+            <h3>{visitor - 1000}+</h3>
           </div>
           <div>
             <h1><i class="fa-solid fa-people-group"></i></h1>
             <h1>Participants</h1>
-            <h3>{visitor-678}+</h3>
+            <h3>{visitor - 678}+</h3>
           </div>
         </div>
       </div>
