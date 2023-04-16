@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import './Footer.css'
 export default function Footer() {
   return (
@@ -7,7 +7,9 @@ export default function Footer() {
       <div className="footer-main-box">
         <div className="get-in-touch-button">
           <h1>Want to know more?</h1>
-
+          <button>
+            <p >Get in touch</p>
+          </button>
         </div>
         <div className="footer-content-box">
           <div className="footer-logo">

@@ -27,21 +27,89 @@ export default function Offering() {
       </div>
 
       {/* Section - 2 */}
-      <div className="event-section-3-container  event-cnt scroll-sections">
-        <img src="./images/single-event-image-2.jpg" alt="" />
-        <div className='event-cnt-content'>
-          <div className="offering-section-2-left-container">
-            <h3 style={{ fontSize: '30px', color: 'black' }}>MII Foundation offers two main services :</h3>
-            <h3><i class="fa-solid fa-check"></i> Incubation</h3>
-            <h3><i class="fa-solid fa-check"></i> Consulting</h3>
-            <h3 style={{ fontSize: '30px' }}>To help start-ups grow and succeed.</h3>
-          </div>
+      <div className="offering-section-2-container scroll-sections">
+        <div className="offering-section-2-content">
+          <p>Our goal is to set up each MII project with a network, community, legal instruments, and business management toolkit sufficient for solving very global challenges</p>
         </div>
       </div>
 
       {/* Section - 3 */}
+      <div className="offering-section-3-container scroll-sections">
+        <div className="offering-benifit-item-container1">
+          <div className="benifit-item-number">
+            01
+          </div>
+          <div className="benifit-item-name">
+            Incubation
+          </div>
+        </div>
+        <div className="offering-benifit-item-container2">
+          <div className="benifit-item-number">
+            01
+          </div>
+          <div className="benifit-item-name">
+            Incubation
+          </div>
+        </div>
+        <div className="offering-benifit-item-container3">
+          <div className="benifit-item-number">
+            01
+          </div>
+          <div className="benifit-item-name">
+            Incubation
+          </div>
+        </div>
+        <div className="offering-benifit-item-container4">
+          <div className="benifit-item-number">
+            01
+          </div>
+          <div className="benifit-item-name">
+            Incubation
+          </div>
+        </div>
+        <div className="offering-benifit-item-container5">
+          <div className="benifit-item-number">
+            01
+          </div>
+          <div className="benifit-item-name">
+            Incubation
+          </div>
+        </div>
+        <div className="offering-benifit-item-container6">
+          <div className="benifit-item-number">
+            01
+          </div>
+          <div className="benifit-item-name">
+            Incubation
+          </div>
+        </div>
+        <div className="offering-benifit-item-container7">
+          <div className="benifit-item-number">
+            01
+          </div>
+          <div className="benifit-item-name">
+            Incubation
+          </div>
+        </div>
+        <div className="offering-benifit-item-container8">
+          <div className="benifit-item-number">
+            01
+          </div>
+          <div className="benifit-item-name">
+            Incubation
+          </div>
+        </div>
+        <div className="offering-benifit-item-container9">
+          <div className="benifit-item-number">
+            01
+          </div>
+          <div className="benifit-item-name">
+            Incubation
+          </div>
+        </div>
+      </div>
 
-      <div className="offering-section-3 scroll-sections">
+      {/* <div className="offering-section-3 scroll-sections">
         <h3 className="offering-section-3-heading">Incubation</h3>
         <div className="offering-section-3-layout">
           <div className="section-3-layout-items">
@@ -93,7 +161,7 @@ export default function Offering() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Section - 4 */}
 
