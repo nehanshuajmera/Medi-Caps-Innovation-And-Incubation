@@ -74,7 +74,7 @@ img {
     padding: 0%;
 } */
 
-.about-section-1-heading {
+/* .about-section-1-heading {
     position: absolute;
     top: 16%;
     left: 50%;
@@ -86,17 +86,17 @@ img {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
-.about-image-container {
+/* .about-image-container {
     background-image: url("../../public/images/about-1-mu(copy).jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
     opacity: 0.8;
-    /* width: 100%; */
-}
+    width: 100%;
+} */
 
 /* .about-image-container img {
     width: 100%;

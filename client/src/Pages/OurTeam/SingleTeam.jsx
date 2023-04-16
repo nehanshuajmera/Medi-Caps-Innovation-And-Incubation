@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from "react-router-dom";
 
 export default function SingleTeam(props) {
     const [accodian, setaccodian] = useState(false);
@@ -43,14 +44,7 @@ export default function SingleTeam(props) {
         </div>
       </div>
       <div className="zl-staff-item-text">
-        <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sapiente, rem fugiat, distinctio vitae, quod dolores cum obcaecati voluptatibus a porro nisi beatae saepe
-        (
-          <a href="https://www.medicaps.ac.in/" target="_blank" rel="noopener">
-           www.medicaps.ac.in
-          </a>
-          ), a leading crypto VC and strategic advisory firm.
-        </p>
+        <p>{props.content}</p>
         {/* <p>
           Martin has over 15 years of experience working with and leading complex
           software architecture and development projects; including system-level,
@@ -80,7 +74,7 @@ export default function SingleTeam(props) {
           proponent of making such innovations readily available to the global
           community.
         </p> */}
-        <a href="mailto:sharma39vishal@gmail.com">Contact</a>
+        <NavLink to={props.contact} target='_blank'>Contact</NavLink>
       </div>
     </div>
 
