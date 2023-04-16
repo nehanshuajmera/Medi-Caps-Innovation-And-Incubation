@@ -5,9 +5,6 @@ import TeamMember from './OurTeam/TeamMember';
 export default function About() {
   return (
     <div className='about-container'>
-      {/* <div className='scroll-sections'>
-      <Abouthero />
-      </div> */}
 
       <div className="about-section-2 scroll-sections">
         <img src="./images/Black logo - no background.png" alt="" width={"35%"} />
@@ -20,8 +17,12 @@ export default function About() {
           </p>
         </div>
       </div>
-
-      <TeamMember />
+      <div className="about-team-section-3-container scroll-sections">
+        <TeamMember />
+      </div>
+      <div className="about-team-section-3-container scroll-sections">
+        <TeamMember />
+      </div>
     </div>
   )
 }

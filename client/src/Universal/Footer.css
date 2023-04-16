@@ -1,49 +1,14 @@
-
-.hunderedvh{
-    /* margin-top: 20vh; */
-    padding-top: 20vh;
+.footer-pg{
     height: 100vh;
     display: flex;
-    
-    justify-content: space-evenly;
     align-items: center;
-}
+    justify-content: center;
+    padding-top: 10vh;
+    /* padding: 50px; */
 
-.inside-footer{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
 }
-.hunderedvh .left-footer{
-    margin: 20px;
-    width: 300px;
-}
-.hunderedvh .right-footer{
-    margin: 20px;
-    width: calc(100% - 500px);
-}
-.hunderedvh .right-footer p{
-    font-size: 25px;
-    margin: 18px;
-    font-weight: 300;
-}
-.centre-footer p{
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 300;
-}
-
-.right-footer .socialsection i{
- /* border: 3px solid #000; */
- padding: 10px;
- /* border-radius: 8px; */
-}
-
-.hunderedvh .btn{
-    padding: 20px;
-    font-size: 55px;
-    font-weight: 300;
-    font-family: 'Inter', sans-serif;
-    border-radius: 5px;
-    cursor: pointer;
+.footer-main-box{
+    border: 1px solid red;
+    height: 70vh;
+    width: 70vw;
 }

@@ -1,8 +1,8 @@
 import React /*, { useState } */ from "react";
-// import Ourpartner from "../AboutUs/Ourpartner";
+import Ourpartner from "../AboutUs/Ourpartner";
 import "./Herosection.css";
 import ScrollAnimation from "./Home/ScrollAnimation";
-import Testimonials from "./Home/Testimonials";
+// import Testimonials from "./Home/Testimonials";
 const Herosection = () => {
   // const [chng,setchng]=useState("./images/bulb.png");
   return (
@@ -39,12 +39,12 @@ const Herosection = () => {
           </div>
         </div>
         <div className="scroll-sections">
-            <ScrollAnimation />
+          <ScrollAnimation />
         </div>
         <div className="scroll-sections">
-            <Testimonials />
+          {/* <Testimonials /> */}
+          <Ourpartner />
         </div>
-        {/* <Ourpartner /> */}
       </div>
     </>
   );

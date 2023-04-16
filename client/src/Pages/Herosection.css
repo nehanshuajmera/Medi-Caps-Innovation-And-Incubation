@@ -21,6 +21,7 @@
   margin-top: 10px;
   box-sizing: border-box;
   padding: 10px;
+  padding-top: 10vh;
 }
 
 /* Left side Container of herosection */
@@ -128,6 +129,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding-top: 10vh;
   /* width: 94%; */
   /* border: 2px solid green; */
 }
