@@ -12,16 +12,19 @@
 }
 
 .footer-main-box {
-    border: 1px solid red;
+    display: flex;
+    flex-flow: column wrap;
     height: 70vh;
     width: 70vw;
 }
-.get-in-touch-button{
+
+.get-in-touch-button {
     margin: 5px;
     padding: 5px;
     font-size: 25px;
 }
-.get-in-touch-button h1{
+
+.get-in-touch-button h1 {
     margin: 5px;
     padding: 5px;
     font-size: 50px;
@@ -36,14 +39,12 @@
 
 .get-in-touch-button button {
     --primary-color: #ffffff;
-    --hovered-color: #ffffff;
+    --hovered-color: blue;
     position: relative;
     display: flex;
     font-weight: 300;
-    /* font-size: 40px; */
     gap: 0.5rem;
     align-items: center;
-    letter-spacing: 1.5;
 }
 
 .get-in-touch-button button p {
@@ -53,7 +54,6 @@
     color: var(--primary-color);
     font-weight: 300;
     cursor: pointer;
-    
 }
 
 .get-in-touch-button button::after {
@@ -70,7 +70,6 @@
 .get-in-touch-button button p::before {
     position: absolute;
     /*   box-sizing: border-box; */
-
     width: 0%;
     inset: 0;
     color: var(--hovered-color);
@@ -84,4 +83,35 @@
 
 .get-in-touch-button button:hover p::before {
     width: 100%;
+}
+
+.footer-content-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 30vh;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.navbar-items-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+
+}
+.footer-social-media-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 30px 0 5px;
+    padding: 5px;
+}
+.footer-social-media-links img{
+    width: 35px;
+    padding: 2px;
+    margin: 2px 12px;
 }
