@@ -23,7 +23,7 @@
     width: 50%;
     height: 54vh;
     margin: 8px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .blog-section-1-left-box img {
@@ -39,7 +39,7 @@
     margin: 8px;
     width: 46%;
     box-sizing: border-box;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .blog-feed-date {
@@ -47,7 +47,7 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
-    color: #979797;
+    color: #000000;
 }
 
 .blog-feed-title {
@@ -61,7 +61,7 @@
 
 .blog-feed-description {
     font-size: 22px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.2;
     /* letter-spacing: -.02em; */
 }
