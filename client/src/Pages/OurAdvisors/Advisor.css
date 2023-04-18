@@ -1,9 +1,8 @@
 .our-team-section-aboutus {
   font-family: 'Inter', sans-serif;
-  /* height: 100vh; */
+  min-height: 100vh;
   padding-top: 10vh;
   background-color: #000000;
-
 }
 
 .zl-staff-items {
@@ -431,7 +430,7 @@
 
 .zl-staff-item {
   padding: 25px 0;
-  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid grey;
 }
 
 @media (min-width: 768px) {
@@ -693,7 +692,7 @@
   display: inline-block;
   margin: 15px 0 0 0;
   text-decoration: none;
-  color: blue;
+  color: grey;
 }
 
 .zl-staff-item-text a:before {
@@ -762,9 +761,9 @@
   transition: opacity 0.7s;
 }
 
-.zl-staff-head:hover {
+/* .zl-staff-head:hover {
   opacity: 0.8;
-}
+} */
 
 .zl-staff-info {
   display: -webkit-box;

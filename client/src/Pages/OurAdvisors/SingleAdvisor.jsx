@@ -27,7 +27,6 @@ export default function SingleAdvisor(props) {
           <div className="zl-staff-item-name">
             <h4>{props.name}</h4>
             <p>{props.desc}</p>
-            <p>Medi-Caps University</p>
           </div>
         </div>
         <div className="zl-staff-item-icon">

@@ -36,7 +36,7 @@ export default function Testimonials() {
           </figure>
         </div>
       </div>
-      <hr style={{ width: '90%', margin: 'auto' }} />
+      <hr style={{ width: '86%', margin: 'auto'}} />
     </div>
   )
 }

@@ -8,7 +8,7 @@ function Ourpartner() {
       <div className="ourpartner-main-container scroll-sections">
         <div className="home-sec6-main">
           <div className="home-sec6-start">
-            <h1 className="home-sec6-h1" style={{ textAlign: 'center', fontSize: '36px' }}>From concept to wide Adoption</h1>
+            <h1 className="home-sec6-h1" style={{ fontSize: '36px' }}>From concept to wide Adoption</h1>
             {/* <h1 className="home-sec6-h1">to wide adoption</h1> */}
             <Images />
             <p className="home-sec6-text">MII Foundation is a full-scale incubator that prepares decentralized innovation for global use. To prepare the project for wide adoption, we assure full compliance, set up collaborations with global financial institutions, investment funds, governments. MII is a space where highly practical ideas that could potentially impact millions
@@ -18,6 +18,7 @@ function Ourpartner() {
           </div>
         </div>
       </div>
+      <hr style={{width: '86%', margin: 'auto'}}/>
     </>
   )
 }
