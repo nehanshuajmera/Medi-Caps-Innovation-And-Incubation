@@ -2,22 +2,27 @@
 
 /* Single-Event full page access */
 .single-event-main-container {
-    background-color: #ffffff;
+    background-color: #000000 !important;
+    color: #ffffff !important;
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-top: 58px;
+    /* padding-top: 10vh; */
 }
 
 /* Section - 1 */
-
+.single-event-section-1{
+    padding-top: 10vh;
+}
 
 /* Section - 2 */
 .single-event-section-2-container {
     display: flex;
     flex-flow: column wrap;
-    padding: 20px;
+    /* padding: 20px; */
+    /* background-color: black;
+    color: white; */
 }
 
 /* Section - 2 ( Description Container ) */
@@ -170,9 +175,13 @@
 
 /* Section - 4 */
 .single-event-section-4-container{
+    height: 100vh;
+    padding-top: 10vh;
     display: flex;
     flex-flow: column wrap;
-    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 40px; */
 }
 
 .section-4-single-event-heading{
