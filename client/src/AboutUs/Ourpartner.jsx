@@ -5,7 +5,7 @@ import Images from './Ourpartner_images.jsx';
 function Ourpartner() {
   return (
     <>
-      <div className="ourpartner-main-container">
+      <div className="ourpartner-main-container scroll-sections">
         <div className="home-sec6-main">
           <div className="home-sec6-start">
             <h1 className="home-sec6-h1" style={{ textAlign: 'center', fontSize: '36px' }}>From concept to wide Adoption</h1>

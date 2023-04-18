@@ -2,15 +2,16 @@
 
 .ourpartner-main-container {
     font-family: 'Inter', sans-serif;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    padding-top: 10vh;
     box-sizing: border-box;
 }
 
 .home-sec6-main {
-    height: 100vh;
+    /* height: 100vh;
     margin-top: 0px;
-    padding-top: 0px;
+    padding-top: 0px; */
     background-color: black;
     color: white;
 }

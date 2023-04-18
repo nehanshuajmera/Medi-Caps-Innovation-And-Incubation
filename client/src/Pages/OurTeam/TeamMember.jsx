@@ -3,8 +3,8 @@ import SingleTeamMember from './SingleTeam'
 import "./team.css"
 export default function TeamMember() {
   return (
-    <div className='our-team-section-aboutus scroll-sections'>
-      <div style={{ backgroundColor: "black", color: "white", padding: "20px", paddingBottom: "20px"}}>
+    <div className='our-team-section-aboutus '>
+      <div style={{ backgroundColor: "black", color: "white", padding: "10px"}}>
         <h1 style={{ textAlign: "center", margin: "10px" }}>Our Team</h1>
         <div className="zl-staff-items " >
           <SingleTeamMember img={"https://media.licdn.com/dms/image/C5603AQE3rSup8NMJAA/profile-displayphoto-shrink_200_200/0/1577668183645?e=1686182400&v=beta&t=1TwXAy2RH4f_kNMBdyX-gDz8IJ4IRYMZvdIgNOSR9Cc"} name={"Palash Garg"} desc={"Managing Director at MII Foundation"}

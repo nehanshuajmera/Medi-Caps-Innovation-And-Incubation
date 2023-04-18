@@ -30,18 +30,6 @@ export default function SingleTeam(props) {
             <p>Medi-Caps University</p>
           </div>
         </div>
-        <div className="zl-staff-item-icon">
-          <span>
-            <svg className="zl-svgsprite -plus">
-              <use xlinkHref="/assets/img/sprites/svgsprites.svg#plus" />
-            </svg>
-          </span>
-          <span>
-            <svg className="zl-svgsprite -minus">
-              <use xlinkHref="/assets/img/sprites/svgsprites.svg#minus" />
-            </svg>
-          </span>
-        </div>
       </div>
       <div className="zl-staff-item-text">
         <p>{props.content}</p>

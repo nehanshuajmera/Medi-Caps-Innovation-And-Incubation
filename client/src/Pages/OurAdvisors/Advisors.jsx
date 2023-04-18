@@ -3,8 +3,8 @@ import SingleAdvisor from './SingleAdvisor'
 import "./Advisor.css"
 export default function Advisors() {
   return (
-    <div className='our-team-section-aboutus scroll-sections'>
-      <div style={{ backgroundColor: "white", color: "black", padding: "20px", paddingBottom: "50px" }}>
+    <div className='our-team-section-aboutus '>
+      <div style={{ backgroundColor: "white", color: "black", padding: "10px"}}>
         <h1 style={{ textAlign: "center", margin: "10px" }}>Our Advisors</h1>
         <div className="zl-staff-items " >
           <SingleAdvisor img={"https://media.licdn.com/dms/image/C5603AQE3rSup8NMJAA/profile-displayphoto-shrink_200_200/0/1577668183645?e=1686182400&v=beta&t=1TwXAy2RH4f_kNMBdyX-gDz8IJ4IRYMZvdIgNOSR9Cc"} name={"Palash Garg"} desc={"Managing Director at MII Foundation"}
