@@ -20,7 +20,7 @@ const Herosection = () => {
             </div>
           </div>
           <div className="home-section-1-image removeonphone">
-            <img className="hero-section-1-img" src="./images/bulb.png"/*{chng}*/ alt="" />
+            <img className="hero-section-1-img" src="./images/chess-hero1.gif"/*{chng}*/ alt="" />
           </div>
         </div>
 

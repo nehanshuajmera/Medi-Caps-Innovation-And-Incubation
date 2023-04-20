@@ -8,8 +8,8 @@ export default function ScrollAnimation() {
           <div className="scroll__content scroll__hero is-alwayssticky">
             <div className="scroll__sectionwrapper " style={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
               <div className='scroll-section-image'>
-                <img src="./images/creative.png" alt="" />
-                {/* <i className="fa-solid fa-chess fa-9x"></i> */}
+                <img src="./images/chess-scroll1.png" alt="" />
+                {/* <img src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/14cbed676d4c26e7d3a8f25fac357a4e/original.png" alt="" /> */}
               </div>
             </div>
           </div>

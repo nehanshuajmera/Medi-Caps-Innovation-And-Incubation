@@ -23,6 +23,9 @@ export default function Offering() {
           <div className="section-1-offering-heading3">
             <h3>To help start-ups grow and succeed.</h3>
           </div>
+          <div className="section-1-offering-arrow">
+            <img style={{width: '65px'}} src="https://cdn-icons-png.flaticon.com/512/10449/10449837.png" alt="" />
+          </div>
         </div>
       </div>
 
