@@ -43,71 +43,71 @@ export default function Offering() {
             01
           </div>
           <div className="benifit-item-name">
-            Incubation
+          Mentoring
           </div>
         </div>
-        <div className="offering-benifit-item-container2">
+        <div className="offering-benifit-item-container1">
           <div className="benifit-item-number">
-            01
+            02
           </div>
           <div className="benifit-item-name">
-            Incubation
+          Seed-Fund Investment
           </div>
         </div>
-        <div className="offering-benifit-item-container3">
+        <div className="offering-benifit-item-container1">
           <div className="benifit-item-number">
-            01
+            03
           </div>
           <div className="benifit-item-name">
-            Incubation
+          Access to Events
           </div>
         </div>
-        <div className="offering-benifit-item-container4">
+        <div className="offering-benifit-item-container1">
           <div className="benifit-item-number">
-            01
+            04
           </div>
           <div className="benifit-item-name">
-            Incubation
+            Co-Working
           </div>
         </div>
-        <div className="offering-benifit-item-container5">
+        <div className="offering-benifit-item-container1">
           <div className="benifit-item-number">
-            01
+            05
           </div>
           <div className="benifit-item-name">
-            Incubation
+            HR Access
           </div>
         </div>
-        <div className="offering-benifit-item-container6">
+        <div className="offering-benifit-item-container1">
           <div className="benifit-item-number">
-            01
+            06
           </div>
           <div className="benifit-item-name">
-            Incubation
+            Interns
           </div>
         </div>
-        <div className="offering-benifit-item-container7">
+        <div className="offering-benifit-item-container1">
           <div className="benifit-item-number">
-            01
+            07
           </div>
           <div className="benifit-item-name">
-            Incubation
+            Research Support
           </div>
         </div>
-        <div className="offering-benifit-item-container8">
+        <div className="offering-benifit-item-container1">
           <div className="benifit-item-number">
-            01
+            08
           </div>
           <div className="benifit-item-name">
-            Incubation
+            Business Plan Development
           </div>
         </div>
-        <div className="offering-benifit-item-container9">
+        <div className="offering-benifit-item-container1">
           <div className="benifit-item-number">
-            01
+            09
           </div>
           <div className="benifit-item-name">
-            Incubation
+            Consulting
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@ export default function Offering() {
 
       {/* Section - 4 */}
 
-      <div className="offering-section-4-container scroll-sections">
+      {/* <div className="offering-section-4-container scroll-sections">
         <div className="offering-section-4-layout">
           <div className="section-4-layout-items">
             <h3>Consulting</h3>
@@ -182,7 +182,7 @@ export default function Offering() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div >
   );
 }
