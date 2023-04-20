@@ -2,15 +2,17 @@
 
 .scroll-animation-homepage {
   font-family: 'Inter', sans-serif;
+  /* height: 100vh; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
+  /* padding-top: 10vh; */
 }
 
-/* .scroll__text {
+.scroll__text {
   text-align: center;
-} */
+}
 @media(max-width: 1241px){
   .scroll__sectionwrapper h1{
     font-size: 40px !important;
@@ -29,6 +31,9 @@
   top: 0;
   width: 100%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .scroll__view {
@@ -62,7 +67,12 @@
   width: 100%;
   height: 90vh;
   top: 0;
+  padding-top: 15vh;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -86,6 +96,7 @@
   position: absolute;
   top: 0;
   transform: translateY(calc(-100% + 1px));
+  transform: translateX(calc(50% + 1px));
 }
 
 @media screen and (max-width: 768px) {
@@ -100,8 +111,9 @@
 }
 
 .scroll__sectionwrapper {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
+  text-align: center;
 }

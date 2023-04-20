@@ -1,21 +1,22 @@
 import React from 'react'
 import './Upcomingeventpage.css'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 export default function Upcomingeventpage() {
   return (
-    <div className='single-event-main-container'>
+    <div className='single-event-main-container scroll-sections'>
 
       {/* Section - 1 */}
 
-      <div className="single-event-section-1">
-        <img className='single-event-image-one' src="./images/single-event-image-3.jpg" alt=" Event Image" />
+      <div className="single-event-section-1 scroll-sections">
+        <img className='single-event-image-one' src="./images/single-event-image-3.jpg" alt="Event" />
       </div>
 
       {/* Section - 2 */}
 
-      <div className="single-event-section-2-container">
+      <div className="single-event-section-2-container scroll-sections">
         <div className="single-event-section-2-description-container">
           <h5 className="single-event-section-2-description-heading">Conference on Inovation And Incubation</h5>
+          <p className="single-event-section-2-description-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil vero error placeat beatae vel, quae fugiat, illo maiores quo aliquam consectetur. Aliquam atque, distinctio eum numquam nisi, optio itaque adipisci esse exercitationem obcaecati nesciunt iste.</p>
           <p className="single-event-section-2-description-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil vero error placeat beatae vel, quae fugiat, illo maiores quo aliquam consectetur. Aliquam atque, distinctio eum numquam nisi, optio itaque adipisci esse exercitationem obcaecati nesciunt iste.</p>
         </div>
         <div className="single-event-section-2-data-container">
@@ -69,7 +70,7 @@ export default function Upcomingeventpage() {
 
       {/* Section - 3 */}
 
-      <div className="single-event-section-3-container">
+      {/* <div className="single-event-section-3-container">
         <div className="single-event-section-3-description-container">
           <h5 className="single-event-section-3-description-heading">Bigup to our Sponsors</h5>
           <p className="single-event-section-3-description-paragraph">
@@ -79,10 +80,10 @@ export default function Upcomingeventpage() {
             </NavLink>
             &nbsp;with us.
           </p>
-        </div>
+        </div> */}
 
         {/* Section - 3 ( Sponsor Shoutout ) */}
-        <div className="single-event-section-3-sponsors">
+        {/* <div className="single-event-section-3-sponsors">
           <div className="single-sponsor-heading">
             <h5>Event Sponsors</h5>
           </div>
@@ -95,7 +96,7 @@ export default function Upcomingeventpage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

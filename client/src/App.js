@@ -17,7 +17,8 @@ function App() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    console.log("Scroll done")
+    // console.log("Scroll done")
+    // window.scrollTo(0, 0)
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [pathname]);
 
