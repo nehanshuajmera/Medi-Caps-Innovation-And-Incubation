@@ -4,6 +4,7 @@ import './Header.css'
 export default function Header() {
   const [display, setDisplay] = useState(window.innerWidth > 1024 ? true : false);
   const [naveff, setnaveff] = useState(0);
+
   useEffect(() => {
     setnaveff(window.pageYOffset);
     console.log(naveff)
@@ -64,7 +65,7 @@ export default function Header() {
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Offering</NavLink>
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Article">Blogs</NavLink>
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">Event</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Contact">Contact</NavLink>
+            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Contact" >Contact</NavLink>
           </div>
         </div> : <></>}
       </div>

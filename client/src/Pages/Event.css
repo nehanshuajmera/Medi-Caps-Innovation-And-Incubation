@@ -6,6 +6,10 @@
     justify-content: center;
     align-items: center;
 }
+
+img{
+    max-width: 100%;
+}
 .event-page-hero .text-section{
     /* height: 50vh; */
     text-align: center;
