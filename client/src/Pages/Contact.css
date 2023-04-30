@@ -1,12 +1,12 @@
 .contactCss{
-    margin-top: 10vh; 
+    height: 100vh;
     padding-top: 10vh;
+    font-family: 'Inter', sans-serif;
 }
  .maincontactpage{
-    height: 90vh;
+    height: 100vh;
     text-align: center;
     display: flex;
-    /* flex-direction: column; */
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;

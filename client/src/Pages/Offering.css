@@ -4,19 +4,18 @@
 .offering-main-container {
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
-    margin-top: 10vh;
 }
 
 /* Section - 1 */
 .offering-section-1-container {
     height: 100vh;
     padding-top: 10vh;
-
+    /* background-color: #000000;
+    color: #ffffff; */
 }
 
 .offering-section-1-image {
-    background-image: url("https://cdn.dribbble.com/users/32512/screenshots/5315301/media/2b600b3c659b06eb2b4231ab38d72933.gif");
-    /* background-image: url("https://ouch-cdn2.icons8.com/OxiwJk2ZGVU0r9HGQvaC108RqZfoUuZyg3lOMmu1Sow/rs:fit:256:192/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzgy/LzkxZjE2YTRmLTIy/ZDctNDFkYy1hNjY0/LTc4ODc1ZTU4MjBm/Mi5wbmc.png"); */
+    /* background-image: url("https://cdn-icons-png.flaticon.com/512/3915/3915655.png"); */
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: cover; */
@@ -29,7 +28,7 @@
 }
 
 .section-1-offering-heading1 {
-    font-size: 45px;
+    font-size: 55px;
     text-align: center;
     height: 40%;
 }
@@ -43,11 +42,12 @@
     flex-wrap: wrap;
     /* justify-content: center;
     align-items: center; */
+    /* border: 1px solid yellow; */
 }
 
 .offering-section-1-sub-heading {
     /* border: 1px solid green; */
-    margin: 30px;
+    margin: 30px 150px;
     padding: 5px;
     font-size: 40px;
 }
@@ -60,9 +60,67 @@
 .section-1-offering-heading3 {
     margin: 10px;
     padding: 10px;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
 }
+
 .section-1-offering-heading3 h3 {
     font-weight: 300;
+}
+
+/* Section - 2 */
+.offering-section-2-container {
+    height: 100vh;
+    padding-top: 10vh;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.offering-section-2-content {
+    margin: 20px;
+    padding: 10px 150px;
+    display: flex;
+}
+
+.offering-section-2-content p {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+/* Section - 3 */
+.offering-section-3-container {
+    height: 100vh;
+    padding: 0 250px;
+    padding-top: 16vh;
+    padding-bottom: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.offering-benifit-item-container1 {
+    margin: 2px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    /* border: 1px solid red; */
+}
+
+.benifit-item-number {
+    padding: 4px;
+    margin: 2px;
+    font-size: 40px;
+    color: grey;
+}
+
+.benifit-item-name {
+    padding: 4px;
+    margin: 2px;
+    font-size: 26px;
 }

@@ -2,7 +2,10 @@ import React /*, { useState } */ from "react";
 import Ourpartner from "../AboutUs/Ourpartner";
 import "./Herosection.css";
 import ScrollAnimation from "./Home/ScrollAnimation";
-// import Testimonials from "./Home/Testimonials";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const Herosection = () => {
   // const [chng,setchng]=useState("./images/bulb.png");
   return (
@@ -17,16 +20,16 @@ const Herosection = () => {
               </div>
             </div>
             <div className="home-section-1-slogan">
-              <h3 className="mii-slogan"> "Unlock <i class="fa-solid fa-key"></i> Your Business Potential"</h3>
+              <h3 className="mii-slogan"> "Ace Your Chess Like Life @StartUps"</h3>
             </div>
           </div>
           <div className="home-section-1-image removeonphone">
-            <img className="hero-section-1-img" src="./images/bulb.png"/*{chng}*/ alt="" />
+            <img className="hero-section-1-img" src="./images/chess-hero1.gif"/*{chng}*/ alt="" />
           </div>
         </div>
 
 
-        <div className="section2-home-page home-section2-container scroll-sections">
+        <div data-aos="fade-right" className="section2-home-page home-section2-container scroll-sections">
           <div className="home-section2-heading">
             <h1>Create a perfect ecosystem for your business</h1>
           </div>
@@ -38,12 +41,12 @@ const Herosection = () => {
               environment for entrepreneurs to grow their businesses.</p>
           </div>
         </div>
-        <div className="scroll-sections">
+        <div data-aos="fade-left" className="scroll-sections">
           <ScrollAnimation />
         </div>
-        <div className="scroll-sections">
-          {/* <Testimonials /> */}
+        <div data-aos="fade-right" className="scroll-sections" style={{backgroundColor:"black"}}>
           <Ourpartner />
+          <hr/>
         </div>
       </div>
     </>

@@ -1,8 +1,9 @@
 import React from 'react'
+import "../Contact.css"
 
 export default function StartupFounder() {
   return (
-    <div className='who-form'>
+    <div className='who-form contactCss scroll-sections scroll-sections'>
       <div className='left'>
       <h1 style={{textAlign:"center"}}>Startup Founder</h1>      
 

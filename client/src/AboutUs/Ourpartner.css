@@ -2,15 +2,14 @@
 
 .ourpartner-main-container {
     font-family: 'Inter', sans-serif;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    padding-top: 10vh;
     box-sizing: border-box;
 }
 
 .home-sec6-main {
-    height: 100vh;
-    margin-top: 0px;
-    padding-top: 0px;
+    padding-bottom: 30px;
     background-color: black;
     color: white;
 }
@@ -38,7 +37,7 @@
 .home-sec6-h1 {
     transform: translate(0px, 0px);
     letter-spacing: .015em;
-    line-height: 50px;
+    /* line-height: 50px; */
     font-weight: 400;
     color: #fff;
     margin-bottom: 20px;
@@ -62,19 +61,20 @@
 }
 
 .home-sec6-carousel {
-    margin: 60px 5px;
+    margin: 60px 5px 30px 5px;
     display: flex;
 }
 
 .home-sec6-text {
-    font-size: 18px;
-    margin: 5px 0;
-    text-align: center;
+    font-size: 20px;
+    margin: 2px 0;
+    /* text-align: center; */
     line-height: 1.5;
+    font-weight: 300;
 }
 
 .home-sec6-start {
-    padding: 60px 180px;
+    padding: 38px 180px;
 }
 
 button.rec-dot {
@@ -82,13 +82,16 @@ button.rec-dot {
 }
 
 .rec-arrow {
-    /* border: 2px solid white; */
     background-color: black !important;
-    color: white;
+    color: grey !important;
+    border: 2px solid grey !important;
+    cursor: pointer !important;
 }
 
 .rec-arrow:hover {
-    border: 2px solid white;
+    border: 2px solid white !important;
     background-color: black !important;
-    color: white;
+    color: white !important;
+    cursor: pointer !important;
+
 }

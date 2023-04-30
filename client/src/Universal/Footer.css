@@ -1,39 +1,120 @@
-.footer-pg{
+.footer-pg {
+    font-family: 'Inter', sans-serif;
     height: 100vh;
-    padding: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    background-color: black;
+    color: white;
     /* padding: 50px; */
     font-family: 'Inter', sans-serif;
     background-color: black;
     color: white;
 
 }
-.footer-main-box{
-    border: 1px solid red;
+
+.footer-main-box {
+    display: flex;
+    flex-flow: column wrap;
     height: 70vh;
     width: 70vw;
 }
-.get-more{
-    font-size: 60px;
-    font-weight: 1000;
-}
-.gitouch{
-    color: brown;
-    font-size: 60px;
-    font-weight: 500;
-    padding: 10px;
-    width: fit-content;
-    border-bottom: 2px solid saddlebrown;
+
+.get-in-touch-button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;
 }
 
-.fotter-bottom{
+.get-in-touch-button h1 {
+    margin: 5px;
+    padding: 5px;
+    font-size: 50px;
+}
+
+.get-in-touch-button button {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    background: none;
+}
+
+.get-in-touch-button button {
+    --primary-color: #ffffff;
+    --hovered-color: blue;
+    position: relative;
     display: flex;
+    font-weight: 300;
+    gap: 0.5rem;
+    align-items: center;
 }
 
-.fotter-bottom .second-class{
-    /* font-size: ; */
-
+.get-in-touch-button button p {
+    margin: 0;
+    position: relative;
+    font-size: 50px;
+    color: var(--primary-color);
+    font-weight: 300;
+    cursor: pointer;
 }
 
-.fotter-bottom .second-class a{
+.get-in-touch-button button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+.get-in-touch-button button p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+.get-in-touch-button button:hover::after {
+    width: 100%;
+}
+
+.get-in-touch-button button:hover p::before {
+    width: 100%;
+}
+
+.footer-content-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 30vh;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.navbar-items-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
     padding: 10px;
+
+}
+.footer-social-media-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 30px 0 5px;
+    padding: 5px;
+}
+.footer-social-media-links img{
+    width: 35px;
+    padding: 2px;
+    margin: 2px 12px;
 }

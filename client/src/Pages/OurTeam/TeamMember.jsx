@@ -3,13 +3,13 @@ import SingleTeamMember from './SingleTeam'
 import "./team.css"
 export default function TeamMember() {
   return (
-    <div style={{ marginBottom: "50px", paddingTop: "10vh", marginTop: "10vh" }}>
-      <div className='scroll-sections' style={{ backgroundColor: "black", color: "white", padding: "20px", paddingBottom: "40px" }}>
-        <h1 style={{ textAlign: "center", margin: "50px" }}>Our Team</h1>
+    <div className='our-team-section-aboutus'>
+      <div style={{ backgroundColor: "black", color: "white", padding: "10px"}}>
+        <h1 style={{ textAlign: "center", margin: "10px" }}>Our Team</h1>
         <div className="zl-staff-items " >
           <SingleTeamMember img={"https://media.licdn.com/dms/image/C5603AQE3rSup8NMJAA/profile-displayphoto-shrink_200_200/0/1577668183645?e=1686182400&v=beta&t=1TwXAy2RH4f_kNMBdyX-gDz8IJ4IRYMZvdIgNOSR9Cc"} name={"Palash Garg"} desc={"Managing Director at MII Foundation"}
             content={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sapiente, rem fugiat, distinctio vitae, quod dolores cum obcaecati voluptatibus a porro nisi beatae saepe
-           , a leading crypto VC and strategic advisory firm.`} contact={"https://www.linkedin.com/in/palash-garg-394195195/"}/>
+           , a leading crypto VC and strategic advisory firm.`} contact={"https://www.linkedin.com/in/palash-garg-394195195/"} />
           <SingleTeamMember img={"https://media.licdn.com/dms/image/C5603AQHR2TFt3o4lGw/profile-displayphoto-shrink_800_800/0/1517272135477?e=1686182400&v=beta&t=gecMvwsEc6LmkhZ2baoPyRU0D7NQaI2b-YP75RYkScc"} name={"Prof. Dilip K. Patnaik "} desc={"Vice Chancellor"}
             content={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sapiente, rem fugiat, distinctio vitae, quod dolores cum obcaecati voluptatibus a porro nisi beatae saepe
             , a leading crypto VC and strategic advisory firm.`} contact={"https://www.linkedin.com/in/prof-dilip-k-patnaik-28339b105/"} />

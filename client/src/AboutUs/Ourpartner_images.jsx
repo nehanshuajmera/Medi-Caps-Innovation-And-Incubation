@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React /*, {Component}*/ from 'react';
 import './Ourpartner.css';
 import Carousel from 'react-elastic-carousel';
 import ourpartnerImg1 from './assets/ourpartnerImg1.png';
@@ -32,5 +32,4 @@ const Ourpartner_images = () =>{
         </div>
     )
 }   
-
 export default Ourpartner_images;

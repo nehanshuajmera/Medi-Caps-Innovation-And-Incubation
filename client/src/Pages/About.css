@@ -3,16 +3,15 @@
 .about-container {
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
-    margin-top: 10vh;
 }
 
-img {
+/* img {
     max-width: 100%;
 }
 
 .about-section-1 {
     height: 100vh;
-    /* opacity: 0.8; */
+    opacity: 0.8;
 }
 
 .about-section-1-heading {
@@ -41,16 +40,18 @@ img {
         font-weight: 300;
         margin-top: 5px;
         font-size: 20px;
-        /* color: aqua; */
+        color: aqua;
     }
-}
+} */
 
 .about-section-2 {
     background-color: #ffffff;
     display: flex;
     align-items: center;
     height: 100vh;
-    padding: 20px;
+    padding: 0 12px;
+    padding-top: 10vh;
+    /* border: 1px solid yellow; */
     /* flex-flow: column wrap; */
 }
 
@@ -58,7 +59,19 @@ img {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    padding: 12px;
+    height: 50vh;
+    padding: 16px;
+    /* border: 1px solid red; */
+}
+
+.about-section-2-heading{
+    font-weight: 400;
+    padding: 2px;
+    margin: 2px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .about-section-2-paragraph {
@@ -66,6 +79,7 @@ img {
     margin-right: 10px;
     font-size: 22px;
     font-weight: 300;
+    /* border: 1px solid green; */
 }
 
 /* .about-hero-img {

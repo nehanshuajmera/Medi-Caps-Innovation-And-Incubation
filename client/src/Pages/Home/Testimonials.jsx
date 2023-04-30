@@ -2,7 +2,7 @@ import React from 'react'
 import './testimonials.css'
 export default function Testimonials() {
   return (
-    <div className='testimonial-box' style={{ backgroundColor: 'black' }}>
+    <div className='testimonial-box'>
       <div className='testimonial-main-container-homepage'>
         <h5 className="testimonial-main-heading-text">Testimonials</h5>
         <div className="testimonial-image-container">
@@ -36,7 +36,7 @@ export default function Testimonials() {
           </figure>
         </div>
       </div>
-      <hr style={{ width: '90%', margin: 'auto' }} />
+      <hr style={{ width: '86%', margin: 'auto'}} />
     </div>
   )
 }

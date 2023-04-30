@@ -1,9 +1,9 @@
 import React from 'react'
 import './Singleeventpage.css'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 export default function Singleeventpage() {
   return (
-    <div className='single-event-main-container'>
+    <div className='single-event-main-container scroll-sections'>
 
       {/* Section - 1 */}
 
@@ -69,7 +69,7 @@ export default function Singleeventpage() {
 
       {/* Section - 3 */}
 
-      <div className="single-event-section-3-container">
+      {/* <div className="single-event-section-3-container scroll-sections">
         <div className="single-event-section-3-description-container">
           <h5 className="single-event-section-3-description-heading">Bigup to our Sponsors</h5>
           <p className="single-event-section-3-description-paragraph">
@@ -79,10 +79,10 @@ export default function Singleeventpage() {
             </NavLink>
             &nbsp;with us.
           </p>
-        </div>
+        </div> */}
 
         {/* Section - 3 ( Sponsor Shoutout ) */}
-        <div className="single-event-section-3-sponsors">
+        {/* <div className="single-event-section-3-sponsors">
           <div className="single-sponsor-heading">
             <h5>Event Sponsors</h5>
           </div>
@@ -95,38 +95,37 @@ export default function Singleeventpage() {
             </div>
           </div>
         </div>
-      </div>
-      {/* <hr style={{ width: '90%', margin: 'auto' }} /> */}
+      </div> */}
+        {/* <hr style={{ width: '90%', margin: 'auto' }} /> */}
 
-      {/* Section - 4 */}
+        {/* Section - 4 */}
 
-      <div className="single-event-section-4-container">
-        <div className="section-4-single-event-heading">
-          <h5>Glimpses From The Event</h5>
-          <p>For more photos and videos visit our social hubs.</p>
+        <div className="single-event-section-4-container scroll-sections">
+          <div className="section-4-single-event-heading">
+            <h5>Glimpses From The Event</h5>
+            <p>For more photos and videos visit our social hubs.</p>
+          </div>
+          <div className="single-event-memories">
+            <div className="memories-album-single-event">
+              <img src="http://mutationmedia.net/EVENTS/img/15.jpg" alt="Loading Error" />
+            </div>
+            <div className="memories-album-single-event">
+              <img src="http://mutationmedia.net/EVENTS/img/13.jpg" alt="Loading Error" />
+            </div>
+            <div className="memories-album-single-event">
+              <img src="http://mutationmedia.net/EVENTS/img/14.jpg" alt="Loading Error" />
+            </div>
+            <div className="memories-album-single-event">
+              <img src="http://mutationmedia.net/EVENTS/img/16.jpg" alt="Loading Error" />
+            </div>
+            <div className="memories-album-single-event">
+              <img src="http://mutationmedia.net/EVENTS/img/17.jpg" alt="Loading Error" />
+            </div>
+            <div className="memories-album-single-event">
+              <img src="http://mutationmedia.net/EVENTS/img/12.jpg" alt="Loading Error" />
+            </div>
+          </div>
         </div>
-        <div className="single-event-memories">
-          <div className="memories-album-single-event">
-            <img src="http://mutationmedia.net/EVENTS/img/15.jpg" alt="Loading Error" />
-          </div>
-          <div className="memories-album-single-event">
-            <img src="http://mutationmedia.net/EVENTS/img/13.jpg" alt="Loading Error" />
-          </div>
-          <div className="memories-album-single-event">
-            <img src="http://mutationmedia.net/EVENTS/img/14.jpg" alt="Loading Error" />
-          </div>
-          <div className="memories-album-single-event">
-            <img src="http://mutationmedia.net/EVENTS/img/16.jpg" alt="Loading Error" />
-          </div>
-          <div className="memories-album-single-event">
-            <img src="http://mutationmedia.net/EVENTS/img/17.jpg" alt="Loading Error" />
-          </div>
-          <div className="memories-album-single-event">
-            <img src="http://mutationmedia.net/EVENTS/img/12.jpg" alt="Loading Error" />
-          </div>
-        </div>
       </div>
-
-    </div>
   )
 }
