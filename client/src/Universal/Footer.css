@@ -1,14 +1,39 @@
 .footer-pg{
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10vh;
+    padding: 30vh;
     /* padding: 50px; */
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
 
 }
 .footer-main-box{
     border: 1px solid red;
     height: 70vh;
     width: 70vw;
+}
+.get-more{
+    font-size: 60px;
+    font-weight: 1000;
+}
+.gitouch{
+    color: brown;
+    font-size: 60px;
+    font-weight: 500;
+    padding: 10px;
+    width: fit-content;
+    border-bottom: 2px solid saddlebrown;
+}
+
+.fotter-bottom{
+    display: flex;
+}
+
+.fotter-bottom .second-class{
+    /* font-size: ; */
+
+}
+
+.fotter-bottom .second-class a{
+    padding: 10px;
 }
