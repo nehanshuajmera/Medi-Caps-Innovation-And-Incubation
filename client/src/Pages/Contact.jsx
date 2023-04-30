@@ -16,14 +16,9 @@ export default function Contact() {
   }, [])
 
   return (
-    <div className="contactCss scroll-sections scroll-sections">
-      {section === "" ? <MainContactpage setsection={setsection} /> : <></>}
-      {section === "startupfounder" ? <StartupFounder /> : <></>}
-      {section === "investor" ? <Investor /> : <></>}
-      {section === "generalquery" ? <GeneralQuery /> : <></>}
-      {section === "ideaowner" ? <IdeaOwner /> : <></>}
-      {section === "student" ? <Student /> : <></>}
-      {section === "mentor" ? <Mentor /> : <></>}
+    <div >
+      <MainContactpage setsection={setsection} />
+    
     </div>
   )
 }

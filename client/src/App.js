@@ -11,6 +11,12 @@ import About from './Pages/About';
 import Singleeventpage from './SingleEvent/Singleeventpage';
 import { useEffect } from 'react';
 import Upcomingeventpage from './SingleEvent/Upcomingeventpage';
+import GeneralQuery from './Pages/Contact/GeneralQuery';
+import IdeaOwner from './Pages/Contact/IdeaOwner';
+import Investor from './Pages/Contact/Investor';
+import Mentor from './Pages/Contact/Mentor';
+import StartupFounder from './Pages/Contact/StartupFounder';
+import Student from './Pages/Contact/Student';
 
 function App() {
   
@@ -34,6 +40,12 @@ function App() {
         <Route  path='/Event' element={<Event/> }/>
         <Route  path='/singleevent' element={<Singleeventpage/> }/>
         <Route  path='/upcomingevent' element={<Upcomingeventpage/> }/>
+        <Route  path='/generalquery' element={<GeneralQuery/> }/>
+        <Route  path='/ideaowner' element={<IdeaOwner/> }/>
+        <Route  path='/investor' element={<Investor/> }/>
+        <Route  path='/mentor' element={<Mentor/> }/>
+        <Route  path='/startupfounder' element={<StartupFounder/> }/>
+        <Route  path='/studentform' element={<Student/> }/>
       </Routes>
       <Footer/>
     </div>

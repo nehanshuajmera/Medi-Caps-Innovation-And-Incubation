@@ -15,10 +15,7 @@
 }
 
 .offering-section-1-image {
-    /* background-image: url("https://www.wargamevault.com/images/15320/_product_images/330434/chess_pieces_turnaround.gif"); */
-    /* background-image: url("https://ouch-cdn2.icons8.com/OxiwJk2ZGVU0r9HGQvaC108RqZfoUuZyg3lOMmu1Sow/rs:fit:256:192/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzgy/LzkxZjE2YTRmLTIy/ZDctNDFkYy1hNjY0/LTc4ODc1ZTU4MjBm/Mi5wbmc.png"); */
-    /* background-image: url("https://media.istockphoto.com/id/1201092704/vector/chess-pieces.jpg?s=612x612&w=0&k=20&c=WqQ1GrsUOKiE3UGz6a6uxW09BHJzLKceyxx-l9hIDuY="); */
-    /* background-image: url("../../public/images/chess-hero2.gif"); */
+    /* background-image: url("https://cdn-icons-png.flaticon.com/512/3915/3915655.png"); */
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: cover; */
@@ -31,7 +28,7 @@
 }
 
 .section-1-offering-heading1 {
-    font-size: 45px;
+    font-size: 55px;
     text-align: center;
     height: 40%;
 }

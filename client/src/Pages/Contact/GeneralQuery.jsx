@@ -1,8 +1,9 @@
 import React from 'react'
-
+import "../Contact.css"
+ 
 export default function GeneralQuery() {
   return (
-    <div className='who-form'>
+    <div  className="who-form contactCss scroll-sections scroll-sections">
     <div className='left'>
     <h1 style={{textAlign:"center"}}>General Query</h1>      
 

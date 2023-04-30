@@ -16,7 +16,7 @@ const Herosection = () => {
               </div>
             </div>
             <div className="home-section-1-slogan">
-              <h3 className="mii-slogan"> "Unlock <i class="fa-solid fa-key"></i> Your Business Potential"</h3>
+              <h3 className="mii-slogan"> "Ace Your Chess Like Life @StartUps"</h3>
             </div>
           </div>
           <div className="home-section-1-image removeonphone">

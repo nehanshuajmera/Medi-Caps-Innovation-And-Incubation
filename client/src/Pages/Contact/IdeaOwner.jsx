@@ -1,8 +1,10 @@
 import React from 'react'
+import "../Contact.css"
+
 
 export default function IdeaOwner() {
   return (
-    <div className='who-form'>
+    <div className='who-form contactCss scroll-sections scroll-sections'>
     <div className='left'>
     <h1 style={{textAlign:"center"}}>Idea Owner</h1>      
 

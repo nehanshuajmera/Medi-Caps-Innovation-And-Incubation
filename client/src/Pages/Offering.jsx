@@ -10,11 +10,11 @@ export default function Offering() {
         <div className="offering-section-1-image">
           <div className="section-1-offering-heading1">
             <h3>MII Foundation</h3>
-            <h3>offers two main services :</h3>
+            <h3>offers two main services</h3>
           </div>
           <div className="section-1-offering-heading2">
             <div className="offering-section-1-sub-heading">
-              <h3>Incubation & Consulting</h3>
+              <h3>Incubation & Start-Up Consulting</h3>
             </div>
             {/* <div className="offering-section-1-sub-heading">
               <h3>Consulting</h3>
