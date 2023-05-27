@@ -1,8 +1,9 @@
 const router = require("express").Router();
 const Event=require("../models/eventModel")
+const adminauth=require("../middleware/adminauth");
 
 // add new event
-router.post("/addevent", async (req, res) => {
+router.post("/addevent",adminauth, async (req, res) => {
   // console.log(req.body);
     const { images,description,title,authername,date,time,location,numberofspeaker,registrationfee} = req.body;
     const newevent = new Event({
@@ -26,7 +27,7 @@ router.post("/addevent", async (req, res) => {
   
 
 //   delete event
-router.get("/deleteevent/:id", async (req, res) => {
+router.get("/deleteevent/:id",adminauth, async (req, res) => {
     const eventId= req.params.id;
     try {
         let oldevent= await Event.findOneAndDelete({ _id:eventId});

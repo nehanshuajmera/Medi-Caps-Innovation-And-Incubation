@@ -1,8 +1,9 @@
 const router = require("express").Router();
 const Blog=require("../models/blogModel")
+const adminauth=require("../middleware/adminauth");
 
 // add new blog
-router.post("/newblog", async (req, res) => {
+router.post("/newblog",adminauth, async (req, res) => {
     const { images,description,title,authername,date} = req.body;
     const newblog = new Blog({
         images,
@@ -22,7 +23,7 @@ router.post("/newblog", async (req, res) => {
 
 //   delet blogs
 
-router.get("/deleteblog/:id", async (req, res) => {
+router.get("/deleteblog/:id",adminauth, async (req, res) => {
     const blogId= req.params.id;
     try {
         let oldblog= await Blog.findOneAndDelete({ _id:blogId});
@@ -32,7 +33,7 @@ router.get("/deleteblog/:id", async (req, res) => {
     }
 });
 
-router.get("/allblogs",(req, res) => {
+router.get("/allblogs", (req, res) => {
     try {
         // console.log("searching for blogs")
         Blog.find()
