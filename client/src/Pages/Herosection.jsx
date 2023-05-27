@@ -2,34 +2,13 @@ import React /*, { useState } */ from "react";
 import Ourpartner from "../AboutUs/Ourpartner";
 import "./Herosection.css";
 import ScrollAnimation from "./Home/ScrollAnimation";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
 
 const Herosection = () => {
-  // const [chng,setchng]=useState("./images/bulb.png");
   return (
     <>
       <div className="home-section-container scroll-sections">
-        <div className="home-section-1-container">
-          <div className="home-section-1-text" /*onMouseEnter={()=>{setchng("./images/bulb.png")}} onMouseLeave={()=>{setchng("./images/bulbblack.png")}} */>
-            <div className="home-section-1-heading" >
-              <div className="section-1-home-container1 ">
-                <h3 className="removeonphone" >MII Foundation</h3>
-                <img className="removeonlaptop" src="./images/Black logo - no background.png" alt="" />
-              </div>
-            </div>
-            <div className="home-section-1-slogan">
-              <h3 className="mii-slogan"> "Ace Your Chess Like Life @StartUps"</h3>
-            </div>
-          </div>
-          <div className="home-section-1-image removeonphone">
-            <img className="hero-section-1-img" src="./images/chess-hero1.gif"/*{chng}*/ alt="" />
-          </div>
-        </div>
-
-
-        <div data-aos="fade-right" className="section2-home-page home-section2-container scroll-sections">
+        
+        <div className="section2-home-page home-section2-container scroll-sections">
           <div className="home-section2-heading">
             <h1>Create a perfect ecosystem for your business</h1>
           </div>
@@ -41,10 +20,10 @@ const Herosection = () => {
               environment for entrepreneurs to grow their businesses.</p>
           </div>
         </div>
-        <div data-aos="fade-left" className="scroll-sections">
+        <div className="scroll-sections">
           <ScrollAnimation />
         </div>
-        <div data-aos="fade-right" className="scroll-sections" style={{backgroundColor:"black"}}>
+        <div className="scroll-sections" style={{backgroundColor:"black"}}>
           <Ourpartner />
           <hr/>
         </div>
