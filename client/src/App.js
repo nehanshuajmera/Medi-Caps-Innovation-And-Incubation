@@ -39,8 +39,8 @@ function App() {
         <Route  path='/Article' element={<Article/> }/>
         <Route  path='/About' element={<About/> }/>
         <Route  path='/Event' element={<Event/> }/>
-        <Route  path='/singleevent' element={<Singleeventpage/> }/>
-        <Route  path='/upcomingevent' element={<Upcomingeventpage/> }/>
+        <Route  path='/singleevent/:id' element={<Singleeventpage/> }/>
+        <Route  path='/upcomingevent/:id' element={<Upcomingeventpage/> }/>
         <Route  path='/generalquery' element={<GeneralQuery/> }/>
         <Route  path='/ideaowner' element={<IdeaOwner/> }/>
         <Route  path='/investor' element={<Investor/> }/>

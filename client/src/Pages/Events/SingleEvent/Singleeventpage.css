@@ -24,6 +24,11 @@
     /* background-color: black;
     color: white; */
 }
+.single-event-section-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Section - 2 ( Description Container ) */
 .single-event-section-2-description-container {
