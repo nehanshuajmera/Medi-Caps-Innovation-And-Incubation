@@ -8,15 +8,13 @@ AOS.init();
 
 export default function Article() {
 
-
-  const Blog = () => {
     const [openform,setopenform]=useState(false);
-    const [sign,setSign] =useState('plus');
+    // const [sign,setSign] =useState('plus');
     
     
-    const [blogs, setblogs] = useState([]);
+    const [blogs, setblogs] = useState();
     const apicall=async ()=>{
-        await axios.get("/blog/allblogs").then((res) => { setblogs(res.data) });
+        await axios.get("blog/allblogs").then((res) => { console.log("Data",res) });
       }
     
       useEffect(() => {
@@ -97,11 +95,11 @@ export default function Article() {
             Read more
           </div>
         </div> */}
-        {blogs.map((item) => {
+        {/* {blogs.map((item) => {
          return <blog id={item._id} title={item.title} description={item.description} images={item.images} authername={item.authername} date={item.date}/>
-        })}
+        })} */}
       </div>
     </div>
   );
 }
-}
+
