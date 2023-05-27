@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import './Event.css';
 import { useNavigate } from 'react-router-dom';
 import Pasteventbox from './Pasteventbox';
-import AOS from 'aos';
-import axios from "axios";
-import 'aos/dist/aos.css';
-AOS.init();
-
+// import axios from "axios";
 
 export default function Event() {
 

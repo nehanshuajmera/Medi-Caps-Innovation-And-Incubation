@@ -1,7 +1,7 @@
 import React /*, { useState } */ from "react";
-import Ourpartner from "../AboutUs/Ourpartner";
-import "./Herosection.css";
-import ScrollAnimation from "./Home/ScrollAnimation";
+import Ourpartner from "./Carosol/Ourpartner";
+import "./Home.css";
+import ScrollAnimation from "./Scroll Animation/ScrollAnimation";
 
 const Herosection = () => {
   return (
