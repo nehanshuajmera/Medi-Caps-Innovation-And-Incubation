@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css';
 import TeamMember from './OurTeam/TeamMember';
 import Advisors from './OurAdvisors/Advisors';
-import Testimonials from "./Home/Testimonials";
+import Testimonials from "./Testimonials/Testimonials";
 
 export default function About() {
   return (
