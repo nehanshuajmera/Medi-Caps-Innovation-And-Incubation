@@ -18,6 +18,7 @@ import Mentor from './Pages/Contact/SingleContactPages/Mentor';
 import StartupFounder from './Pages/Contact/SingleContactPages/StartupFounder';
 import Student from './Pages/Contact/SingleContactPages/Student';
 import DetailblogPage from './Pages/Article/DetailblogPage';
+import Singlecontact from './Pages/Contact/Singlecontact';
 
 function App() {
   
@@ -48,6 +49,7 @@ function App() {
         <Route  path='/startupfounder' element={<StartupFounder/> }/>
         <Route  path='/studentform' element={<Student/> }/>
         <Route  path='/detailsblog/:id' element={<DetailblogPage/> }/>
+        <Route  path='/singlecontact/:id' element={<Singlecontact/> }/>
       </Routes>
       <Footer/>
     </div>
