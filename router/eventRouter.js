@@ -1,13 +1,11 @@
 const router = require("express").Router();
-const event=require("../models/eventModel")
-
-
+const Event=require("../models/eventModel")
 
 // add new event
-router.post("/newevent", async (req, res) => {
-  console.log(req.body);
+router.post("/addevent", async (req, res) => {
+  // console.log(req.body);
     const { images,description,title,authername,date,time,location,numberofspeaker,registrationfee} = req.body;
-    const newevent = new event({
+    const newevent = new Event({
         images,
         description,
         title,
@@ -16,44 +14,37 @@ router.post("/newevent", async (req, res) => {
         time,
         location,
         numberofspeaker,
-        registrationfee
+        registrationfee,
+        likes:0,
+        comments:[]
         });
    
     newevent.save()
-        .then(() => res.json("added a new blog succesfully"))
+        .then(() => res.json("Blog Added Succesfully"))
         .catch((err) => res.status(400).json("Error: " + err));
   });
   
 
-//   delet event
+//   delete event
 router.get("/deleteevent/:id", async (req, res) => {
     const eventId= req.params.id;
     try {
-        let oldevent= await Product.findOneAndDelete({ _id:eventId});
+        let oldevent= await Event.findOneAndDelete({ _id:eventId});
         res.status(200).send(oldevent);
     } catch (err) {
       res.status(200).send(err);
     }
   });
 
-  router.get("/allevents",(req, res) => {
+router.get("/allevents",(req, res) => {
     try {
         // console.log("searching for event")
-        event.find()
+        Event.find()
         .then((user) => res.json(user))
         .catch((err) => res.status(400).json("Error: " + err));
     } catch (err) {
-      res.json(false);
+      res.status(200).send(err);
     }
 });
 
 module.exports=router
-
-
-
-
-
-
-
-
-

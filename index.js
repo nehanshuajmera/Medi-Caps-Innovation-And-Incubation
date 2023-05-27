@@ -16,23 +16,19 @@ app.use(cors({
 );
 app.use(cookieParser());
 
-
 // connect to mongoDB
-  mongoose.set('strictQuery', false)
-  mongoose.connect(process.env.MDB_CONNECT) 
-  .then(()=>{console.log('Mongodb connected succesfully')})
-  .catch(()=>{console.log("check your internet conection")});
-
+// console.log(process.env.MDB_CONNECT)
+mongoose.set('strictQuery', false)
+mongoose.connect(process.env.MDB_CONNECT) 
+.then(()=>{console.log('Mongodb connected')})
+.catch(()=>{console.log("Mongodb Not connected")});
 
 // console.log("udsgfgd")
-
 
 //  set up routes
 app.use("/admin", require("./router/adminRouter"));
 app.use("/blog", require("./router/blogRouter"));
 app.use("/event", require("./router/eventRouter"));
-
-
 
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 
