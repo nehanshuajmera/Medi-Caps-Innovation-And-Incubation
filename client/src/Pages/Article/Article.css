@@ -74,6 +74,9 @@
 
 .blog-box-1-title{
     font-weight: bold;
-    /* line-height: 1; */
+    line-height: 1;
+    /* font-weight: 600; */
+    font-size: 30px;
+    padding: 2px;
     /* letter-spacing: 1; */
 }

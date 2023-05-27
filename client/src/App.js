@@ -17,6 +17,7 @@ import Investor from './Pages/Contact/SingleContactPages/Investor';
 import Mentor from './Pages/Contact/SingleContactPages/Mentor';
 import StartupFounder from './Pages/Contact/SingleContactPages/StartupFounder';
 import Student from './Pages/Contact/SingleContactPages/Student';
+import DetailblogPage from './Pages/Article/DetailblogPage';
 
 function App() {
   
@@ -46,6 +47,7 @@ function App() {
         <Route  path='/mentor' element={<Mentor/> }/>
         <Route  path='/startupfounder' element={<StartupFounder/> }/>
         <Route  path='/studentform' element={<Student/> }/>
+        <Route  path='/detailsblog/:id' element={<DetailblogPage/> }/>
       </Routes>
       <Footer/>
     </div>
