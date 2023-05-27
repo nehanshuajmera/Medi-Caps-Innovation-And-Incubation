@@ -9,14 +9,16 @@ import SingleBlog from "./SingleBlog";
 AOS.init();
 
 export default function Article() {
-
-    const [openform,setopenform]=useState(false);
-    // const [sign,setSign] =useState('plus');
     
-    
-    const [blogs, setblogs] = useState();
+    const [blogs, setblogs] = useState([
+      {images:"https://www.searchenginejournal.com/wp-content/uploads/2022/06/image-s…",
+      description: "In publishing and graphic design, Lorem ipsum is a placeholder text co…",
+      title:"Blog Title",
+      authername:"Vishal Sharma",
+      date:"27 May, 2023",
+      like:0}]);
     const apicall=async ()=>{
-        await axios.get("blog/allblogs").then((res) => { console.log("Data",res) });
+        await axios.get("blog/allblogs").then((res) => { setblogs(res.data) }).catch((err)=>{console.log(err)});
       }
     
       useEffect(() => {
@@ -27,25 +29,14 @@ export default function Article() {
   return (
     <div>
       <div className="blog-section">
-        <Mainblog/>
-  
-
+        <Mainblog img={blogs[0].images} description={blogs[0].description} title={blogs[0].title} date={blogs[0].date}/>
         <div className="blog-section-2-box">
-          <SingleBlog/>
-           <SingleBlog/>
-           <SingleBlog/>
-           <SingleBlog/>
-           <SingleBlog/>
+           {blogs.slice(1,blogs.length).map((item) => {
+                return <SingleBlog img={item.images} description={item.description} title={item.title} date={item.date} />
+           })}
         </div>
         
-        {/* <div className="blog-button">
-          <div className="blog-section-3-readmore scrol-sections">
-            Read more
-          </div>
-        </div> */}
-        {/* {blogs.map((item) => {
-         return <blog id={item._id} title={item.title} description={item.description} images={item.images} authername={item.authername} date={item.date}/>
-        })} */}
+      
       </div>
     </div>
   );
