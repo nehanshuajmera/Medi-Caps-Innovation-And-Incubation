@@ -10,6 +10,7 @@ const EventSchema = new mongoose.Schema({
     location:{type:String,require:true},
     numberofspeaker:{type:String,require:true},
     registrationfee:{type:String,require:true},
+    registrationstatus:{type:String,require:true},
     like:{type:Number,required: true},
     comments:[{
         name:{type:String},
