@@ -1,7 +1,11 @@
 import React from "react";
 import { useEffect, useState } from 'react'
 import "./Article.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import axios from "axios";
+AOS.init();
+
 export default function Article() {
 
     const [openform,setopenform]=useState(false);
