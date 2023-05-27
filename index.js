@@ -6,9 +6,9 @@ const cookieParser = require("cookie-parser");
 const PORT = process.env.PORT || 5000;
 const cors = require("cors");
 
-
 dotenv.config();
 app.use(express.json());
+
 app.use(cors({
     origin: [
        "http://localhost:3000",
@@ -20,10 +20,11 @@ app.use(cookieParser());
 
 // connect to mongoDB
 // console.log(process.env.MDB_CONNECT)
+// connect to mongoDB
 mongoose.set('strictQuery', false)
 mongoose.connect(process.env.MDB_CONNECT) 
 .then(()=>{console.log('Mongodb connected')})
-.catch(()=>{console.log("Mongodb Not connected")});
+.catch((err)=>{console.log("Error in connection",err)});
 
 // console.log("udsgfgd")
 

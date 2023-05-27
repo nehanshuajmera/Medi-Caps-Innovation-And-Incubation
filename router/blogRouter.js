@@ -3,7 +3,7 @@ const Blog=require("../models/blogModel")
 const adminauth=require("../middleware/adminauth");
 
 // add new blog
-router.post("/newblog",adminauth, async (req, res) => {
+router.post("/addblog",adminauth, async (req, res) => {
     const { images,description,title,authername,date} = req.body;
     const newblog = new Blog({
         images,
