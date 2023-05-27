@@ -44,4 +44,14 @@ router.get("/allblogs", (req, res) => {
     }
 });
 
+router.get("/singleblog/:id", (req, res) => {
+    // console.log(req.params.id)
+    try {
+        Blog.findById(req.params.id)
+        .then((blg) => res.json(blg))
+        .catch((err) => res.status(400).json("Error: " + err));
+    } catch (err) {
+      res.status(200).send(err);
+    }
+});
 module.exports=router
