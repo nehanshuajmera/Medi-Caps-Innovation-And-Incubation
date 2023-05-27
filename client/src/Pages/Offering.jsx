@@ -1,11 +1,7 @@
 import React from "react";
 import "./Offering.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
 
 export default function Offering() {
-
   return (
     <div className="offering-main-container ">
 
