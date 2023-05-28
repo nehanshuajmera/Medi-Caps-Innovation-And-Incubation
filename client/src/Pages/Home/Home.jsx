@@ -2,12 +2,13 @@ import React /*, { useState } */ from "react";
 import Ourpartner from "./Carosol/Ourpartner";
 import "./Home.css";
 import ScrollAnimation from "./Scroll Animation/ScrollAnimation";
+import MainContainer from "./MainContainer";
 
 const Herosection = () => {
   return (
     <>
       <div className="home-section-container scroll-sections">
-        
+        {/* <MainContainer/> */}
         <div className="section2-home-page home-section2-container scroll-sections">
           <div className="home-section2-heading">
             <h1>Create a perfect ecosystem for your business</h1>
