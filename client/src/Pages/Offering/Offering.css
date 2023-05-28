@@ -143,6 +143,7 @@
  /* border: 1px solid green; */
 }
 .c-4-l-name{
+ cursor: pointer;
  text-align: center;
  padding: 35px;
  font-weight: bold;

@@ -8,7 +8,7 @@ const Herosection = () => {
   return (
     <>
       <div className="home-section-container scroll-sections">
-        {/* <MainContainer/> */}
+        <MainContainer/>
         <div className="section2-home-page home-section2-container scroll-sections">
           <div className="home-section2-heading">
             <h1>Create a perfect ecosystem for your business</h1>

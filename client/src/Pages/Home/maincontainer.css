@@ -1,0 +1,22 @@
+.main-section{
+    height: 100vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+.main-section-right{
+    width: 40%;
+}
+.main-section-left{
+    width: 40%;
+    text-align: center;
+}
+.home-svg{
+    background-color: darkgray;
+    height: 60vh;
+    width: 60vh;
+    padding: 20vh;
+    border-radius: 125%;
+}

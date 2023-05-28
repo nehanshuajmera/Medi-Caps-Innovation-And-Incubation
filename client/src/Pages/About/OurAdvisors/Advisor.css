@@ -2,7 +2,8 @@
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
   padding-top: 10vh;
-  background-color: #000000;
+  background-color: #fff;
+  /* background-color: #000000; */
 }
 
 .zl-staff-items {
