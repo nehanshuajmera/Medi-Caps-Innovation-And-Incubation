@@ -4,7 +4,6 @@ import "./Offering.css";
 export default function Offering() {
   return (
     <div className="offering-main-container ">
-
       {/* Section - 1 */}
       <div className="offering-section-1-container scroll-sections">
         <div className="offering-section-1-image">
@@ -32,86 +31,67 @@ export default function Offering() {
       {/* Section - 2 */}
       <div className="offering-section-2-container scroll-sections">
         <div className="offering-section-2-content">
-          <p>Our goal is to set up each MII project with a network, community, legal instruments, and business management toolkit sufficient for solving very global challenges</p>
+          <p>
+            Our goal is to set up each MII project with a network, community,
+            legal instruments, and business management toolkit sufficient for
+            solving very global challenges
+          </p>
         </div>
       </div>
 
       {/* Section - 3 */}
       <div className="offering-section-3-container scroll-sections">
         <div className="offering-benifit-item-container1">
-          <div className="benifit-item-number">
-            01
-          </div>
-          <div className="benifit-item-name">
-          Mentoring
-          </div>
+          <div className="benifit-item-number">01</div>
+          <div className="benifit-item-name">Mentoring</div>
         </div>
         <div className="offering-benifit-item-container1">
-          <div className="benifit-item-number">
-            02
-          </div>
-          <div className="benifit-item-name">
-          Seed-Fund Investment
-          </div>
+          <div className="benifit-item-number">02</div>
+          <div className="benifit-item-name">Seed-Fund Investment</div>
         </div>
         <div className="offering-benifit-item-container1">
-          <div className="benifit-item-number">
-            03
-          </div>
-          <div className="benifit-item-name">
-          Access to Events
-          </div>
+          <div className="benifit-item-number">03</div>
+          <div className="benifit-item-name">Access to Events</div>
         </div>
         <div className="offering-benifit-item-container1">
-          <div className="benifit-item-number">
-            04
-          </div>
-          <div className="benifit-item-name">
-            Co-Working
-          </div>
+          <div className="benifit-item-number">04</div>
+          <div className="benifit-item-name">Co-Working</div>
         </div>
         <div className="offering-benifit-item-container1">
-          <div className="benifit-item-number">
-            05
-          </div>
-          <div className="benifit-item-name">
-            HR Access
-          </div>
+          <div className="benifit-item-number">05</div>
+          <div className="benifit-item-name">HR Access</div>
         </div>
         <div className="offering-benifit-item-container1">
-          <div className="benifit-item-number">
-            06
-          </div>
-          <div className="benifit-item-name">
-            Interns
-          </div>
+          <div className="benifit-item-number">06</div>
+          <div className="benifit-item-name">Interns</div>
         </div>
         <div className="offering-benifit-item-container1">
-          <div className="benifit-item-number">
-            07
-          </div>
-          <div className="benifit-item-name">
-            Research Support
-          </div>
+          <div className="benifit-item-number">07</div>
+          <div className="benifit-item-name">Research Support</div>
         </div>
         <div className="offering-benifit-item-container1">
-          <div className="benifit-item-number">
-            08
-          </div>
-          <div className="benifit-item-name">
-            Business Plan Development
-          </div>
+          <div className="benifit-item-number">08</div>
+          <div className="benifit-item-name">Business Plan Development</div>
         </div>
         <div className="offering-benifit-item-container1">
-          <div className="benifit-item-number">
-            09
-          </div>
-          <div className="benifit-item-name">
-            Consulting
-          </div>
+          <div className="benifit-item-number">09</div>
+          <div className="benifit-item-name">Consulting</div>
         </div>
       </div>
-
+      <div className="offering-container-4">
+        <div className="c-4-left">
+          <div className="c-4-l-name">Mentoring</div>
+          <div className="c-4-l-name">Seed-Fund Investment</div>
+          <div className="c-4-l-name">Access to Events</div>
+          <div className="c-4-l-name">Co-Working</div>
+          <div className="c-4-l-name">HR Access</div>
+          <div className="c-4-l-name">Interns</div>
+          <div className="c-4-l-name">Research Support</div>
+          <div className="c-4-l-name">Business Plan Development</div>
+          <div className="c-4-l-name">Consulting</div>
+        </div>
+        <div className="c-4-right"></div>
+      </div>
       {/* <div className="offering-section-3 scroll-sections">
         <h3 className="offering-section-3-heading">Incubation</h3>
         <div className="offering-section-3-layout">
@@ -183,6 +163,6 @@ export default function Offering() {
           </div>
         </div>
       </div> */}
-    </div >
+    </div>
   );
 }
