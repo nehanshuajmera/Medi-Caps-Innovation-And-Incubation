@@ -19,6 +19,7 @@ import StartupFounder from './Pages/Contact/SingleContactPages/StartupFounder';
 import Student from './Pages/Contact/SingleContactPages/Student';
 import DetailblogPage from './Pages/Article/DetailblogPage';
 import Singlecontact from './Pages/Contact/Singlecontact';
+import AdminPanel from './Admin/AdminPanel';
 
 function App() {
   
@@ -50,6 +51,7 @@ function App() {
         <Route  path='/studentform' element={<Student/> }/>
         <Route  path='/detailsblog/:id' element={<DetailblogPage/> }/>
         <Route  path='/singlecontact/:id' element={<Singlecontact/> }/>
+        <Route  path='/mii-admin' element={<AdminPanel/> }/>
       </Routes>
       <Footer/>
     </div>

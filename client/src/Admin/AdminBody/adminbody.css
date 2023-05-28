@@ -1,0 +1,23 @@
+.admin-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.single-admin-option{
+    margin: 10px;
+    background-color: #999;
+    padding: 20px 40px;
+    border-radius: 8%;
+}
+.single-admin-option:hover{
+    background-color: #666;
+    cursor: pointer;
+}
+.single-admin-option h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}

@@ -18,5 +18,15 @@ router.post("/", async (req, res) => {
         .catch((err) => res.status(400).json("Error: " + err));
   });
   
+  router.get("/allquery", (req, res) => {
+    try {
+        // console.log("searching for blogs")
+        Contact.find()
+        .then((blg) => res.json(blg))
+        .catch((err) => res.status(400).json("Error: " + err));
+    } catch (err) {
+      res.status(200).send(err);
+    }
+  });
 
 module.exports=router
