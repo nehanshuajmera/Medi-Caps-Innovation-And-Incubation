@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Singleblog(props) {
   const deleteblg=async ()=>{
-    await axios.get(`/blog/deleteblog/${props.id}`).then((res) => { alert(res.data) });
+    await axios.get(`/blog/deleteblog/${props.id}`).then((res) => {  alert("Deleted Sucessfully") });
   }
   return (
     <>

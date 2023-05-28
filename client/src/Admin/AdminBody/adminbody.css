@@ -21,3 +21,24 @@
     color: #fff;
     text-align: center;
 }
+
+.nav-bar{
+   
+    height: 4rem;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.nav-link{
+    padding: 10px;
+}
+.left-align{
+    display: flex;
+    align-items: center;
+}
+.right-align{
+    display: flex;
+    align-items: center;
+}

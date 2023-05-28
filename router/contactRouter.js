@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const Contact=require("../models/contactModel")
+const adminauth=require("../middleware/adminauth");
 
 router.post("/", async (req, res) => {
   // console.log(req.body);
@@ -18,7 +19,7 @@ router.post("/", async (req, res) => {
         .catch((err) => res.status(400).json("Error: " + err));
   });
   
-  router.get("/allquery", (req, res) => {
+  router.get("/allquery",adminauth, (req, res) => {
     try {
         // console.log("searching for blogs")
         Contact.find()
