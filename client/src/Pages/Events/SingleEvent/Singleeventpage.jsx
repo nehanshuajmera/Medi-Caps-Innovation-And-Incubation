@@ -1,62 +1,89 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Singleeventpage.css'
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 // import { NavLink } from 'react-router-dom'
 export default function Singleeventpage() {
+  const { id } = useParams();
+  const [event, setevent] = useState(
+      {
+        images:"",
+        description:"",
+        title:"",
+        authername:"",
+        date:"",
+        time:"",
+        location:"",
+        numberofspeaker:"",
+        registrationfee:"",
+        like:0,
+        registrationstatus:"ongoing",
+        comments:[]
+      });
+    const apicall=async ()=>{
+        await axios.get(`/event/singleevent/${id}`).then((res) => { setevent(res.data) }).catch((err)=>{console.log(err)});
+      }
+    
+      useEffect(() => {
+        apicall();
+      }, [])
+
   return (
     <div className='single-event-main-container scroll-sections'>
 
       {/* Section - 1 */}
 
       <div className="single-event-section-1">
-        <img className='single-event-image-one' src="./images/single-event-image.jpg" alt="" />
+        <img className='single-event-image-one' src={event.images} alt="" />
       </div>
 
       {/* Section - 2 */}
 
       <div className="single-event-section-2-container">
         <div className="single-event-section-2-description-container">
-          <h5 className="single-event-section-2-description-heading">Conference on Inovation And Incubation</h5>
-          <p className="single-event-section-2-description-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil vero error placeat beatae vel, quae fugiat, illo maiores quo aliquam consectetur. Aliquam atque, distinctio eum numquam nisi, optio itaque adipisci esse exercitationem obcaecati nesciunt iste.</p>
+          <h5 className="single-event-section-2-description-heading">{event.title}</h5>
+          <p className="single-event-section-2-description-paragraph">{event.description}</p>
         </div>
         <div className="single-event-section-2-data-container">
 
           {/* Item - 1 */}
           <div className="section-2-small-data-items">
             <div className="small-data-items-img">
-              <img style={{ width: '80px' }} src="./images/date-event.png" alt="" />
+              <img style={{ width: '80px' }} src="../images/date-event.png" alt="" />
             </div>
             <div className="small-data-items-text">
               <h5>Date</h5>
-              <p>05 November, 2022</p>
+              <p>{event.date}</p>
+              <p>{event.time}</p>
             </div>
           </div>
 
           {/* Item - 2 */}
           <div className="section-2-small-data-items">
             <div className="small-data-items-img">
-              <img style={{ width: '50px' }} src="./images/location-event.png" alt="" />
+              <img style={{ width: '50px' }} src="../images/location-event.png" alt="" />
             </div>
             <div className="small-data-items-text">
               <h5>Location</h5>
-              <p>Medi-Caps University</p>
+              <p>{event.location}</p>
             </div>
           </div>
 
           {/* Item - 3 */}
           <div className="section-2-small-data-items">
             <div className="small-data-items-img">
-              <img style={{ width: '60px' }} src="./images/speaker-event.png" alt="" />
+              <img style={{ width: '60px' }} src="../images/speaker-event.png" alt="" />
             </div>
             <div className="small-data-items-text">
               <h5>Speakers</h5>
-              <p>8 Professional Speakers</p>
+              <p>{event.numberofspeaker} Professional Speakers</p>
             </div>
           </div>
 
           {/* Item - 4 */}
           <div className="section-2-small-data-items">
             <div className="small-data-items-img">
-              <img style={{ width: '60px' }} src="./images/participants-event.png" alt="" />
+              <img style={{ width: '60px' }} src="../images/participants-event.png" alt="" />
             </div>
             <div className="small-data-items-text">
               <h5>Participants</h5>
@@ -88,7 +115,7 @@ export default function Singleeventpage() {
           </div>
           <div className="single-sponsor-image">
             <div className="single-event-sponsor-img">
-              <img src="./images/netflix.png" alt="" />
+              <img src="../images/netflix.png" alt="" />
             </div>
             <div className="single-event-sponsor-img">
               <img src="./images/tcs-logo.png" alt="" />

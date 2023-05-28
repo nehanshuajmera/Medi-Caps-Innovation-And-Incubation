@@ -3,6 +3,7 @@ const Event=require("../models/eventModel")
 const adminauth=require("../middleware/adminauth");
 
 // add new event
+
 router.post("/addevent",adminauth, async (req, res) => {
   // console.log(req.body);
     const { images,description,title,authername,date,time,location,numberofspeaker,registrationfee} = req.body;
@@ -16,7 +17,8 @@ router.post("/addevent",adminauth, async (req, res) => {
         location,
         numberofspeaker,
         registrationfee,
-        likes:0,
+        like:0,
+        registrationstatus:"ongoing",
         comments:[]
         });
    
@@ -42,6 +44,17 @@ router.get("/allevents",(req, res) => {
         // console.log("searching for event")
         Event.find()
         .then((user) => res.json(user))
+        .catch((err) => res.status(400).json("Error: " + err));
+    } catch (err) {
+      res.status(200).send(err);
+    }
+});
+
+router.get("/singleevent/:id", (req, res) => {
+    // console.log(req.params.id)
+    try {
+        Event.findById(req.params.id)
+        .then((blg) => res.json(blg))
         .catch((err) => res.status(400).json("Error: " + err));
     } catch (err) {
       res.status(200).send(err);

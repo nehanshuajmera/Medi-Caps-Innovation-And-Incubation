@@ -8,6 +8,7 @@ router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
     // console.log(req.body)
+    // console.log(req.body)
     if (!email || !password)
       return res
         .status(400)
@@ -19,7 +20,7 @@ router.post("/login", async (req, res) => {
       return res.status(401).json({ errorMessage: "Wrong cradentials." });
 
     const passwordCorrect = await bcrypt.compare(password,existingUser.pass);
-    console.log(passwordCorrect)
+    // console.log(passwordCorrect)
     if (!passwordCorrect)
       return res.status(401).json({ errorMessage: "Wrong email or password." });
    
