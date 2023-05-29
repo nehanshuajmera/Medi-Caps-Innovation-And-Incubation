@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const Singleevent = (props) => {
     const deleteevent=async ()=>{
-        await axios.get(`/event/deleteevent/${props.id}`).then((res) => { alert(res.data) });
+        await axios.get(`/event/deleteevent/${props.id}`).then((res) => { alert("Deleted Sucessfully") });
       }
   return (
     <div>

@@ -13,7 +13,7 @@ export default function TeamMember() {
           <SingleTeamMember img={"https://media.licdn.com/dms/image/C5603AQHR2TFt3o4lGw/profile-displayphoto-shrink_800_800/0/1517272135477?e=1686182400&v=beta&t=gecMvwsEc6LmkhZ2baoPyRU0D7NQaI2b-YP75RYkScc"} name={"Prof. Dilip K. Patnaik "} desc={"Vice Chancellor"}
             content={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sapiente, rem fugiat, distinctio vitae, quod dolores cum obcaecati voluptatibus a porro nisi beatae saepe
             , a leading crypto VC and strategic advisory firm.`} contact={"https://www.linkedin.com/in/prof-dilip-k-patnaik-28339b105/"} />
-          <SingleTeamMember img={"https://media.licdn.com/dms/image/C4D03AQFulEBrLcANjg/profile-displayphoto-shrink_200_200/0/1661943850018?e=1686182400&v=beta&t=SqWTeBRMNTDLG8igqrjNfW7bfobs9Atip8hn_MV9110"} name={"Arnav Mishra "} desc={"CEO at MII Foundation"}
+          <SingleTeamMember img={"https://media.licdn.com/dms/image/D4E03AQFx8MAPSQNJeg/profile-displayphoto-shrink_800_800/0/1683177196896?e=1691020800&v=beta&t=7nZ7MS9nrEliJwoJN68PtTESvZ1bwu3-IH8sGvXOioA"} name={"Arnav Mishra "} desc={"CEO at MII Foundation"}
             content={`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sapiente, rem fugiat, distinctio vitae, quod dolores cum obcaecati voluptatibus a porro nisi beatae saepe
             , a leading crypto VC and strategic advisory firm.`} contact={"https://www.linkedin.com/in/arnavm/"} />
           <hr />
