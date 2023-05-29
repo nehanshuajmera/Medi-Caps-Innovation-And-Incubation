@@ -4,9 +4,9 @@
 }
 
 .blog-section-1-box {
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0 150px;
-    padding-top: 10vh;
+    /* padding-top: 10vh; */
     margin: 0 auto;
     display: flex;
     align-items: center;

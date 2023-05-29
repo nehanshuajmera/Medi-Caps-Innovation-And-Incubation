@@ -28,12 +28,12 @@ export default function Offering() {
 <div className='main-section'>
       
       <div className='main-section-right'>
-        <div className='home-svg'>
+        <div className='offering-svg'>
       <svg 
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
-            width={400}
+            width={150}
             // height="2416.225475370842"
             viewBox="0 0 3300 2416.225475370842"
           >
@@ -57,12 +57,13 @@ export default function Offering() {
               </g>
             </g>
           </svg>
+          <h3 style={{fontSize:'30px'}}>Offers two main services</h3>
           </div>
       </div>
       <div className='main-section-left'>
       <div className="section-1-offering-heading1">
-            <h3>MII Foundation</h3>
-            <h3>offers two main services</h3>
+            {/* <h3>MII Foundation</h3> */}
+            {/* <h3>Offers two main services</h3> */}
           </div>
           <div className="section-1-offering-heading2">
             <div className="offering-section-1-sub-heading">

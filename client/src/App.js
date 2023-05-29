@@ -35,7 +35,7 @@ function App() {
     <div className='scroller'>
       <Header/>
       <Routes>
-        {/* <Route exact path='/' element={<Home/> }/> */}
+        <Route exact path='/' element={<Home/> }/>
         <Route  path='/contact' element={<Contact/> }/>
         <Route  path='/Offering' element={<Offering/> }/>
         <Route  path='/Article' element={<Article/> }/>
@@ -53,7 +53,7 @@ function App() {
         <Route  path='/singlecontact/:id' element={<Singlecontact/> }/>
         <Route  path='/mii-admin' element={<AdminPanel/> }/>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

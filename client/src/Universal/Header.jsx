@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <div className="navbar">
       <div className="header">
-        {display ? <div className="navbar-items">
+        {display ? <div className="navbar-items-left">
           <div className="left-items">
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink>
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
@@ -40,7 +40,7 @@ export default function Header() {
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               version="1.1"
-              width={65}
+              width={130}
               // height="24"
               viewBox="0 0 3300 2416.225475370842"
             >
@@ -67,13 +67,15 @@ export default function Header() {
             {/* </NavLink> */}
           </a>
         </div>
-        {display ? <div className="navbar-items">
+        {display ? <div className="navbar-items-right">
           <div className="right-items">
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Article">Blogs</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">Event</NavLink>
+          <NavLink to='https://www.instagram.com/miifoundation.in/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
+          <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
+          <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
+          <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
           </div>
           <div className="right-contact">
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Contact" >Contact</NavLink>
+            <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "" })} to="/Contact" >Contact</NavLink>
           </div>
         </div> : <></>}
       </div>
