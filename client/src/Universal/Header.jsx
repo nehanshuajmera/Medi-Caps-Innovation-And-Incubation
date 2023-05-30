@@ -69,7 +69,7 @@ export default function Header() {
         </div>
         {display ? <div className="navbar-items-right">
           <div className="right-items">
-          <NavLink to='https://www.instagram.com/miifoundation.in/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
+          <NavLink to='https://www.instagram.com/its_me_ajmeranehanshu/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
           <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
           <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
           <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
