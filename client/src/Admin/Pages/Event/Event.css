@@ -141,3 +141,8 @@ p>i{
     font-size: large;
     color: #9C27B0;
 }   
+
+.event-edit input{
+    margin: 2%;
+    padding: 1%;
+}

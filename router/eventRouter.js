@@ -61,4 +61,16 @@ router.get("/singleevent/:id", (req, res) => {
     }
 });
 
+router.post("/updateevent/:id",adminauth, (req, res) => {
+  try {
+      // console.log("Events Updated",req.params.id)
+       const {images, description,title,authername,date,time,location,numberofspeaker,registrationfee} = req.body;
+      Event.findOneAndUpdate({_id:req.params.id},{images, description,title,authername,date,time,location,numberofspeaker,registrationfee})
+      .then((evt) => res.json(evt))
+      .catch((err) => res.status(400).json("Error: " + err));
+  } catch (err) {
+    res.status(200).send(err);
+  }
+});
+
 module.exports=router

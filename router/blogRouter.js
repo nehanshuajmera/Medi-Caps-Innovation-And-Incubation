@@ -57,6 +57,7 @@ router.get("/singleblog/:id", (req, res) => {
 
 router.post("/updateblog/:id",adminauth, (req, res) => {
     try {
+        // console.log("Blog Updated",req.params.id)
          const {images,description,title,authername,date} = req.body;
         Blog.findOneAndUpdate({_id:req.params.id},{images,description,authername,title,date})
         .then((blg) => res.json(blg))
@@ -65,4 +66,5 @@ router.post("/updateblog/:id",adminauth, (req, res) => {
       res.status(200).send(err);
     }
 });
+
 module.exports=router

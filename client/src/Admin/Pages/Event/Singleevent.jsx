@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios';
+import EditEvents from './EditEvents';
 
 const Singleevent = (props) => {
     const deleteevent=async ()=>{
@@ -24,6 +25,7 @@ const Singleevent = (props) => {
             </div>
             <i className="fa fa-trash event-delete-btn" aria-hidden="true"onClick={()=>{deleteevent()}}/>
           </div>
+          <EditEvents props={props}/>
         </div>
     </div>
   )
