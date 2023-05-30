@@ -9,6 +9,7 @@
 }
 
 img{
+
     max-width: 100%;
 }
 .event-page-hero .text-section{
@@ -25,7 +26,10 @@ img{
     text-align: center;
     width: 48%;
 }
-
+.event-page-hero .img-section img{
+    border-radius: 15px;
+    width: 600px;
+}   
 .button-event{
     margin: 20px;
 }
@@ -63,7 +67,8 @@ img{
 }
 
 .singlepastevent img{
-    
+    width: 400px;
+    height: 200px;
     padding: 10px;
     border-radius: 15px;
 }
