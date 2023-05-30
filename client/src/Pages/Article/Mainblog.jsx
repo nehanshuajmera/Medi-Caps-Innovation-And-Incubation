@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function Mainblog(props) {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className='main-blog-section'>
         <div onClick={()=>{navigate(`/detailsblog/${props.id}`)}} style={{cursor:"pointer"}} className="blog-section-1-box scroll-sections">
           <div className="blog-section-1-left-box">
             <img src={props.img} alt="dfjfj" />
