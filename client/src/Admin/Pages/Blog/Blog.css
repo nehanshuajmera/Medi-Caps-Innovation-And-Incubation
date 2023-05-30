@@ -65,6 +65,10 @@
     min-height: 80%;
     
 }
+.blog-img img{
+    width: 3000px;
+    height: 250px;
+}
 .blog-content{
     padding: 20px;
 }
