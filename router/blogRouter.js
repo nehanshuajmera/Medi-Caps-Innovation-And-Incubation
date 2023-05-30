@@ -54,4 +54,15 @@ router.get("/singleblog/:id", (req, res) => {
       res.status(200).send(err);
     }
 });
+
+router.post("/updateblog/:id",adminauth, (req, res) => {
+    try {
+         const {images,description,title,authername,date} = req.body;
+        Blog.findOneAndUpdate({_id:req.params.id},{images,description,authername,title,date})
+        .then((blg) => res.json(blg))
+        .catch((err) => res.status(400).json("Error: " + err));
+    } catch (err) {
+      res.status(200).send(err);
+    }
+});
 module.exports=router

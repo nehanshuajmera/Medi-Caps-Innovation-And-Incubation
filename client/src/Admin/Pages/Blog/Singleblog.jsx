@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react'
+import EditBlog from './EditBlog';
 
 export default function Singleblog(props) {
   const deleteblg=async ()=>{
@@ -25,6 +26,7 @@ export default function Singleblog(props) {
           </div> 
         </div>
       </div>
+      <EditBlog/>
     </>
   )
 }

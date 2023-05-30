@@ -29,7 +29,8 @@
 }
 
 .home-svg {
-    background-color: darkgray;
+    background-color: black;
+    opacity: 0.8;
     display: flex;
     /* border: 2px solid black; */
     height: 60vh;
