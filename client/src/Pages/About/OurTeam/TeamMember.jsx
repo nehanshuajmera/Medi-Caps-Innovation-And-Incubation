@@ -3,7 +3,7 @@ import SingleTeamMember from './SingleTeam'
 import "./team.css"
 export default function TeamMember() {
   return (
-    <div className='our-team-section-aboutus'>
+    <div className='our-team-section-aboutus' style={{backgroundColor:"black"}}>
       <div style={{ backgroundColor: "black", color: "white", padding: "10px"}}>
         <h1 style={{ textAlign: "center", margin: "10px" }}>Our Team</h1>
         <div className="zl-staff-items " >

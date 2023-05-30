@@ -26,7 +26,7 @@ export default function Singleblog(props) {
           </div> 
         </div>
       </div>
-      <EditBlog/>
+      <EditBlog props={props}/>
     </>
   )
 }
