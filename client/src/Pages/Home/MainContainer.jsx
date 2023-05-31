@@ -12,7 +12,7 @@ export default function MainContainer() {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
-            onMouseEnter={()=>{}}
+            onMouseEnter={() => { }}
             // width={500}
             // height="2416.225475370842"
             viewBox="0 0 3300 2416.225475370842"
@@ -40,9 +40,14 @@ export default function MainContainer() {
         </div>
       </div>
       <div className='main-section-left'>
-        <h1>Medi-Caps</h1>
-        <h1><span>I</span>NNOVATION and <span>I</span>NCUBATION Foundation</h1>
-        <p>"Unlock your business potential"</p>
+        <div className="main-section-left-upper">
+          <h1>Medi-Caps</h1>
+          <h1>INNOVATION and INCUBATION Foundation</h1>
+          <p>"Unlock your business potential"</p>
+        </div>
+        <div className="main-section-left-down">
+          
+        </div>
       </div>
     </div>
   )

@@ -16,16 +16,30 @@
 }
 
 .main-section-left {
-    /* border: 1px solid red; */
     letter-spacing: 1px;
     font-family: 'Inter', sans-serif;
     width: 55%;
-    font-size: 25px;
+    height: 60vh;
     text-align: center;
+    
+}
+.main-section-left-upper{
+    margin-bottom: 5px;
 }
 
-.main-section-left span {
-    color: rgb(0, 0, 0);
+.main-section-left-upper h1{
+    font-size: 40.95px;
+    font-weight: 400;
+}
+
+.main-section-left-upper p{
+    font-size: 25.74px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.main-section-left-down{
+    margin-top: 5px;
 }
 
 .home-svg {
