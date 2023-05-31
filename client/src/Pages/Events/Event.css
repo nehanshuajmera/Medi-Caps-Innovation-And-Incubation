@@ -1,4 +1,6 @@
 .event-page-hero{
+    font-family: 'Inter', sans-serif;
+
     /* padding-top: 12vh; */
     /* height: 80vh; */
     width: 100%;
@@ -12,12 +14,16 @@ img{
     max-width: 100%;
 }
 .event-page-hero .text-section{
+    font-family: 'Inter', sans-serif;
+
     /* height: 50vh; */
     text-align: center;
     padding: 80px;
     width: 48%;
 }
 .event-page-hero .text-section h1{
+    font-family: 'Inter', sans-serif;
+
     margin: 13px;
 }
 .event-page-hero .img-section{
