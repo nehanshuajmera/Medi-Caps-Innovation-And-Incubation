@@ -2,6 +2,7 @@ import React from 'react'
 import './maincontainer.css'
 
 export default function MainContainer() {
+  // const [first, setfirst] = useState(second)
   return (
     <div className='main-section'>
 
@@ -11,6 +12,7 @@ export default function MainContainer() {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
+            onMouseEnter={()=>{}}
             // width={500}
             // height="2416.225475370842"
             viewBox="0 0 3300 2416.225475370842"

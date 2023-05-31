@@ -1,12 +1,12 @@
-import React, {  useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from "react-router-dom";
 import './Header.css'
 export default function Header() {
   const [display, setDisplay] = useState(window.innerWidth > 1024 ? true : false);
   const [menue, setmenue] = useState(false);
-  useEffect(()=>{
+  useEffect(() => {
     setmenue(false)
-  },[])
+  }, [])
   return (
     <div className="navbar">
       <div className="header">
@@ -18,8 +18,8 @@ export default function Header() {
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Article">Blogs</NavLink>
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">Event</NavLink>
           </div>
-        </div> : <div className='handburg' onClick={()=>{setmenue(!menue)}}>
-            {!menue? <i class="fa-solid fa-bars-staggered fa-5x"></i>:<i class="fa-solid fa-xmark fa-5x"></i>}
+        </div> : <div className='handburg' onClick={() => { setmenue(!menue) }}>
+          {!menue ? <i class="fa-solid fa-bars-staggered fa-5x"></i> : <i class="fa-solid fa-xmark fa-5x"></i>}
         </div>}
         <div className="navbar-logo">
           <a href="/">
@@ -55,33 +55,33 @@ export default function Header() {
         </div>
         {display ? <div className="navbar-items-right">
           <div className="right-items">
-          <NavLink to='https://www.instagram.com/its_me_ajmeranehanshu/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
-          <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
-          <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
-          <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
+            <NavLink to='https://www.instagram.com/miifoundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
+            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
+            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
+            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
           </div>
           <div className="right-contact">
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "" })} to="/Contact" >Contact</NavLink>
+            <NavLink to="/Contact" >Contact</NavLink>
           </div>
         </div> : <></>}
       </div>
-      {menue?
-       <div className="navbar-items-for-mobile">
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Offering</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Article">Blogs</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">Event</NavLink>
-            <div>
+      {menue ?
+        <div className="navbar-items-for-mobile">
+          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink>
+          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
+          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Offering</NavLink>
+          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Article">Blogs</NavLink>
+          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">Event</NavLink>
+          <div>
             <NavLink to='https://www.instagram.com/miifoundation.in/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
-          <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
-          <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
-          <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
-            </div>
-            <div className="right-contact">
-            <NavLink style={{color:"#fff"}} to="/Contact" >Contact</NavLink>
+            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
+            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
+            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
           </div>
-        </div>:<></>}
+          <div className="right-contact">
+            <NavLink style={{ color: "#fff" }} to="/Contact" >Contact</NavLink>
+          </div>
+        </div> : <></>}
     </div>
   )
 }
