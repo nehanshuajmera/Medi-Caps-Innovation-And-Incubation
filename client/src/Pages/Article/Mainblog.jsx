@@ -13,7 +13,7 @@ export default function Mainblog(props) {
             <div class="blog-feed-grid-col -right">
               <div class="blog-feed-date">{props.date}</div>
               <div class="blog-feed-title">{props.title}</div>
-              <div class="blog-feed-description">{props.description}</div>
+              <div class="blog-feed-description">{props.description.slice(1,290)}...</div>
             </div>
           </div>
         </div>
