@@ -5,9 +5,9 @@ export default function Mainblog(props) {
   const navigate = useNavigate();
   return (
     <div className='main-blog-section'>
-        <div onClick={()=>{navigate(`/detailsblog/${props.id}`)}} style={{cursor:"pointer"}} className="blog-section-1-box scroll-sections">
+        <div onClick={()=>{navigate(`/detailsblog/${props.id}`)}} style={{cursor:"pointer"}} className="blog-section-1-box">
           <div className="blog-section-1-left-box">
-            <img src={props.img} alt="dfjfj" />
+            <img src={props.img} alt="blog-image" />
           </div>
           <div className="blog-section-1-right-box">
             <div class="blog-feed-grid-col -right">
