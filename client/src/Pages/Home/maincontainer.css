@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap');
+
 .main-section {
+    font-family: 'Inter', sans-serif;
     min-height: 80vh;
     /* margin-top: 10vh; */
     display: flex;
@@ -29,7 +32,7 @@
 
 .main-section-left-upper h1{
     font-size: 40.95px;
-    font-weight: 400;
+    /* font-weight: 300; */
 }
 
 .main-section-left-upper p{
