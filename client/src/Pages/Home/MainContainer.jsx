@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './maincontainer.css'
 
 export default function MainContainer() {
   // const [first, setfirst] = useState(second)
+  const [cnt,setcnt]=useState(0);
+  
+  useEffect(() => {
+    if(cnt!==6221){
+      setcnt(cnt+1);
+    }
+  }, [cnt])
+
+  useEffect(()=>{
+    setcnt(1);
+  },[])
   return (
     <div className='main-section'>
 
@@ -46,7 +57,7 @@ export default function MainContainer() {
           <p>"Unlock your business potential"</p>
         </div>
         <div className="main-section-left-down">
-          
+          <h1>{cnt}</h1>
         </div>
       </div>
     </div>
