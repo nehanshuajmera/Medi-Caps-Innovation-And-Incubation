@@ -44,10 +44,10 @@ export default function Footer() {
             </NavLink>
           </div>
           <div className="navbar-items-footer">
-            <NavLink style={{padding: '5px', margin: '4px 20px', color: '#fff'}} to="/About">About</NavLink>
-            <NavLink style={{padding: '5px', margin: '4px 20px', color: '#fff'}} to="/Offering">Offering</NavLink>
-            <NavLink style={{padding: '5px', margin: '4px 20px', color: '#fff'}} to="/Article">Blogs</NavLink>
-            <NavLink style={{padding: '5px', margin: '4px 20px', color: '#fff'}} to="/Event">Event</NavLink>
+            <NavLink  to="/About">About</NavLink>
+            <NavLink  to="/Offering">Offering</NavLink>
+            <NavLink  to="/Article">Blogs</NavLink>
+            <NavLink  to="/Event">Event</NavLink>
             {/* <NavLink style={{padding: '5px', margin: '4px 12px', color: '#fff'}} to="/Contact">Contact</NavLink> */}
           </div>
         </div>
