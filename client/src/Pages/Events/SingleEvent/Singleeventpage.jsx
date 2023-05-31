@@ -38,14 +38,14 @@ export default function Singleeventpage() {
       </div>
 
       {/* Section - 2 */}
-
-      <div className="single-event-section-2-container">
-        <div className="single-event-section-2-description-container">
+      <div className="single-event-section-2-description-container">
           <h5 className="single-event-section-2-description-heading">{event.title}</h5>
           <p className="single-event-section-2-description-paragraph">{event.description}</p>
         </div>
-        <div className="single-event-section-2-data-container">
 
+      <div className="single-event-section-2-container">
+       
+        <div className="single-event-section-2-data-container">
           {/* Item - 1 */}
           <div className="section-2-small-data-items">
             <div className="small-data-items-img">
@@ -93,39 +93,6 @@ export default function Singleeventpage() {
         </div>
       </div>
       <hr style={{ width: '90%', margin: 'auto' }} />
-
-      {/* Section - 3 */}
-
-      {/* <div className="single-event-section-3-container scroll-sections">
-        <div className="single-event-section-3-description-container">
-          <h5 className="single-event-section-3-description-heading">Bigup to our Sponsors</h5>
-          <p className="single-event-section-3-description-paragraph">
-            For further info about sponsoring, feel free to&nbsp;
-            <NavLink to='/contact'>
-              <span className='single-event-span-link'>Get in Touch</span>
-            </NavLink>
-            &nbsp;with us.
-          </p>
-        </div> */}
-
-        {/* Section - 3 ( Sponsor Shoutout ) */}
-        {/* <div className="single-event-section-3-sponsors">
-          <div className="single-sponsor-heading">
-            <h5>Event Sponsors</h5>
-          </div>
-          <div className="single-sponsor-image">
-            <div className="single-event-sponsor-img">
-              <img src="../images/netflix.png" alt="" />
-            </div>
-            <div className="single-event-sponsor-img">
-              <img src="./images/tcs-logo.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div> */}
-        {/* <hr style={{ width: '90%', margin: 'auto' }} /> */}
-
-        {/* Section - 4 */}
 
         <div className="single-event-section-4-container scroll-sections">
           <div className="section-4-single-event-heading">

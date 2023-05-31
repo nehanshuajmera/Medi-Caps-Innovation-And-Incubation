@@ -11,15 +11,12 @@
     /* padding-top: 10vh; */
 }
 
-/* Section - 1 */
-/* .single-event-section-1{
-    padding-top: 10vh;
-} */
 
-/* Section - 2 */
 .single-event-section-2-container {
     display: flex;
-    flex-flow: column wrap;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    flex-wrap: wrap;
     /* padding: 20px; */
     /* background-color: black;
     color: white; */
@@ -180,7 +177,7 @@
 
 /* Section - 4 */
 .single-event-section-4-container{
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 10vh;
     display: flex;
     flex-flow: column wrap;

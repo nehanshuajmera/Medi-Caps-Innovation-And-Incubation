@@ -26,7 +26,7 @@ export default function Event() {
       })}
       <div className='past-events-section'> 
       <div className='past-event-name-section scroll-sections'>
-        <h1>Past Events</h1>
+        <h1 style={{textAlign:"center"}}>Past Events</h1>
       </div>
       <div className='past-events scroll-sections'>
       {event.map((item) => {
