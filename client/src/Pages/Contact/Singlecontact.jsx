@@ -28,18 +28,19 @@ export default function Singlecontact() {
         await axios.post(`/contactdetails`,contact).then((res) => { alert(res.data) }).catch((err)=>{console.log(err)});
       }
     
+      const [display, setDisplay] = useState(window.innerWidth > 1024 ? true : false);
 
 
   return (
-    <div className='who-form contactCss scroll-sections scroll-sections'>
+    <div className='who-form contactCss'>
     <div className='left'>
     <h1 style={{textAlign:"center"}}>{id}</h1>      
 
-    <button onClick={()=>{apicall()}}>
+    {display ?<button onClick={()=>{apicall()}}>
       <span class="button_top"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> Submit
       </span>
-    </button>
-
+    </button>:<></>}
+    
     </div>
     <div className='right'>
     <input type='text' placeholder='Name' value={contact.name} onChange={handleChange} name="name"/>
@@ -50,6 +51,10 @@ export default function Singlecontact() {
     <input type='text' placeholder='Message' value={contact.message} onChange={handleChange} name="message"/>
     </div>
     
+   {!display ?<button onClick={()=>{apicall()}}>
+      <span class="button_top"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> Submit
+      </span>
+    </button>:<></>}
     
   </div>
   )
