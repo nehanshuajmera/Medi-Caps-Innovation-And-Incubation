@@ -43,6 +43,13 @@
 
 .main-section-left-down{
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-section-left-down h1{
+    margin: 20px;
 }
 
 .home-svg {

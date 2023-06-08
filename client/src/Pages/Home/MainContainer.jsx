@@ -57,7 +57,9 @@ export default function MainContainer() {
           <p style={{ fontWeight: '300', fontFamily: 'Inter'}}>"Unlock your business potential"</p>
         </div>
         <div className="main-section-left-down">
-          <h1>{cnt}</h1>
+          <h1>Participants <div>{cnt}+</div></h1>
+          <h1>Registration <div>{cnt}+</div></h1>
+          <h1>Startup <div>{cnt}+</div></h1>
         </div>
       </div>
     </div>
