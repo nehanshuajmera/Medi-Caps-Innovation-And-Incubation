@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from "react-router-dom";
 import './Header.css'
+import { useLocation } from "react-router-dom";
 export default function Header() {
   const [display, setDisplay] = useState(window.innerWidth > 1024 ? true : false);
   const [menue, setmenue] = useState(false);
+  const { pathname } = useLocation();
+
   useEffect(() => {
-    setmenue(false)
-  }, [])
+    setmenue(false);
+  }, [pathname]);
+  
   return (
     <div className="navbar">
       <div className="header">
