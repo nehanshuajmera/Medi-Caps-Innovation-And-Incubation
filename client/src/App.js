@@ -1,22 +1,25 @@
 import './App.css';
 import Header from './Universal/Header';
 import Footer from './Universal/Footer';
-import Home from './Pages/Herosection';
+import Home from './Pages/Home/Home';
 import { Route, Routes, useLocation } from "react-router-dom";
-import Contact from './Pages/Contact';
-import Article from './Pages/Article';
-import Event from './Pages/Event';
-import Offering from './Pages/Offering';
-import About from './Pages/About';
-import Singleeventpage from './SingleEvent/Singleeventpage';
+import Contact from './Pages/Contact/Contact';
+import Article from './Pages/Article/Article';
+import Event from './Pages/Events/Event';
+import Offering from './Pages/Offering/Offering';
+import About from './Pages/About/About';
+import Singleeventpage from './Pages/Events/SingleEvent/Singleeventpage';
 import { useEffect } from 'react';
-import Upcomingeventpage from './SingleEvent/Upcomingeventpage';
-import GeneralQuery from './Pages/Contact/GeneralQuery';
-import IdeaOwner from './Pages/Contact/IdeaOwner';
-import Investor from './Pages/Contact/Investor';
-import Mentor from './Pages/Contact/Mentor';
-import StartupFounder from './Pages/Contact/StartupFounder';
-import Student from './Pages/Contact/Student';
+import Upcomingeventpage from './Pages/Events/SingleEvent/Upcomingeventpage';
+import GeneralQuery from './Pages/Contact/SingleContactPages/GeneralQuery';
+import IdeaOwner from './Pages/Contact/SingleContactPages/IdeaOwner';
+import Investor from './Pages/Contact/SingleContactPages/Investor';
+import Mentor from './Pages/Contact/SingleContactPages/Mentor';
+import StartupFounder from './Pages/Contact/SingleContactPages/StartupFounder';
+import Student from './Pages/Contact/SingleContactPages/Student';
+import DetailblogPage from './Pages/Article/DetailblogPage';
+import Singlecontact from './Pages/Contact/Singlecontact';
+import AdminPanel from './Admin/AdminPanel';
 
 function App() {
   
@@ -38,14 +41,17 @@ function App() {
         <Route  path='/Article' element={<Article/> }/>
         <Route  path='/About' element={<About/> }/>
         <Route  path='/Event' element={<Event/> }/>
-        <Route  path='/singleevent' element={<Singleeventpage/> }/>
-        <Route  path='/upcomingevent' element={<Upcomingeventpage/> }/>
+        <Route  path='/singleevent/:id' element={<Singleeventpage/> }/>
+        <Route  path='/upcomingevent/:id' element={<Upcomingeventpage/> }/>
         <Route  path='/generalquery' element={<GeneralQuery/> }/>
         <Route  path='/ideaowner' element={<IdeaOwner/> }/>
         <Route  path='/investor' element={<Investor/> }/>
         <Route  path='/mentor' element={<Mentor/> }/>
         <Route  path='/startupfounder' element={<StartupFounder/> }/>
         <Route  path='/studentform' element={<Student/> }/>
+        <Route  path='/detailsblog/:id' element={<DetailblogPage/> }/>
+        <Route  path='/singlecontact/:id' element={<Singlecontact/> }/>
+        <Route  path='/mii-admin' element={<AdminPanel/> }/>
       </Routes>
       <Footer/>
     </div>

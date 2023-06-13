@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="footer-pg scroll-sections">
       <div className="footer-main-box">
         <div className="get-in-touch-button">
-          <h1 style={{ letterSpacing: '1px' }}>Want to know more?</h1>
+          <h1 style={{ letterSpacing: '1px', fontSize: '60px' }}>Want to know more?</h1>
           <button>
             <NavLink to='/Contact'><p style={{ letterSpacing: '1px'}}>Get in touch</p></NavLink>
           </button>
@@ -44,15 +44,15 @@ export default function Footer() {
             </NavLink>
           </div>
           <div className="navbar-items-footer">
-            <NavLink style={{padding: '5px', margin: '4px 20px', color: '#fff'}} to="/About">About</NavLink>
-            <NavLink style={{padding: '5px', margin: '4px 20px', color: '#fff'}} to="/Offering">Offering</NavLink>
-            <NavLink style={{padding: '5px', margin: '4px 20px', color: '#fff'}} to="/Article">Blogs</NavLink>
-            <NavLink style={{padding: '5px', margin: '4px 20px', color: '#fff'}} to="/Event">Event</NavLink>
+            <NavLink  to="/About">About</NavLink>
+            <NavLink  to="/Offering">Offering</NavLink>
+            <NavLink  to="/Article">Blogs</NavLink>
+            <NavLink  to="/Event">Event</NavLink>
             {/* <NavLink style={{padding: '5px', margin: '4px 12px', color: '#fff'}} to="/Contact">Contact</NavLink> */}
           </div>
         </div>
         <div className="footer-social-media-links">
-          <NavLink to='' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
+          <NavLink to='https://www.instagram.com/miifoundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
           <NavLink to='' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
           <NavLink to='' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
           <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
