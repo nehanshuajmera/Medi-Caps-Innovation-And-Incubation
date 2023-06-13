@@ -16,7 +16,7 @@ export default function Article() {
     
     const [blogs, setblogs] = useState([]);
     const apicall=async ()=>{
-        await axios.get("/blog/allblogs").then((res) => { setblogs(res.data) });
+        await axios.get(".../backend/blog/allblogs").then((res) => { setblogs(res.data) });
       }
     
       useEffect(() => {
