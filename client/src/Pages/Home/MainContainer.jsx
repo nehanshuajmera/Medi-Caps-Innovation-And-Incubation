@@ -52,15 +52,15 @@ export default function MainContainer() {
       </div>
       <div className='main-section-left'>
         <div className="main-section-left-upper">
-          <h1 style={{ fontWeight: '400', fontFamily: 'Inter'}}>Medi-Caps</h1>
+          <h1 style={{ fontWeight: '400', fontFamily: 'Inter'}}>MEDI-CAPS</h1>
           <h1 style={{ fontWeight: '400', fontFamily: 'Inter'}}>INNOVATION and INCUBATION Foundation</h1>
           <p style={{ fontWeight: '300', fontFamily: 'Inter'}}>"Unlock your business potential"</p>
         </div>
-        <div className="main-section-left-down">
+        {/* <div className="main-section-left-down">
           <h1>Participants <div>{cnt}+</div></h1>
           <h1>Registration <div>{cnt}+</div></h1>
           <h1>Startup <div>{cnt}+</div></h1>
-        </div>
+        </div> */}
       </div>
     </div>
   )

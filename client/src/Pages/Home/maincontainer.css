@@ -2,19 +2,22 @@
 
 .main-section {
     font-family: 'Inter', sans-serif;
-    min-height: 80vh;
+    min-height: 86vh;
     /* margin-top: 10vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
 }
 
 .main-section-right {
     /* border: 1px solid red; */
+    position: fixed;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    min-height: 86vh;
     width: 40%;
 }
 
@@ -23,6 +26,9 @@
     font-family: 'Inter', sans-serif;
     width: 55%;
     height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
     text-align: center;
     
 }
@@ -57,8 +63,8 @@
     /* opacity: 0.8; */
     display: flex;
     /* border: 2px solid black; */
-    height: 60vh;
-    width: 60vh;
+    height: 50vh;
+    width: 50vh;
     padding: 10vh;
     border-radius: 125%;
 }
