@@ -2,8 +2,8 @@
 
 .ourpartner-main-container {
     font-family: 'Inter', sans-serif;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
+    margin: 10vh;
     padding-top: 5vh;
     box-sizing: border-box;
 }
@@ -52,7 +52,7 @@
 }
 
 .home-sec6-start {
-    padding: 38px 180px;
+    padding: 5%;
 }
 
 button.rec-dot {

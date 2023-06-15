@@ -1,33 +1,27 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from "react-router-dom";
 import './Header.css'
+import { useLocation } from "react-router-dom";
 export default function Header() {
   const [display, setDisplay] = useState(window.innerWidth > 1024 ? true : false);
   const [menue, setmenue] = useState(false);
+  const { pathname } = useLocation();
+
   useEffect(() => {
-    setmenue(false)
-  }, [])
+    setmenue(false);
+  }, [pathname]);
+  
   return (
     <div className="navbar">
+      
       <div className="header">
-        {display ? <div className="navbar-items-left">
-          <div className="left-items">
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Offering</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Article">Blogs</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">Event</NavLink>
-          </div>
-        </div> : <div className='handburg' onClick={() => { setmenue(!menue) }}>
-          {!menue ? <i class="fa-solid fa-bars-staggered fa-5x"></i> : <i class="fa-solid fa-xmark fa-5x"></i>}
-        </div>}
-        <div className="navbar-logo">
+      <div className="navbar-logo">
           <a href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               version="1.1"
-              width={130}
+              width={100}
               // height="24"
               viewBox="0 0 3300 2416.225475370842"
             >
@@ -53,25 +47,33 @@ export default function Header() {
             </svg>
           </a>
         </div>
+        {display ? <div className="navbar-items-left">
+          <div className="left-items">
+            {/* <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink> */}
+            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
+            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Services</NavLink>
+            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">MII Community</NavLink>
+  </div>
+        </div> : <div className='handburg' onClick={() => { setmenue(!menue) }}>
+          {!menue ? <i class="fa-solid fa-bars-staggered fa-5x"></i> : <i class="fa-solid fa-xmark fa-5x"></i>}
+        </div>}
         {display ? <div className="navbar-items-right">
-          <div className="right-items">
+          {/* <div className="right-items">
             <NavLink to='https://www.instagram.com/miifoundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
-          </div>
+          </div> */}
           <div className="right-contact">
-            <NavLink to="/Contact" >Contact</NavLink>
+            <NavLink to="/Contact" >Contact Us</NavLink>
           </div>
         </div> : <></>}
       </div>
       {menue ?
         <div className="navbar-items-for-mobile">
-          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink>
-          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
-          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Offering</NavLink>
-          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Article">Blogs</NavLink>
-          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">Event</NavLink>
+      <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
+            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Services</NavLink>
+            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">MII Community</NavLink>
           <div>
             <NavLink to='https://www.instagram.com/miifoundation.in/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
