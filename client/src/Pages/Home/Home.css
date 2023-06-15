@@ -15,58 +15,62 @@
 /* Home Section (second) Container after herosection */
 .section2-home-page {
   background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   /* border: 2px solid red; */
 }
 
 /* Container inside second container */
 .home-section2-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-top: 10vh;
-  /* width: 94%; */
+  /* padding-top: 10vh; */
+  padding: 10vh 18%;
+
   /* border: 2px solid green; */
 }
 
 /* Left container inside section-2-container */
 .home-section2-heading {
-  width: 280px;
+  /* width: 280px; */
+
   margin: 5px;
   padding: 8px;
+  padding-bottom: 50px;
   /* border: 2px solid rgb(22, 30, 22); */
 }
 
 .home-section2-heading h1 {
   color: white;
   /* border-right: 3px dotted #017FE4; */
-  font-size: 35px;
+  font-size: 7vh;
   letter-spacing: 1px;
   line-height: 1.4;
   /* text-align: center; */
   /* padding: 1% 3%; */
 }
 
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
   .home-section2-heading h1 {
     border-right: 3px solid #ffffff;
   }
-}
+} */
 
 /* Right container inside section-2-container */
 .home-section2-content {
-  width: 60%;
+  /* width: 60%; */
   margin: 10px;
   padding: 8px;
 }
 
 .home-section2-content p {
   color: white;
-  font-size: 20px;
+  font-size: 3vh;
   letter-spacing: 1px;
   line-height: 1.3;
   /* text-align: center; */

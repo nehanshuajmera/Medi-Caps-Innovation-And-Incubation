@@ -49,7 +49,7 @@ export default function Header() {
         </div>
         {display ? <div className="navbar-items-left">
           <div className="left-items">
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink>
+            {/* <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink> */}
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Services</NavLink>
             <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">MII Community</NavLink>
@@ -71,12 +71,9 @@ export default function Header() {
       </div>
       {menue ?
         <div className="navbar-items-for-mobile">
-          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink>
-          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
-          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Offering</NavLink>
-          {/* <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Article">Blogs</NavLink> */}
-          {/* <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">Event</NavLink> */}
-          <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">MII Community</NavLink>
+      <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
+            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Services</NavLink>
+            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">MII Community</NavLink>
           <div>
             <NavLink to='https://www.instagram.com/miifoundation.in/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
