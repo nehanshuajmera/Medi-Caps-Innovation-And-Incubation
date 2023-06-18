@@ -59,30 +59,38 @@ export default function ScrollAnimation() {
 })
   return (
     <div className='scroll-animation-homepage'>
-      <div className="scroll-animation-homepage-container"> 
-        <div ref={myref1} className="scroll-animation-homepage-container-content">
-          <h1>Ideate </h1>
-          {/* <i className={`fa-solid fa-1 fa-9x  ${isvisibleOdd?'show-animation':'hide-animation'}`}/> */}
-          <i className={`fa-solid fa-1 fa-9x hidden-i-animation ${isvisible1?'show-i-animation ':''}`}/>
-          {/* <i className={`fa-solid fa-1 fa-9x `}/> */}
+      <div className="scroll-animation-homepage-left">
+        <div className="scroll-animation-homepage-container"> 
+          <div ref={myref1} className="scroll-animation-homepage-container-content">
+            <h1>Ideate </h1>
+            {/* <i className={`fa-solid fa-1 fa-9x  ${isvisibleOdd?'show-animation':'hide-animation'}`}/> */}
+            {/* <i className={`fa-solid fa-1 fa-9x hidden-i-animation ${isvisible1?'show-i-animation ':''}`}/> */}
+            {/* <i className={`fa-solid fa-1 fa-9x `}/> */}
+          </div>
+          <div ref={myref2} className="scroll-animation-homepage-container-content">
+            <h1>Innovate </h1>
+            {/* <i className={`fa-solid fa-2 fa-9x  ${isvisibleEven?'show-animation':'hide-animation'}`}/> */}
+            {/* <i className={`fa-solid fa-2 fa-9x hidden-i-animation ${isvisible2?'show-i-animation ':''}`}/> */}
+          </div>
+          <div ref={myref3} className="scroll-animation-homepage-container-content">
+            <h1>Incubate </h1>
+            {/* <i className={`fa-solid fa-3 fa-9x  ${isvisibleOdd?'show-animation':'hide-animation'}`}/> */}
+            {/* <i className={`fa-solid fa-3 fa-9x hidden-i-animation ${isvisible3?'show-i-animation ':''}`}/> */}
+            {/* <i classname="fa-solid fa-3 fa-9x hidden-i-animation"></i> */}
+          </div>
+          <div ref={myref4} className="scroll-animation-homepage-container-content">
+            <h1>Accelerate </h1>
+            {/* <i className={`fa-solid fa-4 fa-9x  ${isvisibleEven?'show-animation':'hide-animation'}`}/> */}
+            {/* <i className={`fa-solid fa-4 fa-9x hidden-i-animation ${isvisible4?'show-i-animation ':''}`}/> */}
+            {/* <i classname="fa-solid fa-4 fa-9x hidden-i-animation"></i> */}
+          </div>
         </div>
-        <div ref={myref2} className="scroll-animation-homepage-container-content">
-          <h1>Innovate </h1>
-          {/* <i className={`fa-solid fa-2 fa-9x  ${isvisibleEven?'show-animation':'hide-animation'}`}/> */}
-          <i className={`fa-solid fa-2 fa-9x hidden-i-animation ${isvisible2?'show-i-animation ':''}`}/>
-        </div>
-        <div ref={myref3} className="scroll-animation-homepage-container-content">
-          <h1>Incubate </h1>
-          {/* <i className={`fa-solid fa-3 fa-9x  ${isvisibleOdd?'show-animation':'hide-animation'}`}/> */}
-          <i className={`fa-solid fa-3 fa-9x hidden-i-animation ${isvisible3?'show-i-animation ':''}`}/>
-          {/* <i classname="fa-solid fa-3 fa-9x hidden-i-animation"></i> */}
-        </div>
-        <div ref={myref4} className="scroll-animation-homepage-container-content">
-          <h1>Accelerate </h1>
-          {/* <i className={`fa-solid fa-4 fa-9x  ${isvisibleEven?'show-animation':'hide-animation'}`}/> */}
-          <i className={`fa-solid fa-4 fa-9x hidden-i-animation ${isvisible4?'show-i-animation ':''}`}/>
-          {/* <i classname="fa-solid fa-4 fa-9x hidden-i-animation"></i> */}
-        </div>
+      </div>     
+      <div className="scroll-animation-homepage-right">
+        <i className={`fa-solid fa-1 fa-9x hidden-i-animation ${isvisible1?'show-i-animation ':''}`}/>
+        <i className={`fa-solid fa-2 fa-9x hidden-i-animation ${isvisible2?'show-i-animation ':''}`}/>
+        <i className={`fa-solid fa-3 fa-9x hidden-i-animation ${isvisible3?'show-i-animation ':''}`}/> 
+        <i className={`fa-solid fa-4 fa-9x hidden-i-animation ${isvisible4?'show-i-animation ':''}`}/>
       </div>
     </div>
     // <div className='scroll-animation-homepage'>

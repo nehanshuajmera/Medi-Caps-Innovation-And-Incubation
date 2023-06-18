@@ -1,11 +1,24 @@
 .scroll-animation-homepage{
     margin: 10vh 20vh;
     min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.scroll-animation-homepage-right{
+  padding-top: 128px;
+  padding-left: 20px;
+}
+.scroll-animation-homepage-right i{
+  display: block;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 30px ;
+  text-align: center;
 }
 .scroll-animation-homepage-container-content{
   min-height: 80vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .scroll-animation-homepage-container-content h1{
