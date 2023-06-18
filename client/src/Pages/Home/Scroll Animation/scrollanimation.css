@@ -16,5 +16,54 @@
 }
 .scroll-animation-homepage-container-content i{
   width: 40%;
+  position: -webkit-sticky;
+  position: sticky;
+  top:150px;
   text-align: center;
+}
+
+.hidden-i-animation{
+  visibility:hidden;
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show-i-animation{
+  visibility: visible;
+  opacity: 1;
+  transition: all 5s;
+}
+
+.show-animation{
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+
+.hide-animation{
+  animation-name: fade-out;
+  animation-duration: 5s;
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    color: aqua;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  100%{
+    opacity: 1;
+  }
+  50%{
+    color: red;
+  }
+  0%{
+    opacity: 1;
+  }
 }
