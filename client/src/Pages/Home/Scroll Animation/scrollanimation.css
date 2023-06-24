@@ -5,6 +5,7 @@
     justify-content: space-between;
 }
 .scroll-animation-homepage-right{
+  margin: 10vh 0;
   padding-top: 128px;
   padding-left: 20px;
 }
@@ -12,11 +13,12 @@
   display: block;
   position: sticky;
   position: -webkit-sticky;
-  top: 30px ;
+  top: 40% ;
   text-align: center;
 }
 .scroll-animation-homepage-container-content{
-  min-height: 80vh;
+  margin: 10vh 0;
+  min-height: 100vh;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -36,33 +38,34 @@
 }
 
 .hidden-i-animation{
-  visibility:hidden;
+  animation-name: fade-out;
+  animation-duration: 1s;
+  /* visibility:hidden; */
   opacity: 0;
-  transition: all 2s;
+  /* transition: all 2s; */
 }
 
 .show-i-animation{
   visibility: visible;
-  opacity: 1;
-  transition: all 5s;
-}
-
-.show-animation{
   animation-name: fade-in;
-  animation-duration: 5s;
+  animation-duration: 2s;
+  opacity: 1;
+  /* transition: all 8s;
+  transition-delay: 2s; */
 }
 
-.hide-animation{
-  animation-name: fade-out;
-  animation-duration: 5s;
-}
 
 @keyframes fade-in {
   0%{
     opacity: 0;
+    
+  }
+  25%{
+    opacity: 0.25;
   }
   50%{
     color: aqua;
+    opacity: 0.5;
   }
   100%{
     opacity: 1;
@@ -70,13 +73,13 @@
 }
 
 @keyframes fade-out {
-  100%{
+  0%{
     opacity: 1;
   }
   50%{
     color: red;
   }
-  0%{
-    opacity: 1;
+  100%{
+    opacity: 0;
   }
 }
