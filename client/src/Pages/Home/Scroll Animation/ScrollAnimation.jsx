@@ -53,8 +53,6 @@ export default function ScrollAnimation() {
     },apperOptions)
 
     const observer4 = new IntersectionObserver((entries)=>{
-      // const entry =entries[0];
-      // console.log('entry', entry);
       entries.forEach((entry)=>{
         setISvisible4(entry.isIntersecting);
         console.log("entry",entry);

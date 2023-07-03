@@ -64,7 +64,7 @@
     opacity: 0.25;
   }
   50%{
-    color: aqua;
+    /* color: aqua; */
     opacity: 0.5;
   }
   100%{
@@ -76,8 +76,15 @@
   0%{
     opacity: 1;
   }
+  25%{
+    opacity: 0.5;
+  }
   50%{
-    color: red;
+    /* color: aqua; */
+    opacity: 0.25;
+  }
+  50%{
+    /* color: red; */
   }
   100%{
     opacity: 0;
