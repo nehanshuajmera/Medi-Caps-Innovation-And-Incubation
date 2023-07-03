@@ -6,44 +6,15 @@
     min-height: 100%;
 }
 
-/* img {
-    max-width: 100%;
+.about-hero{
+    min-height: 86vh;
+    margin: 0 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-
-.about-section-1 {
-    height: 100vh;
-    opacity: 0.8;
-}
-
-.about-section-1-heading {
-    font-weight: 400;
-    padding: 2px;
-    margin: 2px;
-    font-size: 35px;
-    letter-spacing: 2px;
-    height: 12%;
-    opacity: 1;
-}
-
-.about-section-1-paragraph {
-    text-align: center;
-    font-weight: 400;
-    padding: 10px;
-    margin: 2px;
-    width: max-content;
-    font-size: 25px;
-    opacity: 1;
-}
-
-@media (max-width: 900px) {
-    .about-section-1-paragraph {
-        width: 100%;
-        font-weight: 300;
-        margin-top: 5px;
-        font-size: 20px;
-        color: aqua;
-    }
-} */
 
 .divide-and-conquer-2 {
     display: flex;
