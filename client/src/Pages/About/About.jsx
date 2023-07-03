@@ -8,8 +8,7 @@ export default function About() {
   return (
     <div className='about-container'>
       <div className='main-section'>
-
-        <div className='main-section-right'>
+        {/* <div className='main-section-right'>
           <div className='home-svg'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,8 +39,9 @@ export default function About() {
               </g>
             </svg>
           </div>
-        </div>
+        </div> */}
         <div className='main-section-left'>
+     
           <div className="divide-and-conquer-2">
             <h3 className="about-section-2-heading">
               "Create a perfect ecosystem for your business"
@@ -58,6 +58,7 @@ export default function About() {
       <div className="about-advisor-section-4-container">
         <Advisors />
       </div>
+      <hr style={{margin:"0% 10%"}}/>
       <div className="about-testimonials-section-5-container">
         <Testimonials />
       </div>
