@@ -3,6 +3,8 @@ import Ourpartner from "./Carosol/Ourpartner";
 import "./Home.css";
 import ScrollAnimation from "./Scroll Animation/ScrollAnimation";
 import MainContainer from "./MainContainer";
+import Glimpses from "./Glimpses/Glimpses";
+
 
 const Herosection = () => {
   return (
@@ -23,7 +25,11 @@ const Herosection = () => {
         <div className="scroll-sections" style={{backgroundColor:"black"}}>
           <Ourpartner />
           <hr/>
-        </div>
+          </div>
+          <div className="scroll-sections" style={{backgroundColor:"white"}}>
+          <Glimpses/>
+          <hr/>
+       </div>
       </div>
     </>
   );
