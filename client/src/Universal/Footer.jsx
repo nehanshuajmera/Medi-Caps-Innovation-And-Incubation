@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="footer-pg scroll-sections">
       <div className="footer-main-box">
         <div className="get-in-touch-button">
-          <h1 style={{ letterSpacing: '1px', fontSize: '60px' }}>Want to know more?</h1>
+          <h1 style={{ letterSpacing: '1px', fontSize: '12vh' }}>Want to know more?</h1>
           <button>
             <NavLink to='/Contact'><p style={{ letterSpacing: '1px'}}>Get in touch</p></NavLink>
           </button>
@@ -46,8 +46,8 @@ export default function Footer() {
           <div className="navbar-items-footer">
             <NavLink  to="/About">About</NavLink>
             <NavLink  to="/Offering">Offering</NavLink>
-            <NavLink  to="/Article">Blogs</NavLink>
-            <NavLink  to="/Event">Event</NavLink>
+            <NavLink  to="/Article">MII Community</NavLink>
+            {/* <NavLink  to="/Event">Event</NavLink> */}
             {/* <NavLink style={{padding: '5px', margin: '4px 12px', color: '#fff'}} to="/Contact">Contact</NavLink> */}
           </div>
         </div>

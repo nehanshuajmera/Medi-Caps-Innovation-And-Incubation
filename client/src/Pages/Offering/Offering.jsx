@@ -7,12 +7,12 @@ export default function Offering() {
   <div className="offering-main-container ">
    <div className='main-section'>   
       <div className='main-section-right'>
-        <div className='offering-svg'>
+        <div className='home-svg'>
       <svg 
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
-            width={150}
+            // width={150}
             // height="2416.225475370842"
             viewBox="0 0 3300 2416.225475370842"
           >
@@ -36,23 +36,14 @@ export default function Offering() {
               </g>
             </g>
           </svg>
-          <h3 style={{fontSize:'30px'}}>Offers two main services</h3>
+          {/* <h3 style={{fontSize:'30px'}}>Offers two main services</h3> */}
           </div>
       </div>
       <div className='main-section-left'>
-      <div className="section-1-offering-heading1">
-            {/* <h3>MII Foundation</h3> */}
-            {/* <h3>Offers two main services</h3> */}
-          </div>
-          <div className="section-1-offering-heading2">
-            <div className="offering-section-1-sub-heading">
-              <h3>Incubation & Start-Up Consulting</h3>
-            </div>
-            
-          </div>
-          <div className="section-1-offering-heading3">
-            <h3>To help start-ups grow and succeed.</h3>
-          </div>
+      <div className="main-section-left-upper">
+      <h1 style={{ fontWeight: '400', fontFamily: 'Inter' }}>Incubation & Start-Up Consulting</h1>
+      <p style={{ fontWeight: '300', fontFamily: 'Inter' }}>"To help start-ups grow and succeed."</p>
+      </div>
       </div>
   </div>
 
@@ -68,7 +59,7 @@ export default function Offering() {
       </div>
 
       {/* Section - 3 */}
-      <div className="offering-section-3-container scroll-sections">
+      <div className="offering-section-3-container">
         <div className="offering-benifit-item-container1">
           <div className="benifit-item-number">01</div>
           <div className="benifit-item-name">Mentoring</div>

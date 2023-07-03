@@ -16,7 +16,7 @@
 .footer-main-box {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 75vh;
     width: 70vw;
 }
 
@@ -29,7 +29,7 @@
 .get-in-touch-button h1 {
     margin: 5px;
     padding: 5px;
-    font-size: 50px;
+    /* font-size: 50px; */
 }
 
 .get-in-touch-button button {
@@ -40,9 +40,9 @@
 }
 
 .get-in-touch-button button {
-    --primary-color: #ffffff;
+    --primary-color: red;
     /* --hovered-color: blue; */
-    --hovered-color: grey;
+    --hovered-color: red;
     position: relative;
     display: flex;
     font-weight: 300;
@@ -53,7 +53,7 @@
 .get-in-touch-button button p {
     margin: 0;
     position: relative;
-    font-size: 50px;
+    font-size: 9vh;
     color: var(--primary-color);
     font-weight: 300;
     cursor: pointer;
@@ -108,7 +108,7 @@
 
 }
 .navbar-items-footer a{
-    font-size: 20px;
+    font-size: 3.5vh;
     padding: 5px;
     margin: 4px 20px;
     color: #ffffff;
@@ -136,3 +136,7 @@
     align-items: center;
   }
 }
+
+/* .footer-logo svg{
+    width: 16vh;
+} */
