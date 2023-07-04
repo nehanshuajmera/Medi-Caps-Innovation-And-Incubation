@@ -1,5 +1,5 @@
 .footer-pg {
-    font-family: 'Inter', sans-serif;
+    
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     background-color: black;
     
     /* padding: 50px; */
-    font-family: 'Inter', sans-serif;
+    
     background-color: black;
     color: white;
 

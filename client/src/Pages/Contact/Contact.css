@@ -1,7 +1,7 @@
 .contactCss{
     /* height: 80vh; */
     /* padding-top: 10vh; */
-    font-family: 'Inter', sans-serif;
+    
 }
  .maincontactpage{
     height: 80vh;
@@ -12,7 +12,7 @@
     justify-content: center;
  }
  .maincontactpage h1{
-    font-family: 'Inter', sans-serif;
+    
     font-size:xx-large;
  }
 
@@ -120,7 +120,7 @@
     margin: auto;
 }
 .who-form h1{
-    font-family: 'Inter', sans-serif;
+    
     font-size:60px;
     margin-bottom: 10px;
 }

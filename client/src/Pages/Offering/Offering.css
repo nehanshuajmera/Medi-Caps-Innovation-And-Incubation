@@ -3,7 +3,7 @@
 /* Offering full page access */
 .offering-main-container {
     background-color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    
 }
 
 /* Section - 1 */
@@ -56,7 +56,7 @@
 }
 
 .offering-section-1-sub-heading h3 {
-    font-family: 'Inter', sans-serif;
+    
     font-weight: 400;
     cursor: pointer;
 }

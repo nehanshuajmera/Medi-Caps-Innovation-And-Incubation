@@ -7,12 +7,12 @@ export default function Offering() {
   <div className="offering-main-container ">
    <div className='main-section'>   
       <div className='main-section-right'>
-        <div className='home-svg' style={{backgroundColor:"white"}}>
+        <div className='home-svg' style={{backgroundColor:"white",margin:"0px",padding:"0px"}}>
       <svg 
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
-            // width={150}
+            width={250}
             // height="2416.225475370842"
             viewBox="0 0 3300 2416.225475370842"
           >
