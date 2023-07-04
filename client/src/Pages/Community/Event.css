@@ -4,12 +4,14 @@
 
 }
 .todays-event{
-    padding: 15px;
+    padding-left: 70px;
+    
 }
 .event-today-header{
     font-size: 30px;
+    padding-left: 30px;
     border-left: 5px solid red;
-    padding-left: 5px;
+    
 }
 .today-event-box{
    padding: 15px;
@@ -67,6 +69,19 @@
     color: red;
     
 }
-.fa-sharp fa-solid fa-location-dot{
+/* .fa-sharp fa-solid fa-location-dot{
     margin-left: 50px;
+} */
+
+.event-nav{
+margin-left: 50%;
+font-size: 30px;
+display: flex;
+/* background-color: black; */
+/* text-decoration: solid; */
+}
+
+.event-nav-text{
+    margin-right: 40px;
+    margin-left: -60px;
 }
