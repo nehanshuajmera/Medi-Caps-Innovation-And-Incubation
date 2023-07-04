@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home';
 import { Route, Routes, useLocation } from "react-router-dom";
 import Contact from './Pages/Contact/Contact';
 import Article from './Pages/Article/Article';
-import Event from './Pages/Events/Event';
+// import Event from './Pages/Events/Event';
 import Offering from './Pages/Offering/Offering';
 import About from './Pages/About/About';
 import Singleeventpage from './Pages/Events/SingleEvent/Singleeventpage';
@@ -20,6 +20,7 @@ import Student from './Pages/Contact/SingleContactPages/Student';
 import DetailblogPage from './Pages/Article/DetailblogPage';
 import Singlecontact from './Pages/Contact/Singlecontact';
 import AdminPanel from './Admin/AdminPanel';
+import Event from './Pages/Community/Event'
 
 function App() {
   
@@ -40,7 +41,7 @@ function App() {
         <Route  path='/Offering' element={<Offering/> }/>
         <Route  path='/Article' element={<Article/> }/>
         <Route  path='/About' element={<About/> }/>
-        <Route  path='/Event' element={<Event/> }/>
+        {/* <Route  path='/Event' element={<Event/> }/> */}
         <Route  path='/singleevent/:id' element={<Singleeventpage/> }/>
         <Route  path='/upcomingevent/:id' element={<Upcomingeventpage/> }/>
         <Route  path='/generalquery' element={<GeneralQuery/> }/>
@@ -52,6 +53,7 @@ function App() {
         <Route  path='/detailsblog/:id' element={<DetailblogPage/> }/>
         <Route  path='/singlecontact/:id' element={<Singlecontact/> }/>
         <Route  path='/mii-admin' element={<AdminPanel/> }/>
+        <Route  path='/event' element={<Event/>}/>
       </Routes>
       <Footer/>
     </div>

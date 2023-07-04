@@ -1,0 +1,14 @@
+.eventlist-title-date{
+    margin-left: 150px;
+    margin-top: 90px;
+}
+
+.event-card .event-card-body {
+    border-color: var(--card-highlight-background);
+}
+
+.event-cards-home .event-card-body {
+    display: flex;
+    /* flex-direction: column; */
+    /* height: 100%; */
+}
