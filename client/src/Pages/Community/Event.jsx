@@ -1,14 +1,17 @@
 import React from 'react'
 import './Event.css';
+import Image from './Image'
 
 const event = () => {
   return (
     <div>
+   
       <div className="event-container">
       <div className="event-nav">
        <div className='event-nav-text'>Event</div>
        <div>Blogs</div>
       </div>
+      <Image/>
       
         <div className="todays-event">
           <h2 className="event-today-header">Today`s Event </h2>
