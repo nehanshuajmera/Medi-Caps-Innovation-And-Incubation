@@ -1,6 +1,6 @@
 import React ,{useRef,useEffect,useState} from 'react'
 import "./scrollanimation.css"
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 
 export default function ScrollAnimation() {
  
