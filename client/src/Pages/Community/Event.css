@@ -1,14 +1,72 @@
-.eventlist-title-date{
-    margin-left: 150px;
-    margin-top: 90px;
-}
+.event-container{
+    margin: 10px;
+    padding: 10px;
 
-.event-card .event-card-body {
-    border-color: var(--card-highlight-background);
 }
-
-.event-cards-home .event-card-body {
+.todays-event{
+    padding: 15px;
+}
+.event-today-header{
+    font-size: 30px;
+    border-left: 5px solid red;
+    padding-left: 5px;
+}
+.today-event-box{
+   padding: 15px;
+   margin: 4px 2px;
+   /* border: 2px solid black; */
+   /* margin-top: 20px; */
+   grid-gap: 1.5rem;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+}
+.event-box-para{
     display: flex;
-    /* flex-direction: column; */
-    /* height: 100%; */
+    flex-direction: row;
+    
+}
+.rau-class{
+    /* padding-left: 5px; */
+}
+
+.event-box-container{
+    border-top: 6px solid red;
+    height: 50vh;
+    width: 80%;
+    padding: 40px;
+    display: flex;
+    padding: 40px 25px;
+    margin: 20px;
+    background-color: rgb(43, 41, 41);
+    color: white;
+    flex-direction: column;
+}
+
+.tomarrow-event-box{
+    /* margin-top: 80px; */
+    padding: 15px;
+    margin: 4px 2px;
+    /* border: 2px solid black; */
+    grid-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ }
+ .tomarrow-event{
+    padding: 15px;
+}
+.event-tommarow-header{
+    font-size: 30px;
+    border-left: 5px solid red;
+    padding-left: 5px;
+}
+.event-box-header{
+    height: 15vh;
+    
+}
+.event-box-header:hover{
+    color: red;
+    
+}
+.fa-sharp fa-solid fa-location-dot{
+    margin-left: 50px;
 }
