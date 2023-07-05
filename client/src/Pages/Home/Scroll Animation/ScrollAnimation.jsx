@@ -105,10 +105,16 @@ export default function ScrollAnimation() {
         </div>
       </div>     
       <div className="scroll-animation-homepage-right">
-        <i className={`fa-solid fa-1 fa-9x hidden-i-animation ${isvisible1?'show-i-animation ':''}`}/>
-        <i className={`fa-solid fa-2 fa-9x hidden-i-animation ${isvisible2?'show-i-animation ':''}`}/>
+        {/* <i className={`fa-solid fa-1 fa-9x hidden-i-animation ${isvisible1?'show-i-animation ':''}`}/> */}
+        {/* <i className={`fa-solid fa-2 fa-9x hidden-i-animation ${isvisible2?'show-i-animation ':''}`}/>
         <i className={`fa-solid fa-3 fa-9x hidden-i-animation ${isvisible3?'show-i-animation ':''}`}/> 
-        <i className={`fa-solid fa-4 fa-9x hidden-i-animation ${isvisible4?'show-i-animation ':''}`}/>
+        <i className={`fa-solid fa-4 fa-9x hidden-i-animation ${isvisible4?'show-i-animation ':''}`}/> */}
+        
+        <img src="./images/Seed1.png" alt="" className={`hidden-i-animation ${isvisible1?'show-i-animation ':''}`} />
+        <img src="./images/Seed2.png" alt="" className={`hidden-i-animation ${isvisible2?'show-i-animation ':''}`} />
+        <img src="./images/Seed3.png" alt="" className={`hidden-i-animation ${isvisible3?'show-i-animation ':''}`} />
+        <img src="./images/Seed4.png" alt="" className={`hidden-i-animation ${isvisible4?'show-i-animation ':''}`} />
+       
       </div>
     </div>
   )
