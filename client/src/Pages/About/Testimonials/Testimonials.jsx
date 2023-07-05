@@ -14,7 +14,7 @@ export default function Testimonials() {
           <img src='https://www.zenxlabs.io/assets/img/testimonials/trask.jpg' alt='' />         
           <div className='testimonial-name-container'>
             <h3>Jon Trask, CEO</h3>
-            <h3 style={{color:"red"}}>Dimitra Technology</h3>
+            <h3 style={{color:"#931727"}}>Dimitra Technology</h3>
           </div>
          
           </div>

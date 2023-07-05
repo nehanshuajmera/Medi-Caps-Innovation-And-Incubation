@@ -349,7 +349,7 @@
 }
 
 /* .zl-description-text b {
-  color: "red";
+  color: "#931727";
 } */
 
 /* .zl-staff.-inverse {
@@ -577,13 +577,13 @@
 .zl-checkbox_rounded label>input:checked~.zl-staff-item.zl-checkbox_rounded-box .zl-staff-item-name h4,
 .zl-navbar.-open .zl-navbar-toggle button.zl-staff-item .zl-staff-item-name h4,
 .zl-staff-item.-active .zl-staff-item-name h4 {
-    color: "red";
+    color: "#931727";
 }
 
 .zl-staff-item-icon {
     position: relative;
     margin: 0 15px 0 0;
-    color: "red";
+    color: "#931727";
 }
 
 @media (min-width: 768px) {

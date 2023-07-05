@@ -12,7 +12,7 @@ export default function Offering() {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
-            width={250}
+            width={350}
             // height="2416.225475370842"
             viewBox="0 0 3300 2416.225475370842"
           >
@@ -49,8 +49,8 @@ export default function Offering() {
 
       {/* Section - 2 */}
       <div className="offering-section-2-container scroll-sections">
-        <div className="offering-section-2-content">
-          <p>
+        <div className="offering-section-2-content" style={{paddingTop:"10vh"}}>
+          <p >
             Our goal is to set up each MII project with a network, community,
             legal instruments, and business management toolkit sufficient for
             solving very global challenges
