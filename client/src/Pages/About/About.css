@@ -2,7 +2,8 @@
 
 .about-container {
     background-color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    font-family: Open Sans;
+    /* font-family: ; */
     min-height: 100%;
 }
 
