@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import './Header.css'
 import { useLocation } from "react-router-dom";
 export default function Header() {
+  const navigate = useNavigate();
   const [display, setDisplay] = useState(window.innerWidth > 599 ? true : false);
   const [menue, setmenue] = useState(false);
   const { pathname } = useLocation();
-
   useEffect(() => {
     setmenue(false);
   }, [pathname]);
@@ -52,7 +52,16 @@ export default function Header() {
             {/* <NavLink  to="/">Home</NavLink> */}
             <NavLink  to="/About">About</NavLink>
             <NavLink  to="/Offering">Services</NavLink>
-            <NavLink  to="/Event">MII Community</NavLink>
+            <a className="miicommunity-hover">MII Community
+            <div className='nabar-bloog-events'>
+              <div onClick={()=>{navigate("/Event")}}>
+              <h3 >Events</h3>
+              </div>
+              <div onClick={() => {navigate("/Article")}}>
+              <h3>Blogs</h3>
+              </div>
+            </div>
+            </a>
   </div>
         </div> : <div className='handburg' onClick={() => { setmenue(!menue) }}>
           {!menue ? <i class="fa-solid fa-bars-staggered fa"></i> : <i class="fa-solid fa-xmark fa"></i>}
@@ -74,13 +83,16 @@ export default function Header() {
         <div className="navbar-items-for-mobile">
             <NavLink  to="/About">About</NavLink>
             <NavLink  to="/Offering">Services</NavLink>
-            <NavLink  to="/Event">MII Community</NavLink>
-          {/* <div>
-            <NavLink to='https://www.instagram.com/miifoundation.in/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
-            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
-            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
-            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
-          </div> */}
+            <a  to="/Event" className="miicommunity-hover">MII Community
+            <div className='nabar-bloog-events'>
+              <div onClick={()=>{navigate("/Event")}}>
+              <h3 >Events</h3>
+              </div>
+              <div onClick={() => {navigate("/Article")}}>
+              <h3 >Blogs</h3>
+              </div>
+            </div>
+            </a>            
           <div className="right-contact">
             <NavLink style={{ color: "#fff" }} to="/Contact" >Contact</NavLink>
           </div>

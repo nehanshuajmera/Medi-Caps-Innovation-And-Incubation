@@ -73,8 +73,6 @@ export default function Article() {
             <div className="blog-box-1-title">Geeq Joins Unizen ZenX Accelerator Program</div>
             <div className="blog-box-description">Blockchain pioneer Geeq announced today that it has been selected to join the Unizen ZenX Incubator in the acceleration program. The…</div>
           </div>
-        </div>
-        <div className="blog-section-2-box scroll-sections">
           <div className="blog-box-1">
             <div className="blog-box-img-1">
               <img src="https://www.zenxlabs.io/assets/img/media/alkimi.png?2" alt="" /></div>
@@ -89,8 +87,6 @@ export default function Article() {
             <div className="blog-box-1-title">WhaleRoom Is Accelerated By MIIs</div>
             <div className="blog-box-description">The development of decentralized technology and investing in crypto assets rely on cooperation. Communities help with finding out about new projects, rating exchanges and wallets, sharing…</div>
           </div>
-        </div>
-        <div className="blog-section-2-box scroll-sections">
           <div className="blog-box-1">
             <div className="blog-box-img-1">
               <img src="https://www.zenxlabs.io/assets/img/media/2.jpg?2" alt="" /></div>

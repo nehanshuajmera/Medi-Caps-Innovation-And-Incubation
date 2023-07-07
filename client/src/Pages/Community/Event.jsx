@@ -16,10 +16,10 @@ const event = () => {
   return (
     <div>
       <div className="event-container">
-      <div className="event-nav">
+      {/* <div className="event-nav">
        <div className='event-nav-text' onClick={()=>{navigate("/Event")}}>Event</div>
        <div style={{cursor:"pointer"}} onClick={() => {navigate("/Article")}}>Blogs</div>
-      </div>
+      </div> */}
       <Image/>
         <div className="todays-event">
           <h2 className="event-today-header">Today`s Event </h2>

@@ -11,34 +11,6 @@
 	/* flex-wrap: wrap; */
 }
 
-@media (min-width: 300px) and (max-width: 599px){
-	.home-svg-mii {
-		width: 0vh;
-	}
-	.main-section-right {
-	  width: 100%;
-  }
-  
-  .main-section-left {
-	  width: 100%;
-  }
-	.home-svg-mii {
-	  background-color: black;
-	  /* opacity: 0.8; */
-	  display: flex;
-	  /* border: 2px solid black; */
-	  height: 30vh;
-	  width: 31vh;
-	  padding: 8vh;
-	  border-radius: 80%;
-	}
-	.main-section-left-upper {
-		font-size: 20px;
-		padding: 10px;
-	}
-	}
-
-
 .main-section-right {
 	/* border: 1px solid red; */
 	position: absolute;
@@ -52,43 +24,44 @@
 .main-section-left {
 	letter-spacing: 1px;
 	font-family: 'Inter', sans-serif;
-	width: 55%;
-	height: 70vh;
+	/* width: 55%; */
+	min-height: 70vh;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
 	text-align: center;
+	margin-bottom: 10vh;
 }
 
-.main-section-left-upper {
+/* .main-section-left-upper {
 	margin-bottom: 5px;
 	font-weight: 400px;
 	font-family: 'Inter';
-}
+} */
 
-.main-section-left-upper h1 {
+.main-section-left h1 {
 	font-size: 5vh;
 	/* font-weight: 300; */
 }
 
-.main-section-left-upper p {
+.main-section-left p {
 	font-size: 3vh;
 	font-weight: 300;
 	margin-top: 10px;
 	font-weight: 300px;
 }
 
-.main-section-left-down {
+/* .main-section-left-down {
 	margin-top: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-}
+} */
 
-.main-section-left-down h1 {
+/* .main-section-left-down h1 {
 	margin: 20px;
-}
+} */
 
 
 .home-svg-mii {
@@ -119,7 +92,7 @@
 .scroll-prompt {
 	position: absolute;
 	z-index: 998;
-	bottom: 3vh;
+	bottom: 4.5vh;
 	width: 10vh;
 	height: 10vh;
 
@@ -244,3 +217,37 @@
 		transform: translateY(30px);
 	}
 }
+
+
+@media (min-width: 300px) and (max-width: 599px){
+	.home-svg-mii svg{
+		width: 45vh;
+		height: 45vh;
+	}
+	.main-section-right {
+	  width: 100%;
+
+  }
+  .main-section-left {
+	  width: 100%;
+		/* width: max-content; */
+  }
+	.home-svg-mii {
+	  background-color: black;
+	  /* opacity: 0.8; */
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  /* border: 2px solid black; */
+	  /* height: 30vh; */
+	  /* width: 31vh; */
+	  padding: 8vh;
+	  border-radius: 80%;
+	}
+	.main-section-left-upper {
+		font-size: 20px;
+		padding: 10px;
+		/* width: 100%; */
+		width: max-content;
+	}
+	}

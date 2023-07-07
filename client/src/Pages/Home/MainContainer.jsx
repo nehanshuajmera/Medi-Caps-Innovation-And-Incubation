@@ -52,17 +52,13 @@ export default function MainContainer() {
       </div>
       <div className='main-section-left'>
         <div className="main-section-left-upper">
-          <h1 >Medicaps</h1>
-          <h1 >Innovation and Incubation Foundation</h1>
+          <h1 className='removeinmobile' >Medi-Caps</h1>
+          <h1 className='removeinmobile' >Innovation and Incubation Foundation</h1>
           <p >"Unlock your business potential"</p>
         </div>
 
-        {/* <div className="main-section-left-down">
-          <h1>Participants <div>{cnt}+</div></h1>
-          <h1>Registration <div>{cnt}+</div></h1>
-          <h1>Startup <div>{cnt}+</div></h1>
-        </div> */}
       </div>
+
       <div className='put-down-centre'>
         <div class="scroll-prompt">
           <div class="scroll-prompt-arrow-container">

@@ -10,3 +10,8 @@ body {
 /* body{
   
 } */
+@media (max-width: 599px){
+.removeinmobile{
+  display: none;
+}
+}
