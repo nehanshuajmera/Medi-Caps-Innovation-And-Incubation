@@ -19,7 +19,9 @@ router.post("/addevent",adminauth, async (req, res) => {
         registrationfee,
         like:0,
         registrationstatus:"ongoing",
-        comments:[]
+        comments:[],
+        created_at:new Date(),
+        featured:"False"
         });
    
     newevent.save()

@@ -23,25 +23,25 @@ export default function AdminBody() {
     <div >
       <nav className="nav-bar">
        <div className="left-align">
-         <h1 class="nav-link text-white" style={{fontSize:"30px"}}>Admin Panel</h1>
+         <h1 className="nav-link text-white" style={{fontSize:"30px"}}>Admin Panel</h1>
         </div>
-         <div class="right-align">
-           <button class="nav-link text-white" onClick={()=>{logout()}}>Log out <i className="fa fa-sign-out" aria-hidden="true"></i></button>
+         <div className="right-align">
+           <button className="nav-link text-white" onClick={()=>{logout()}}>Log out <i className="fa fa-sign-out" aria-hidden="true"></i></button>
           </div>   
         </nav>
 
         <div className='admin-options'>
         <div onClick={()=>{setadmincontent("blog")}} className='single-admin-option' >
-            <i class="fa-sharp fa-solid fa-pager fa-9x"></i>
+            <i className="fa-sharp fa-solid fa-pager fa-9x"></i>
             <h1>Blogs</h1>
         </div>
     
         <div onClick={()=>{setadmincontent("event")}} className='single-admin-option'>
-        <i class="fa-solid fa-calendar-days fa-9x"></i>
+        <i className="fa-solid fa-calendar-days fa-9x"></i>
             <h1>Events</h1>
         </div>
         <div onClick={()=>{setadmincontent("query")}} className='single-admin-option'>
-        <i class="fa-solid fa-address-book fa-8x"></i>
+        <i className="fa-solid fa-address-book fa-8x"></i>
             <h1>Query</h1>
         </div>
         </div>

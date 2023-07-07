@@ -30,16 +30,16 @@ const Login = (props) =>  {
     }
   }
   return (
-  <div class="main">
-    <p class="sign" align="center">Log in</p>
-    <form class="form1"/>
-      <input class="un "  type="text" name="email" value={user.email} placeholder="Your Email"  onChange={ handleChange } align="center"/>
-      <input class="pass" align="center" type="password" name="password"
+  <div className="main">
+    <p className="sign" align="center">Log in</p>
+    <form className="form1"/>
+      <input className="un "  type="text" name="email" value={user.email} placeholder="Your Email"  onChange={ handleChange } align="center"/>
+      <input className="pass" align="center" type="password" name="password"
              value={user.password}
               placeholder="Your Password"
                onChange={ handleChange }/>
-      <a class="submit" align="center" onClick={()=>{login()}}>Log in</a>
-      {/* <p class="forgot" align="center"><a href="#"/>Forgot Password?</p> */}
+      <a className="submit" align="center" onClick={()=>{login()}}>Log in</a>
+      {/* <p className="forgot" align="center"><a href="#"/>Forgot Password?</p> */}
             
                 
     </div>

@@ -9,7 +9,7 @@ import Article from './Pages/Article/Article';
 import Offering from './Pages/Offering/Offering';
 import About from './Pages/About/About';
 import Singleeventpage from './Pages/Events/SingleEvent/Singleeventpage';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Upcomingeventpage from './Pages/Events/SingleEvent/Upcomingeventpage';
 import GeneralQuery from './Pages/Contact/SingleContactPages/GeneralQuery';
 import IdeaOwner from './Pages/Contact/SingleContactPages/IdeaOwner';
@@ -21,9 +21,24 @@ import DetailblogPage from './Pages/Article/DetailblogPage';
 import Singlecontact from './Pages/Contact/Singlecontact';
 import AdminPanel from './Admin/AdminPanel';
 import Event from './Pages/Community/Event'
+import axios from 'axios';
 
 function App() {
+  const[event,setevent]=useState([]);
+  const[blog,setblog]=useState([]);
   
+  const getevent=async ()=>{
+    await axios.get("/event/allevents").then((res) =>{ setevent(res.data) }).catch((err)=>{console.log("Error",err)})
+  }
+  const getblog=async ()=>{
+    await axios.get("blog/allblogs").then((res) =>{ setblog(res.data) }).catch((err)=>{console.log("Error",err)})
+  }
+
+  useEffect(() => {
+    getevent();
+    getblog();
+  }, [])
+
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -39,7 +54,7 @@ function App() {
         <Route exact path='/' element={<Home/> }/>
         <Route  path='/contact' element={<Contact/> }/>
         <Route  path='/Offering' element={<Offering/> }/>
-        <Route  path='/Article' element={<Article/> }/>
+        <Route  path='/Article' element={<Article blog={blog}/> }/>
         <Route  path='/About' element={<About/> }/>
         {/* <Route  path='/Event' element={<Event/> }/> */}
         <Route  path='/singleevent/:id' element={<Singleeventpage/> }/>
@@ -50,10 +65,10 @@ function App() {
         <Route  path='/mentor' element={<Mentor/> }/>
         <Route  path='/startupfounder' element={<StartupFounder/> }/>
         <Route  path='/studentform' element={<Student/> }/>
-        <Route  path='/detailsblog/:id' element={<DetailblogPage/> }/>
+        <Route  path='/detailsblog/:id' element={<DetailblogPage /> }/>
         <Route  path='/singlecontact/:id' element={<Singlecontact/> }/>
         <Route  path='/mii-admin' element={<AdminPanel/> }/>
-        <Route  path='/event' element={<Event/>}/>
+        <Route  path='/event' element={<Event event={event}/>}/>
       </Routes>
       <Footer/>
     </div>

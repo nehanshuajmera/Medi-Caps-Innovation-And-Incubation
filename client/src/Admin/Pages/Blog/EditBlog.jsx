@@ -104,7 +104,7 @@ export default function EditBlog({props}) {
       <div className="img-upload">
         <p>Upload image :</p>
         <label htmlFor="event-img">
-          <i class="fa-solid fa-upload"/>
+          <i className="fa-solid fa-upload"/>
         </label>
         <input type="file" name="event-img" accept="image/png, image/gif, image/jpeg"  onChange={(event)=>{setImageUpload(event.target.files[0])}} />
       </div>
@@ -117,7 +117,7 @@ export default function EditBlog({props}) {
       <input type="date"  onChange={ handleChange } name="date" value={FormData.date} />
       <input type="text" onChange={ handleChange } name="authername" value={FormData.authername} placeholder='Author Name'/>
       <div className="btn-section row-3">          
-            <button className='delete-btn' onClick={()=>{submit()}}><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <button className='delete-btn' onClick={()=>{submit()}}><i className="fa fa-pencil" aria-hidden="true"></i></button>
       </div> 
     </div>
   </div>

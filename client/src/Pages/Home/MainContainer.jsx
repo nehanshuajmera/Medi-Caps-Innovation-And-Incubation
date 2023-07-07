@@ -60,10 +60,10 @@ export default function MainContainer() {
       </div>
 
       <div className='put-down-centre'>
-        <div class="scroll-prompt">
-          <div class="scroll-prompt-arrow-container">
-            <div class="scroll-prompt-arrow"><div></div></div>
-            <div class="scroll-prompt-arrow"><div></div></div>
+        <div className="scroll-prompt">
+          <div className="scroll-prompt-arrow-container">
+            <div className="scroll-prompt-arrow"><div></div></div>
+            <div className="scroll-prompt-arrow"><div></div></div>
           </div>
         </div>
       </div>

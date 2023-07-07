@@ -12,7 +12,9 @@ router.post("/addblog",adminauth, async (req, res) => {
         title,
         date,
         like:0,
-        comments:[]
+        comments:[],
+        created_at:new Date(),
+        featured:"False"
         });
    
     newblog.save()

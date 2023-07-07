@@ -17,7 +17,9 @@ const EventSchema = new mongoose.Schema({
         comment:{type:String},
         date:{type:String},
         like:{type:Number}   
-       }]
+       }],
+    created_at:{type:String,required: true},
+    featured:{type:String,required: true}
 });
 
 const Event = mongoose.model('event', EventSchema);

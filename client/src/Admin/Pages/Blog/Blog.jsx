@@ -73,7 +73,7 @@ export default Blog
 //       <div className="add">
 //         <div className="add-icon" onClick={() => { document.getElementById('add_blog_area').style = 'dislplay:block' }}>
 //           {/* icon of add */}
-//           <i class="fa-solid fa-plus" />
+//           <i className="fa-solid fa-plus" />
 //         </div>
 //         <div className="add-area add_blog_area" id='add_blog_area'>
 //           {/* html of blog to add */}

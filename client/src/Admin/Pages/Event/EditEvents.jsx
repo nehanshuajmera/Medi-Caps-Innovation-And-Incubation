@@ -107,7 +107,7 @@ const EditEvents = ({props}) => {
   return (
         <div className="event-edit">
           <hr/>
-          <h1 style={{textAlign:"center"}}>Edit <i class="fa fa-pencil" aria-hidden="true"></i></h1>
+          <h1 style={{textAlign:"center"}}>Edit <i className="fa fa-pencil" aria-hidden="true"></i></h1>
     <div className="blog-img">
       <div className="img-upload">
         <p>Upload image :</p>
@@ -133,7 +133,7 @@ const EditEvents = ({props}) => {
       <input type="number" onChange={ handleChange } name="registrationfee" value={FormData.registrationfee} placeholder='Registration Fee'/>
     </div>
       <div className="btn-section row-3">          
-            <button className='delete-btn' onClick={()=>{submit()}}><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <button className='delete-btn' onClick={()=>{submit()}}><i className="fa fa-pencil" aria-hidden="true"></i></button>
       </div> 
     </div>
   </div>

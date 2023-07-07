@@ -108,7 +108,7 @@ const AddBlog = () => {
                 <div className="img-upload">
                   <p>Upload image :</p>
                   <label htmlFor="event-img">
-                    <i class="fa-solid fa-upload"/>
+                    <i className="fa-solid fa-upload"/>
                   </label>
                   <input type="file" name="event-img" accept="image/png, image/gif, image/jpeg"  onChange={(event)=>{setImageUpload(event.target.files[0])}} />
                 </div>
