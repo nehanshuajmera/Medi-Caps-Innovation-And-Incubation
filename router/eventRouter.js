@@ -41,6 +41,21 @@ router.get("/deleteevent/:id",adminauth, async (req, res) => {
     }
   });
 
+  
+router.get("/changefeaturedstatus/:id",adminauth, async (req, res) => {
+  const eventId= req.params.id;
+  // console.log("Change api status")
+  try {
+      let eventcontent= await Event.findById(req.params.id)
+      let uppdatedfeatured=eventcontent.featured==="False"?"True":"False";
+      // console.log(uppdatedfeatured)
+      let oldevent= await Event.findOneAndUpdate({ _id:eventId},{featured:uppdatedfeatured});
+      res.status(200).send(oldevent);
+  } catch (err) {
+    res.status(200).send(err);
+  }
+});
+
 router.get("/allevents",(req, res) => {
     try {
         // console.log("searching for event")

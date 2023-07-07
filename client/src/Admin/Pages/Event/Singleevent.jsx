@@ -6,6 +6,9 @@ const Singleevent = (props) => {
     const deleteevent=async ()=>{
         await axios.get(`/event/deleteevent/${props.id}`).then((res) => { alert("Deleted Sucessfully") });
       }
+      const updateblgfeatured=async ()=>{
+        await axios.get(`/event/changefeaturedstatus/${props.id}`).then((res) => {  alert("Featured Sucessfully") });
+      }
   return (
     <div>
       <div className="event-box">
@@ -24,6 +27,7 @@ const Singleevent = (props) => {
               <span>{props.registrationfee}₹</span>
             </div>
             <i className="fa fa-trash event-delete-btn" aria-hidden="true"onClick={()=>{deleteevent()}}/>
+            <button  className='delete-btn' style={{color:props.featured==="True"?"red":"green"}} onClick={()=>{updateblgfeatured()}}>Featured <i class="fa-solid fa-jet-fighter-up"></i></button>
           </div>
           <EditEvents props={props}/>
         </div>

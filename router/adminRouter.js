@@ -59,8 +59,6 @@ router.get("/logout", (req, res) => {
     .send();
 });
 
-
-
 router.get("/isauthenticated", (req, res) => {
   // console.log(req.cookies)
   try {

@@ -39,7 +39,7 @@ const apicall=async ()=>{
       <div className="blogs">
         {/* <p>Blogs</p> */}
          {blogs.map((item) => {
-         return <Singleblog id={item._id} title={item.title} description={item.description} images={item.images} authername={item.authername} date={item.date}/>
+         return <Singleblog id={item._id} title={item.title} description={item.description} images={item.images} authername={item.authername} date={item.date} featured={item.featured}/>
         })}
       </div>
     </div>

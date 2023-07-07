@@ -35,6 +35,20 @@ router.get("/deleteblog/:id",adminauth, async (req, res) => {
     }
 });
 
+router.get("/changefeaturedstatus/:id",adminauth, async (req, res) => {
+    const blogId= req.params.id;
+    // console.log("Change api status")
+    try {
+        let blogcontent= await Blog.findById(req.params.id)
+        let uppdatedfeatured=blogcontent.featured==="False"?"True":"False";
+        // console.log(uppdatedfeatured)
+        let oldblog= await Blog.findOneAndUpdate({ _id:blogId},{featured:uppdatedfeatured});
+        res.status(200).send(oldblog);
+    } catch (err) {
+      res.status(200).send(err);
+    }
+});
+
 router.get("/allblogs", (req, res) => {
     try {
         // console.log("searching for blogs")
