@@ -20,6 +20,14 @@
     	/* border: 1px solid red; */
 }
 
+.home-svg-services{
+	margin: 0%;
+	padding: 0%;
+	width: 35rem;
+}
+  
+ 
+  
 .offering-svg h3{
     margin: 10px;
     color: white;
@@ -168,10 +176,8 @@
     padding: 10vh;
 }
 @media (min-width: 300px) and (max-width: 600px) {
-    .home-svg{
-        padding: 1vh;
-        margin: 2vh;
-        width: 225px;
+    .home-svg-services svg{
+        width: 40vh;
     }
     
     .offering-section-2-content{

@@ -35,7 +35,6 @@
 
 @media (min-width: 300px) and (max-width: 599px){
 .home-section2-heading h2{
-  
   letter-spacing: 1px;
   line-height: 1.3;
   
@@ -85,4 +84,9 @@
   /* text-align: center; */
 }
 
+@media (min-width: 300px) and (max-width: 599px){
+  .home-section2-heading h2 {
+  font-size: 5vh;
+  }
+}
 

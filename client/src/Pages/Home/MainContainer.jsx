@@ -55,7 +55,6 @@ export default function MainContainer() {
           <h1 >Medicaps</h1>
           <h1 >Innovation and Incubation Foundation</h1>
           <p >"Unlock your business potential"</p>
-
         </div>
 
         {/* <div className="main-section-left-down">

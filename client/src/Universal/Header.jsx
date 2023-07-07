@@ -21,8 +21,8 @@ export default function Header() {
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               version="1.1"
-              width={100}
-              height="45"
+              width={"15vh"}
+              // height="45"
               viewBox="0 0 3300 2416.225475370842"
             >
               <g transform="scale(15) translate(10, 10)">
