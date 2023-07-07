@@ -20,6 +20,8 @@
     font-weight: 400;
     color: #fff;
     margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Inter';
 }
 
 .home-sec6-img {
@@ -72,4 +74,27 @@ button.rec-dot {
     color: white !important;
     cursor: pointer !important;
 
+}
+
+@media (min-width: 300px) and (max-width:599px){
+    .home-sec6-h1{
+       font-size: 30px;
+    }
+    .ourpartner-main-container{
+        padding: 1vh;
+        margin: 2vh;
+    }
+    .home-sec6-text{
+      font-size: 20px;
+    }
+    .home-sec6-carousel{
+        padding: 1vh;
+        margin: -5vh;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .home-sec6-imgbox{
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
 }

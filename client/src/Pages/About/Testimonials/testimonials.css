@@ -57,4 +57,61 @@
   display: flex;
   justify-content: center;
   align-items: center;
+} 
+@media (min-width:300px) and (max-width:599px){
+  .testimonial-box{
+    padding: 1vh;
+    margin: 2vh;
+  }
+  .testimonial-inner-box{
+    margin: 2vh;
+    padding: 1vh;
+  }
+  .testimonial-inner-box h1{
+    font-size: 30px;
+  }
+  .testimonial-text-content{
+    padding: 1vh;
+    margin: 2vh;
+  }
+  .testimonial-text-content p{
+    font-size: 16px;
+  }
+  .testimonial-bottom-section{
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-avtar-container{
+    margin: 0vh;
+    width: 9vh;
+    
+  }
+  .testimonal-name-avtar{
+    display: flex;
+    padding: 1vh;
+     margin: 2vh;
+     flex: 50%;
+  }
+  .testimonial-name-container{
+    font-size: 10px;
+    flex: 50px;
+  }
+  .testimonial-avtar-container img{
+    width: 8vh;
+    height: 8vh;
+  }
+  .testimonial-next-prev-option{
+    padding: 1vh;
+    margin: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .testimonial-next-prev-option .nxt-prv-btn{
+    padding: 1vh;
+    margin: 2vh;
+    height: 40px;
+   width: 40px;
+  }
 }

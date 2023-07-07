@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import './Header.css'
 import { useLocation } from "react-router-dom";
 export default function Header() {
-  const [display, setDisplay] = useState(window.innerWidth > 1024 ? true : false);
+  const [display, setDisplay] = useState(window.innerWidth > 599 ? true : false);
   const [menue, setmenue] = useState(false);
   const { pathname } = useLocation();
 
@@ -22,7 +22,7 @@ export default function Header() {
               xmlnsXlink="http://www.w3.org/1999/xlink"
               version="1.1"
               width={100}
-              // height="24"
+              height="45"
               viewBox="0 0 3300 2416.225475370842"
             >
               <g transform="scale(15) translate(10, 10)">
@@ -49,13 +49,13 @@ export default function Header() {
         </div>
         {display ? <div className="navbar-items-left">
           <div className="left-items">
-            {/* <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink> */}
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Services</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">MII Community</NavLink>
+            {/* <NavLink  to="/">Home</NavLink> */}
+            <NavLink  to="/About">About</NavLink>
+            <NavLink  to="/Offering">Services</NavLink>
+            <NavLink  to="/Event">MII Community</NavLink>
   </div>
         </div> : <div className='handburg' onClick={() => { setmenue(!menue) }}>
-          {!menue ? <i class="fa-solid fa-bars-staggered fa-5x"></i> : <i class="fa-solid fa-xmark fa-5x"></i>}
+          {!menue ? <i class="fa-solid fa-bars-staggered fa"></i> : <i class="fa-solid fa-xmark fa"></i>}
         </div>}
         {display ? <div className="navbar-items-right">
           {/* <div className="right-items">
@@ -70,16 +70,17 @@ export default function Header() {
         </div> : <></>}
       </div>
       {menue ?
+        
         <div className="navbar-items-for-mobile">
-      <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Services</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">MII Community</NavLink>
-          <div>
+            <NavLink  to="/About">About</NavLink>
+            <NavLink  to="/Offering">Services</NavLink>
+            <NavLink  to="/Event">MII Community</NavLink>
+          {/* <div>
             <NavLink to='https://www.instagram.com/miifoundation.in/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
-          </div>
+          </div> */}
           <div className="right-contact">
             <NavLink style={{ color: "#fff" }} to="/Contact" >Contact</NavLink>
           </div>

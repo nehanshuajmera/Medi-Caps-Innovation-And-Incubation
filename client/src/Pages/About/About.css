@@ -46,11 +46,33 @@
     /* border: 1px solid green; */
 }
 
-@media(max-width: 900px) {
+/* @media(max-width: 900px) {
     .about-section-2 {
         flex-direction: column;
         height: 100vh;
         justify-content: center;
         align-items: center;
     }
+} */
+
+
+@media  (min-width: 300px) and (max-width: 599px){
+   .about-hero{
+    margin: 1vh;
+    padding: 1vh;
+    justify-content: space-around;
+   }
+   .divide-and-conquer-2{
+    padding: 2vh;
+    margin: 2vh;
+   }
+   .about-section-2-heading{
+    font-size: 162%;
+    margin: 1vh;
+    /* padding: 1vh; */
+    text-align: center;
+   } 
+   .about-section-2-paragraph{
+    font-size: 80%;
+   }
 }

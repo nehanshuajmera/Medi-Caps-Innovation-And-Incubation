@@ -49,7 +49,7 @@ export default function Offering() {
 
       {/* Section - 2 */}
       <div className="offering-section-2-container scroll-sections">
-        <div className="offering-section-2-content" style={{paddingTop:"10vh"}}>
+        <div className="offering-section-2-content">
           <p >
             Our goal is to set up each MII project with a network, community,
             legal instruments, and business management toolkit sufficient for

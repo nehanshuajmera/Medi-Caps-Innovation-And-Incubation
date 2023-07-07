@@ -18,7 +18,7 @@ export default function MainContainer() {
     <div className='main-section'>
 
       <div className='main-section-right'>
-        <div className='home-svg'>
+        <div className='home-svg-mii'>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -52,9 +52,9 @@ export default function MainContainer() {
       </div>
       <div className='main-section-left'>
         <div className="main-section-left-upper">
-          <h1 style={{ fontWeight: '400', fontFamily: 'Inter' }}>Medicaps</h1>
-          <h1 style={{ fontWeight: '400', fontFamily: 'Inter' }}>Innovation and Incubation Foundation</h1>
-          <p style={{ fontWeight: '300', fontFamily: 'Inter' }}>"Unlock your business potential"</p>
+          <h1 >Medicaps</h1>
+          <h1 >Innovation and Incubation Foundation</h1>
+          <p >"Unlock your business potential"</p>
 
         </div>
 

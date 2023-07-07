@@ -86,3 +86,25 @@ display: flex;
     margin-right: 40px;
     margin-left: -60px;
 }
+
+@media (min-width:300px) and (max-width:599px){
+    .event-image img{
+        height: 20vh;
+        width: 20vh;
+    }
+    .todays-event{
+        padding: 2vh;
+        margin: 1vh;
+
+    }
+    .today-event-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .event-box-container {
+        padding: 1vh;
+        margin: 1vh;
+        width: auto;
+        justify-content: space-around;
+    }
+}

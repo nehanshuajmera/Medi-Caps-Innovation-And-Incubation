@@ -8,7 +8,6 @@ const Glimpses = () => {
         <div className="glimpses-header">
           <h1
             className="glimpses-h1"
-            style={{ fontSize: "50px", fontFamily: "Inter" }}
           >
             Recent blog <br />
             posts

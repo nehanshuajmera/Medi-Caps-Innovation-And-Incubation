@@ -6,9 +6,9 @@ export default function Footer() {
     <div className="footer-pg scroll-sections">
       <div className="footer-main-box">
         <div className="get-in-touch-button">
-          <h1 style={{ letterSpacing: '1px', fontSize: '12vh' }}>Want to know more?</h1>
+          <h1 >Want to know more?</h1>
           <button>
-            <NavLink to='/Contact'><p style={{ letterSpacing: '1px'}}>Get in touch</p></NavLink>
+            <NavLink to='/Contact'><p>Get in touch</p></NavLink>
           </button>
         </div>
         <div className="footer-content-box">
@@ -18,7 +18,7 @@ export default function Footer() {
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 version="1.1"
-                width={85}
+                
                 viewBox="0 0 3300 2416.225475370842"
               >
                 <g transform="scale(15) translate(10, 10)">
