@@ -6,7 +6,7 @@ const SinglehomeBlog=(props)=>{
   const navigate=useNavigate();
 
   return(
-    <div className="blog-1" style={{cursor:"pointer"}} onClick={()=>{navigate(`/detailsblog/${props._id}`)}} >
+    <div className="blog-1" style={{cursor:"pointer"}} onClick={()=>{navigate(`/detailsblog/${props.id}`)}} >
     <div className="blog-photo">
       <img
         src={props.img}
