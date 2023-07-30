@@ -13,7 +13,9 @@ export default function About() {
             "Create a perfect ecosystem for your business"
           </h3>
           <p className="about-section-2-paragraph">
-            At MII Foundation, we have a culture that is collaborative, inclusive, and centered around innovation and creativity. We believe in fostering a supportive environment where start-ups can come together to share ideas, knowledge, and experiences.
+          MII Foundation is a full-scale incubator that prepares decentralized innovation for global use. To prepare the project for wide adoption, we assure full compliance, set up collaborations with global financial institutions, investment funds, governments. MII is a space where highly practical ideas that could potentially impact millions
+              (or better, billions) receive the support they deserve.
+            {/* At MII Foundation, we have a culture that is collaborative, inclusive, and centered around innovation and creativity. We believe in fostering a supportive environment where start-ups can come together to share ideas, knowledge, and experiences. */}
           </p>
         </div>
       </div>

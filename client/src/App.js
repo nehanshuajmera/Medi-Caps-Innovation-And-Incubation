@@ -51,7 +51,7 @@ function App() {
     <div className='scroller'>
       <Header/>
       <Routes>
-        <Route exact path='/' element={<Home/> }/>
+        <Route exact path='/' element={<Home blog={blog}/> }/>
         <Route  path='/contact' element={<Contact/> }/>
         <Route  path='/Offering' element={<Offering/> }/>
         <Route  path='/Article' element={<Article blog={blog}/> }/>

@@ -1,7 +1,30 @@
 import React from "react";
 import "./Glimpses.css";
+import { useNavigate } from "react-router-dom";
 
-const Glimpses = () => {
+const SinglehomeBlog=(props)=>{
+  const navigate=useNavigate();
+
+  return(
+    <div className="blog-1" style={{cursor:"pointer"}} onClick={()=>{navigate(`/detailsblog/${props._id}`)}} >
+    <div className="blog-photo">
+      <img
+        src={props.img}
+        alt="blog" width={"335"} height={"200"}
+      />
+    </div>
+    <div className="blog-text">
+      <h2>{props.title}</h2>
+      <p>
+      {props.description.slice(1,290)}...
+      </p>
+    </div>
+  </div>
+  )
+}
+const Glimpses = (props) => {
+  const navigate=useNavigate();
+// console.log(props)
   return (
     <div>
       <div className="glimpses-container">
@@ -12,62 +35,15 @@ const Glimpses = () => {
             Recent blog <br />
             posts
           </h1>
-          <button className=" button glimpses-btn-seeall">
+          <button className=" button glimpses-btn-seeall" onClick={()=>{navigate("/Article")}}>
             See all articles
           </button>
         </div>
 
         <div className="blog-container-glimpses">
-          <div className="blog-1">
-            <div className="blog-photo">
-              <img
-                src="https://www.zenxlabs.io/assets/img/media/gec.jpeg?2"
-                alt="blog" width={"335"} height={"200"}
-              />
-            </div>
-            <div className="blog-text">
-              <h2>Unizen partners with GEC for DOGE-1 SpaceX mission</h2>
-              <p>
-                GEC is a leading tech and research pioneer, focused on energy,
-                engineering, space, development, and decentralization.
-                Currently, GEC is working on building and launching DOGE-1…
-              </p>
-            </div>
-          </div>
-          <div className="blog-2">
-            <div className="blog-photo">
-              <img
-                className="img-1"
-                src="https://www.zenxlabs.io/assets/img/media/stable.png?2"
-                alt="blog" width={"335"} height={"200"}
-              />
-            </div>
-            <div className="blog-text">
-              <h2>ZenX Labs Is Accelerating Stablecomp</h2>
-              <p>
-                Stablecoins are now among DeFi’s most valuable assets. USDT with
-                a market cap of 73.89B, is the fourth most used currency in the
-                market. USD Coin (USDC) also makes the top 10 with its 34B
-                value…
-              </p>
-            </div>
-          </div>
-          <div className="blog-3">
-            <div className="blog-photo">
-              <img
-                src="https://www.zenxlabs.io/assets/img/media/geeq.png?2"
-                alt="blog" width={"335"} height={"200"}
-              />
-            </div>
-            <div className="blog-text">
-              <h2>Geeq Joins Unizen ZenX Accelerator Program</h2>
-              <p>
-                Blockchain pioneer Geeq announced today that it has been
-                selected to join the Unizen ZenX Incubator in the acceleration
-                program. The…
-              </p>
-            </div>
-          </div>
+        {props.blog.slice(0,3).map(item=>{
+           return  <SinglehomeBlog id={item._id} img={item.images} date={item.date} title={item.title} description={item.description}/>
+         })}
         </div>
       </div>
     </div>

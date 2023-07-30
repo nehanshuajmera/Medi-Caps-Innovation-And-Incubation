@@ -14,7 +14,7 @@
   position: sticky;
   position: -webkit-sticky;
   top: 40% ;
-  width: 40vh;
+  width: 50vh;
   height: 80vh;
   text-align: center;
   padding-bottom: 30vh;
@@ -73,9 +73,10 @@ img{
     /* color: aqua; */
     opacity: 0.5;
   }
-  100%{
+  75%{
     opacity: 1;
   }
+
 }
 
 @keyframes fade-out {
@@ -83,14 +84,11 @@ img{
     opacity: 1;
   }
   25%{
-    opacity: 0.5;
+    opacity: 1;
   }
   50%{
     /* color: aqua; */
     opacity: 0.25;
-  }
-  50%{
-    /* color: red; */
   }
   100%{
     opacity: 0;

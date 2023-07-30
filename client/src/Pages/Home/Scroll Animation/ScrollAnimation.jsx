@@ -109,11 +109,12 @@ export default function ScrollAnimation() {
         {/* <i className={`fa-solid fa-2 fa-9x hidden-i-animation ${isvisible2?'show-i-animation ':''}`}/>
         <i className={`fa-solid fa-3 fa-9x hidden-i-animation ${isvisible3?'show-i-animation ':''}`}/> 
         <i className={`fa-solid fa-4 fa-9x hidden-i-animation ${isvisible4?'show-i-animation ':''}`}/> */}
-        
+        {/* https://static.vecteezy.com/system/resources/previews/012/325/048/non_2x/seed-icon-free-vector.jpg */}
+        {/* https://i.pinimg.com/originals/2e/26/27/2e26273f9467493f1e5045f2856daeef.png */}
         <img src="./images/Seed1.png" alt="" className={`hidden-i-animation ${isvisible1?'show-i-animation ':''}`} />
-        <img src="./images/Seed2.png" alt="" className={`hidden-i-animation ${isvisible2?'show-i-animation ':''}`} />
-        <img src="./images/Seed3.png" alt="" className={`hidden-i-animation ${isvisible3?'show-i-animation ':''}`} />
-        <img src="./images/Seed4.png" alt="" className={`hidden-i-animation ${isvisible4?'show-i-animation ':''}`} />
+        <img src="./images/image2-animation.jpg" alt="" className={`hidden-i-animation ${isvisible2?'show-i-animation ':''}`} />
+        <img src="./images/image3-animation.png" className={`hidden-i-animation ${isvisible3?'show-i-animation ':''}`} />
+        <img src="./images/Tree.png" alt="" className={`hidden-i-animation ${isvisible4?'show-i-animation ':''}`} />
        
       </div>
     </div>
