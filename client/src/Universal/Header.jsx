@@ -58,8 +58,8 @@ export default function Header() {
               <NavLink to="/Offering">Services</NavLink>
             </div>
             <div>
-              <a className="miicommunity-hover">MII Community
-                <div className='nabar-bloog-events'>
+              <a style={{cursor: 'pointer'}} className="miicommunity-hover">MII Community
+                <div className='navbar-blogs-events'>
                   <div onClick={() => { navigate("/Event") }}>
                     <h3 >Events</h3>
                   </div>
@@ -80,7 +80,7 @@ export default function Header() {
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
           </div> */}
-          <div className="right-contact">
+          <div style={{cursor:'pointer'}} className="right-contact">
             <NavLink to="/Contact" >Contact Us</NavLink>
           </div>
         </div> : <></>}
