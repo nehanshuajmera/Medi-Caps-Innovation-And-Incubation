@@ -21,7 +21,7 @@
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    height: 50vh;
+    /* height: 50vh; */
     padding: 8px;
     /* border: 1px solid red; */
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from "react-router-dom";
 import './Header.css'
 import { useLocation } from "react-router-dom";
+
 export default function Header() {
   const navigate = useNavigate();
   const [display, setDisplay] = useState(window.innerWidth > 599 ? true : false);
@@ -10,12 +11,12 @@ export default function Header() {
   useEffect(() => {
     setmenue(false);
   }, [pathname]);
-  
+
   return (
     <div className="navbar">
-      
+
       <div className="header">
-      <div className="navbar-logo">
+        <div className="navbar-logo">
           <a href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,19 +51,25 @@ export default function Header() {
         {display ? <div className="navbar-items-left">
           <div className="left-items">
             {/* <NavLink  to="/">Home</NavLink> */}
-            <NavLink  to="/About">About</NavLink>
-            <NavLink  to="/Offering">Services</NavLink>
-            <a className="miicommunity-hover">MII Community
-            <div className='nabar-bloog-events'>
-              <div onClick={()=>{navigate("/Event")}}>
-              <h3 >Events</h3>
-              </div>
-              <div onClick={() => {navigate("/Article")}}>
-              <h3>Blogs</h3>
-              </div>
+            <div>
+              <NavLink to="/About">About</NavLink>
             </div>
-            </a>
-  </div>
+            <div>
+              <NavLink to="/Offering">Services</NavLink>
+            </div>
+            <div>
+              <a className="miicommunity-hover">MII Community
+                <div className='nabar-bloog-events'>
+                  <div onClick={() => { navigate("/Event") }}>
+                    <h3 >Events</h3>
+                  </div>
+                  <div onClick={() => { navigate("/Article") }}>
+                    <h3>Blogs</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div> : <div className='handburg' onClick={() => { setmenue(!menue) }}>
           {!menue ? <i className="fa-solid fa-bars-staggered fa"></i> : <i className="fa-solid fa-xmark fa"></i>}
         </div>}
@@ -79,20 +86,20 @@ export default function Header() {
         </div> : <></>}
       </div>
       {menue ?
-        
+
         <div className="navbar-items-for-mobile">
-            <NavLink  to="/About">About</NavLink>
-            <NavLink  to="/Offering">Services</NavLink>
-            <a  to="/Event" className="miicommunity-hover">MII Community
+          <NavLink to="/About">About</NavLink>
+          <NavLink to="/Offering">Services</NavLink>
+          <a to="/Event" className="miicommunity-hover">MII Community
             <div className='nabar-bloog-events'>
-              <div onClick={()=>{navigate("/Event")}}>
-              <h3 >Events</h3>
+              <div onClick={() => { navigate("/Event") }}>
+                <h3 >Events</h3>
               </div>
-              <div onClick={() => {navigate("/Article")}}>
-              <h3 >Blogs</h3>
+              <div onClick={() => { navigate("/Article") }}>
+                <h3 >Blogs</h3>
               </div>
             </div>
-            </a>            
+          </a>
           <div className="right-contact">
             <NavLink style={{ color: "#fff" }} to="/Contact" >Contact</NavLink>
           </div>
