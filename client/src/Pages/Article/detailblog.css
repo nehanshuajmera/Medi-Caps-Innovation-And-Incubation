@@ -285,7 +285,7 @@ p.ad5-color-contrast-medium.ad5-text-md {
 
 .ad5-max-width-lg {
   max-width: 80rem;
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
 }
 img.ad5-block.ad5-width-100\%.ad5-radius-lg {
   object-fit: cover;

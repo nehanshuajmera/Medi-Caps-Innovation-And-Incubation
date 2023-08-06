@@ -10,7 +10,7 @@ const navigate = useNavigate();
   return (
     <div>
       <div className="blog-section">
-        {blog.filter(item => item.featured==="True").map(item=>{
+        {blog.filter(item => item?.featured==="True").map(item=>{
           return <Mainblog id={item._id} img={item.images} date={item.date} title={item.title} description={item.description}/>
         })}
         
