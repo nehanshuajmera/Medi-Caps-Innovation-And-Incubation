@@ -44,7 +44,7 @@ router.get("/deleteevent/:id",adminauth, async (req, res) => {
   
 router.get("/changefeaturedstatus/:id",adminauth, async (req, res) => {
   const eventId= req.params.id;
-  // console.log("Change api status")
+  console.log("Change api status")
   try {
       let eventcontent= await Event.findById(req.params.id)
       let uppdatedfeatured=eventcontent.featured==="False"?"True":"False";

@@ -71,7 +71,7 @@ export default function Header() {
             </div>
           </div>
         </div> : <div className='handburg' onClick={() => { setmenue(!menue) }}>
-          {!menue ? <i className="fa-solid fa-bars-staggered fa"></i> : <i className="fa-solid fa-xmark fa"></i>}
+          {!menue ? <i className="fa-solid fa-bars-staggered fa"/> : <i className="fa-solid fa-xmark fa"/>}
         </div>}
         {display ? <div className="navbar-items-right">
           {/* <div className="right-items">

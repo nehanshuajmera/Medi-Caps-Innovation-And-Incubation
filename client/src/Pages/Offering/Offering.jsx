@@ -41,8 +41,9 @@ export default function Offering() {
         </div>
         <div className='main-section-left'>
           <div className="main-section-left-upper">
-            <h1 style={{ fontWeight: '400', fontSize:'2.5em' }}>Incubation & Start-Up Consulting</h1>
-            <p style={{ fontWeight: '300', fontSize:'1.6em' }}>"To help start-ups grow and succeed."</p>
+            <p style={{ fontWeight: '300', fontSize:'1.6em',paddingBottom:"10px" }}>Offers</p>
+            <h1 style={{ fontWeight: '400', fontSize:'2em',padding:"0px 0px 0px 55px" }}>INCUBATION | CONSULTING | MENTORING | FUNDING | ACCELERATION</h1>
+            <p style={{ fontWeight: '300', fontSize:'1.6em' }}>To help start-ups grow and succeed</p>
           </div>
         </div>
       </div>
@@ -53,7 +54,7 @@ export default function Offering() {
           <p >
             Our goal is to set up each MII project with a network, community,
             legal instruments, and business management toolkit sufficient for
-            solving very global challenges
+            solving global challenges
           </p>
         </div>
       </div>
