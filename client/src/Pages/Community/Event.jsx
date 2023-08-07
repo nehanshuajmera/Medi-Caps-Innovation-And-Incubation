@@ -18,7 +18,7 @@ export default function Event({event}) {
            </div>
        
         <div className="todays-event">
-          <h2 className="event-tommarow-header">Tommoraw Event </h2>
+          <h2 className="event-tommarow-header">Tomorrow Event </h2>
                <div className="today-event-box">
                {event.filter(item => item.featured!=="True").map(item=>{
           return <Singleeventbox id={item._id} title={item.title} description={item.description} date={item.date} location={item.location} />
