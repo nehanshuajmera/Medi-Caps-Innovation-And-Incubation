@@ -41,7 +41,9 @@ export default function SingleAdvisor(props) {
             </svg>
           </span>
         </div>
+        <div className='zl-staff-linkedin-icon'>
         <NavLink to={props.contact} target='_blank' style={{color:"#0072b1"}}><i class="fa-brands fa-linkedin fa-2x"></i></NavLink>
+        </div>
       </div>
       {/* <div className="zl-staff-item-text">
         <p>{props.content}</p>
