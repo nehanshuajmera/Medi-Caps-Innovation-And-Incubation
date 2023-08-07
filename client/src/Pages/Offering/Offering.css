@@ -13,11 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* height: 40%; */
     width: 40%;
-    /* padding: 10vh; */
-    border-radius: 125%;
-    	/* border: 1px solid red; */
 }
 
 .home-svg-services{
@@ -30,6 +26,11 @@
     margin: 10px;
     color: white;
     text-align: center;
+}
+
+.main-section-left{
+    /* border: 1px solid green; */
+    height: 78vh;
 }
 
 @media only screen and (max-width: 600px) {
