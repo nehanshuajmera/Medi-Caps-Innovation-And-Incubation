@@ -32,10 +32,10 @@ export default function SingleTeam(props) {
         </div>
         <NavLink to={props.contact} target='_blank' style={{color:"#0072b1"}}><i class="fa-brands fa-linkedin fa-2x"></i></NavLink>
       </div>
-      <div className="zl-staff-item-text">
+      {/* <div className="zl-staff-item-text">
         <p>{props.content}</p>
         <NavLink to={props.contact} target='_blank' style={{color:"#0072b1"}}><i class="fa-brands fa-linkedin fa-2x"></i></NavLink>
-      </div>
+      </div> */}
     </div>
 
     )
