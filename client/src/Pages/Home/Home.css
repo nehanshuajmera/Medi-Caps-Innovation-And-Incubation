@@ -3,13 +3,11 @@
 
 /* Full Home section Access Container */
 .home-section-container {
-  font-family: 'Inter', sans-serif;
+  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-/* Hero Section  */
 
 
 /* Home Section (second) Container after herosection */
@@ -35,6 +33,17 @@
   /* border: 2px solid green; */
 }
 
+@media (min-width: 300px) and (max-width: 599px){
+.home-section2-heading h2{
+  letter-spacing: 1px;
+  line-height: 1.3;
+  
+}
+.home-section2-container{
+  padding: 20px;
+
+}
+}
 /* Left container inside section-2-container */
 .home-section2-heading {
   /* width: 280px; */
@@ -45,12 +54,11 @@
   /* border: 2px solid rgb(22, 30, 22); */
 }
 
-.home-section2-heading h1 {
+.home-section2-heading h2 {
   color: white;
   /* border-right: 3px dotted #017FE4; */
-  font-size: 7vh;
-  letter-spacing: 1px;
-  line-height: 1.4;
+  font-size: 6vh;
+  
   /* text-align: center; */
   /* padding: 1% 3%; */
 }
@@ -76,9 +84,9 @@
   /* text-align: center; */
 }
 
-@media (max-width: 1120px){
-  .section-1-home-container1 h3{
-    font-size: 80px;
+@media (min-width: 300px) and (max-width: 599px){
+  .home-section2-heading h2 {
+  font-size: 5vh;
   }
 }
 

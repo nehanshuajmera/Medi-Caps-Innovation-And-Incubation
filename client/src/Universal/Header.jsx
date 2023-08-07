@@ -1,28 +1,29 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import './Header.css'
 import { useLocation } from "react-router-dom";
+
 export default function Header() {
-  const [display, setDisplay] = useState(window.innerWidth > 1024 ? true : false);
+  const navigate = useNavigate();
+  const [display, setDisplay] = useState(window.innerWidth > 599 ? true : false);
   const [menue, setmenue] = useState(false);
   const { pathname } = useLocation();
-
   useEffect(() => {
     setmenue(false);
   }, [pathname]);
-  
+
   return (
     <div className="navbar">
-      
+
       <div className="header">
-      <div className="navbar-logo">
+        <div className="navbar-logo">
           <a href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               version="1.1"
-              width={100}
-              // height="24"
+              width={"15vh"}
+              // height="45"
               viewBox="0 0 3300 2416.225475370842"
             >
               <g transform="scale(15) translate(10, 10)">
@@ -49,13 +50,28 @@ export default function Header() {
         </div>
         {display ? <div className="navbar-items-left">
           <div className="left-items">
-            {/* <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/">Home</NavLink> */}
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Services</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">MII Community</NavLink>
-  </div>
+            {/* <NavLink  to="/">Home</NavLink> */}
+            <div>
+              <NavLink to="/About">About</NavLink>
+            </div>
+            <div>
+              <NavLink to="/Offering">Services</NavLink>
+            </div>
+            <div>
+              <a style={{cursor: 'pointer'}} className="miicommunity-hover">MII Community
+                <div className='navbar-blogs-events'>
+                  <div onClick={() => { navigate("/Event") }}>
+                    <h3 >Events</h3>
+                  </div>
+                  <div onClick={() => { navigate("/Article") }}>
+                    <h3>Blogs</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div> : <div className='handburg' onClick={() => { setmenue(!menue) }}>
-          {!menue ? <i class="fa-solid fa-bars-staggered fa-5x"></i> : <i class="fa-solid fa-xmark fa-5x"></i>}
+          {!menue ? <i className="fa-solid fa-bars-staggered fa"></i> : <i className="fa-solid fa-xmark fa"></i>}
         </div>}
         {display ? <div className="navbar-items-right">
           {/* <div className="right-items">
@@ -64,22 +80,26 @@ export default function Header() {
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
             <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
           </div> */}
-          <div className="right-contact">
+          <div style={{cursor:'pointer'}} className="right-contact">
             <NavLink to="/Contact" >Contact Us</NavLink>
           </div>
         </div> : <></>}
       </div>
       {menue ?
+
         <div className="navbar-items-for-mobile">
-      <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/About">About</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Offering">Services</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "#000000" : "" })} to="/Event">MII Community</NavLink>
-          <div>
-            <NavLink to='https://www.instagram.com/miifoundation.in/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
-            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
-            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
-            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
-          </div>
+          <NavLink to="/About">About</NavLink>
+          <NavLink to="/Offering">Services</NavLink>
+          <a to="/Event" className="miicommunity-hover">MII Community
+            <div className='nabar-bloog-events'>
+              <div onClick={() => { navigate("/Event") }}>
+                <h3 >Events</h3>
+              </div>
+              <div onClick={() => { navigate("/Article") }}>
+                <h3 >Blogs</h3>
+              </div>
+            </div>
+          </a>
           <div className="right-contact">
             <NavLink style={{ color: "#fff" }} to="/Contact" >Contact</NavLink>
           </div>

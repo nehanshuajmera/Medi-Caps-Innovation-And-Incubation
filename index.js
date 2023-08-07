@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
 const PORT = process.env.PORT || 5000;
 const cors = require("cors");
-
+// const adminauth= require("./middleware/adminauth")
 dotenv.config();
 app.use(express.json());
 
@@ -29,7 +29,7 @@ mongoose.connect(process.env.MDB_CONNECT)
 // console.log("udsgfgd")
 
 //  set up routes
-app.use("/admin", require("./router/adminRouter"));
+app.use("/admin",require("./router/adminRouter"));
 app.use("/blog", require("./router/blogRouter"));
 app.use("/event", require("./router/eventRouter"));
 app.use("/contactdetails", require("./router/contactRouter"));

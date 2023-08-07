@@ -9,12 +9,15 @@
   padding-top: 128px;
   padding-left: 20px;
 }
-.scroll-animation-homepage-right i{
+.scroll-animation-homepage-right img{
   display: block;
   position: sticky;
   position: -webkit-sticky;
   top: 40% ;
+  width: 50vh;
+  height: 80vh;
   text-align: center;
+  padding-bottom: 30vh;
 }
 .scroll-animation-homepage-container-content{
   margin: 10vh 0;
@@ -29,7 +32,7 @@
   text-align: center;
   width: 50%;
 }
-.scroll-animation-homepage-container-content i{
+.scroll-animation-homepage-container-content img{
   width: 40%;
   position: -webkit-sticky;
   position: sticky;
@@ -53,7 +56,10 @@
   /* transition: all 8s;
   transition-delay: 2s; */
 }
-
+img{
+  height: 100%;
+  width: 100%;
+}
 
 @keyframes fade-in {
   0%{
@@ -67,9 +73,10 @@
     /* color: aqua; */
     opacity: 0.5;
   }
-  100%{
+  75%{
     opacity: 1;
   }
+
 }
 
 @keyframes fade-out {
@@ -77,16 +84,43 @@
     opacity: 1;
   }
   25%{
-    opacity: 0.5;
+    opacity: 1;
   }
   50%{
     /* color: aqua; */
     opacity: 0.25;
   }
-  50%{
-    /* color: red; */
-  }
   100%{
     opacity: 0;
+  }
+}
+
+
+@media (min-width: 300px) and (max-width: 599px){
+  .scroll-section{
+    min-height: min-content;
+  }
+  .scroll-animation-homepage{
+    padding: 1vh;
+    margin: 1vh;
+    display: flexbox;
+    min-height: auto;
+  }
+  .scroll-animation-homepage-container{
+    min-height: min-content;
+  }
+  .scroll-animation-homepage-container-content{
+    padding: 1vh;
+    margin: 2vh;
+    min-height: 1vh;
+  }
+  .scroll-animation-homepage-container-content h1{
+    /* display: flex; */
+    font-size: 50px;
+    padding: 10px;
+  }
+
+  .scroll-animation-homepage-right{
+    display: none;
   }
 }

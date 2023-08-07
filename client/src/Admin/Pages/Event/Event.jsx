@@ -31,9 +31,21 @@ const apicall=async ()=>{
       </div>
       <div className="blogs">
         {/* <p>Evedfisdfiydnts</p> */}
+        <table>
+  <tr>
+    <th>Topic</th>
+    <th>Details</th>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Fees</th>
+    <th>Upcoming</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
          {events.map((item) => {
          return <Singleevent id={item._id} title={item.title} description={item.description} images={item.images} authername={item.authername} date={item.date} time={item.time} location={item.location} numberofspeaker={item.numberofspeaker} registrationfee={item.registrationfee}/>
         })}
+     </table>
       </div>
     </div>
   )

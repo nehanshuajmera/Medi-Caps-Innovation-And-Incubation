@@ -12,7 +12,9 @@ router.post("/addblog",adminauth, async (req, res) => {
         title,
         date,
         like:0,
-        comments:[]
+        comments:[],
+        created_at:new Date(),
+        featured:"False"
         });
    
     newblog.save()
@@ -27,6 +29,20 @@ router.get("/deleteblog/:id",adminauth, async (req, res) => {
     const blogId= req.params.id;
     try {
         let oldblog= await Blog.findOneAndDelete({ _id:blogId});
+        res.status(200).send(oldblog);
+    } catch (err) {
+      res.status(200).send(err);
+    }
+});
+
+router.get("/changefeaturedstatus/:id",adminauth, async (req, res) => {
+    const blogId= req.params.id;
+    // console.log("Change api status")
+    try {
+        let blogcontent= await Blog.findById(req.params.id)
+        let uppdatedfeatured=blogcontent.featured==="False"?"True":"False";
+        // console.log(uppdatedfeatured)
+        let oldblog= await Blog.findOneAndUpdate({ _id:blogId},{featured:uppdatedfeatured});
         res.status(200).send(oldblog);
     } catch (err) {
       res.status(200).send(err);

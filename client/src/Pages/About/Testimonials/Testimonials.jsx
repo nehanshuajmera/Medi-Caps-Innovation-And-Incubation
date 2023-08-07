@@ -1,42 +1,38 @@
 import React from 'react'
 import './testimonials.css'
 export default function Testimonials() {
+  
   return (
     <div className='testimonial-box'>
-      <div className='testimonial-main-container-homepage'>
-        <h5 className="testimonial-main-heading-text">Testimonials</h5>
-        <div className="testimonial-image-container">
-          <figure className="snip1574">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample40.jpg" alt="profile-sample2" />
-            <figcaption>
-              <blockquote>
-                <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
-              </blockquote>
-              <h3>Sue Shei</h3>
-              <h5>Founder</h5>
-            </figcaption>
-          </figure>
-          <figure className="snip1574"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample37.jpg" alt="profile-sample7" />
-            <figcaption>
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. quisquam, harum nam eius praesentium amet cumque consequuntur?</p>
-              </blockquote>
-              <h3>Will Barrow</h3>
-              <h5>Web Designer</h5>
-            </figcaption>
-          </figure>
-          <figure className="snip1574"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample35.jpg" alt="profile-sample6" />
-            <figcaption>
-              <blockquote>
-                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-              </blockquote>
-              <h3>Indigo Violet</h3>
-              <h5>Public Relations</h5>
-            </figcaption>
-          </figure>
-        </div>
+      <div className='testimonial-inner-box'>
+        <h1>Testimonials</h1>
+        <div className='testimonial-text-content'>
+        <p>"We came to ZenX as a well-established company with a goal to strengthen our presence in the blockchain field. We were impressed with the level of expertise and practical experience, both on technical and administrative level. Dimitra is a very ambitious project - we are happy to find a partner that has the knowledge and ability to support our mission of solving global hunger."</p>
       </div>
-      <hr style={{ width: '86%', margin: 'auto'}} />
+      <div className='testimonial-bottom-section'>
+      
+      <div className="testimonal-name-avtar">
+           <div className='testimonial-avtar-container'>
+          <img src='https://www.zenxlabs.io/assets/img/testimonials/trask.jpg' alt='' />         
+          </div>
+          <div className='testimonial-name-container'>
+            <h3>Jon Trask, CEO</h3>
+            <h3 style={{color:"#931727"}}>Dimitra Technology</h3>
+          </div>
+        </div>
+         
+          <div className='testimonial-next-prev-option'>
+            <div className='nxt-prv-btn'> 
+          <i className="fa-solid fa-arrow-left "></i>
+          </div>
+          <div className='nxt-prv-btn'> 
+
+          <i className="fa-solid fa-arrow-right "></i>
+          </div>
+          </div>
+      </div>
+      </div>
+      
     </div>
   )
 }

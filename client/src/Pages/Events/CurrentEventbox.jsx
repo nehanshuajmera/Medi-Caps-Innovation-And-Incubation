@@ -16,8 +16,8 @@ export default function CurrentEventbox({props}) {
           {/* <p>{props.time}</p> */}
           {/* <p>{props.numberofspeaker}</p> */}
           <div className='button-event'>
-          <button class="button-who-am-i" onClick={()=>{navigate(`/singleevent/${props._id}`)}}> Register</button>
-          <button class="button-who-am-i" onClick={()=>{navigate(`/singleevent/${props._id}`)}}> View Details 🎉</button>
+          <button className="button-who-am-i" onClick={()=>{navigate(`/singleevent/${props._id}`)}}> Register</button>
+          <button className="button-who-am-i" onClick={()=>{navigate(`/singleevent/${props._id}`)}}> View Details 🎉</button>
           </div>
         </div>
         <div className='img-section'>

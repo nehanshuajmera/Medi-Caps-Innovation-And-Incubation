@@ -6,8 +6,8 @@ import { storage } from '../../../firebase';
 import {getDownloadURL, listAll, ref, uploadBytes} from 'firebase/storage';
 import './editblog.css'
 
-export default function EditBlog({props}) {
-
+export default function EditBlog({props,seteditblg}) {
+  const [imaguploadsuccessfully, setimaguploadsuccessfully] = useState(false);
   const [FormData,setFormData]=useState({
     images:"",
     description:"",
@@ -38,6 +38,7 @@ export default function EditBlog({props}) {
       images: url
   })
     alert("Image was Succesfully Updated");
+    setimaguploadsuccessfully(true)
   }  
  
   const handleChange = e => {
@@ -50,8 +51,12 @@ export default function EditBlog({props}) {
 
   async function submit() {
     try {
+      if(!imaguploadsuccessfully){
+        alert("IMAGE was not uploaded");
+        return ;
+      }
       await axios.post(`/blog/updateblog/${props.id}`,FormData)
-      .then(()=>{alert("Blog added successfully")})
+      .then(()=>{alert("Blog Updated successfully"); window.location.reload()})
       .catch((err)=>{alert(err)})
     } catch (err) {
       alert(err);
@@ -100,11 +105,12 @@ export default function EditBlog({props}) {
 
   return (
     <div className="edit-box">
+      <h4 className='close-btn-blog' onClick={()=>{seteditblg(false)}}>close X</h4>
     <div className="blog-img">
       <div className="img-upload">
         <p>Upload image :</p>
         <label htmlFor="event-img">
-          <i class="fa-solid fa-upload"/>
+          <i className="fa-solid fa-upload"/>
         </label>
         <input type="file" name="event-img" accept="image/png, image/gif, image/jpeg"  onChange={(event)=>{setImageUpload(event.target.files[0])}} />
       </div>
@@ -117,7 +123,7 @@ export default function EditBlog({props}) {
       <input type="date"  onChange={ handleChange } name="date" value={FormData.date} />
       <input type="text" onChange={ handleChange } name="authername" value={FormData.authername} placeholder='Author Name'/>
       <div className="btn-section row-3">          
-            <button className='delete-btn' onClick={()=>{submit()}}><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <button className='delete-btn' onClick={()=>{submit()}}><i className="fa fa-pencil" aria-hidden="true"></i></button>
       </div> 
     </div>
   </div>

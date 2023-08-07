@@ -5,27 +5,62 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
-    /* z-index: 999; */
     margin-top: 3vh;
     margin-bottom: 1vh;
-    /* padding: 5px 0 0 0; */
-    /* top: 0; */
     background-color: white;
-    /* background-color: black; */
-    /* border: 2px solid red; */
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+    .navbar {
+        height: 8vh;
+        margin-top: 1.5%;
+    }
+
+    .on-mobile-cross {
+        display: none;
+    }
+
+    .handburg {
+        padding-left: 14vh;
+        height: 10px;
+        margin-left: 20%;
+    }
+
+    .navbar-logo {
+        margin: 0px 20px;
+    }
+
+    .navbar-items-for-mobile {
+        display: flex;
+        border-radius: 3vh;
+        background-color: rgb(67, 65, 65);
+        z-index: 3;
+        font-size: 27px;
+        position: sticky;
+        width: min-content;
+        flex-wrap: wrap;
+        width: 50vh;
+        flex-direction: column;
+        padding: 4vh;
+        color: white;
+    }
+
+
+    .navbar-items-for-mobile a {
+        text-decoration: none;
+        margin: 10px 0;
+        color: white;
+    }
 }
 
 .header {
-    /* border: 1px solid black; */
     width: 100%;
     display: grid;
     grid-template-columns: 3fr 1fr 2.5fr;
     gap: 10px;
 }
 
-.navbar-items-left{
-    /* border: 1px solid green; */
+.navbar-items-left {
     display: flex;
     align-items: center;
     margin: 15px 0;
@@ -34,14 +69,12 @@
 .left-items {
     width: max-content;
     display: flex;
-    /* justify-content: flex-end; */
     flex-wrap: wrap;
 }
 
 .left-items a {
     text-decoration: none;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
+    font-size: 3.4vh;
     letter-spacing: 1px;
     padding: 10px 10px;
     font-weight: 400;
@@ -50,25 +83,22 @@
     box-sizing: border-box;
 }
 
-.navbar-items-right{
-    /* border: 1px solid green; */
+.navbar-items-right {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 15px 0;
+    margin: 3vh 0;
 }
 
 .right-items {
     display: flex;
-    /* justify-content: flex-end; */
     flex-wrap: wrap;
 }
 
-.right-items img{
+.right-items img {
     width: 35px;
     padding: 2px;
-    /* margin: 2px 12px; */
 }
 
 .right-items a {
@@ -79,13 +109,17 @@
     box-sizing: border-box;
 }
 
-.navbar-logo{
+.navbar-logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.right-contact{
+.fa {
+    font-size: 55px;
+}
+
+.right-contact {
     /* border: 1px solid pink; */
     border-radius: 5px;
     padding: 1px;
@@ -94,19 +128,14 @@
     display: flex;
 }
 
-.right-contact:hover{
+.right-contact:hover {
     background-color: rgb(43, 41, 41);
     opacity: 0.7;
 }
 
-/* .right-contact a:hover{
-    color: black;
-} */
-
-.right-contact a{
+.right-contact a {
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Inter', sans-serif;
     letter-spacing: 1px;
     padding: 10px 10px;
     font-weight: 300;
@@ -115,10 +144,11 @@
     box-sizing: border-box;
 }
 
-.left-items .active{
+.left-items .active {
     border-bottom: 2px solid #000000;
 }
-.left-items a:hover {
+
+.left-items Navlink:hover {
     color: #000000;
     border-bottom: 2px solid #000000;
 }
@@ -127,34 +157,36 @@
     color: #000000;
 }
 
+@media (max-width: 599px) {}
 
-.on-mobile-cross{
+.navbar-blogs-events {
     display: none;
+    /* text-align: center; */
+    margin: 10px 0px;
+    padding: 8px;
+    position: absolute;
+    width: max-content;
+    z-index: 99999999999999999999999999;
+    background-color: white;
+    border-radius: 5px;
+    /* box-shadow: 1px 1px #888888; */
 }
 
-.handburg{
-    margin-left:20%;
+.navbar-blogs-events h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    font-weight: 300;
+    margin: 0 12px;
+    cursor: pointer;
 }
 
-.navbar-items-for-mobile{
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-}
-
-.navbar-items-for-mobile{
-    font-size: 47px;
+.miicommunity-hover:hover .navbar-blogs-events {
+    display: block;
     color: #000000;
 }
 
-.navbar-items-for-mobile a{
-    text-decoration: none;
+.navbar-blogs-events:hover {
+    display: block;
     color: #000000;
-    margin: 10px 0;
-}
-
-.navbar-items-for-mobile img{
-    width: 35px;
-    padding: 2px;
-    /* margin: 2px 12px; */
 }
