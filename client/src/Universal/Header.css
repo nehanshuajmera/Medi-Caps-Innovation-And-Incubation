@@ -9,7 +9,23 @@
     margin-bottom: 1vh;
     background-color: white;
 }
+.navbar-navigation{
+    display: grid;
+    grid-column: 2/4;
+    grid-template-columns: 2fr 1fr;
+}
+.hamburger-section{
+    display: none;
+}
+.hamburger-btn{
+    display: none;
+}
+.cross-btn{
+    display: none;
+}
+/* .mobile-nav-open{
 
+} */
 @media (min-width: 300px) and (max-width: 599px) {
     .navbar {
         height: 8vh;
@@ -20,7 +36,8 @@
         display: none;
     }
 
-    .handburg {
+    .hamburger-section {
+        /* display: none; */
         padding-left: 14vh;
         height: 10px;
         margin-left: 20%;
@@ -56,7 +73,8 @@
 .header {
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 1fr 2.5fr;
+    /* grid-template-columns: 3fr 1fr 2.5fr; */
+    grid-template-columns: 1.5fr 3.5fr;
     gap: 10px;
 }
 
@@ -189,4 +207,70 @@
 .navbar-blogs-events:hover {
     display: block;
     color: #000000;
+}
+
+@media (max-width : 768px){
+    .header{
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: white;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 20px 30px;
+    }
+    .mobile-view{
+        padding-block: 50px;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        text-align: start;
+        top : 15vh;
+        left : -120%;
+        transition: all .5s;
+        z-index: 2;
+    }
+    .left-items{
+        gap : 2rem; 
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .mobile-on{
+        left : 0%;
+    }
+    .hamburger-section{
+        display: block;
+        margin-top: 20px;
+        float: left;
+        text-align: end;
+    }
+    .hamburger-btn{
+        display: none;
+    }
+    .cross-btn{
+        display: none;
+    }
+    .menu-active{
+        display: block;
+    }
+    .hamburger-section i{
+        padding-right: 20px;
+        font-size: 25px;
+    }
+    .navbar-blogs-events{
+        display: block;
+        background-color: none;
+        position: static;
+    }
+    .navbar-blogs-events div h3{
+        font-size: 18px;
+        /* text-decoration: dashed; */
+    }
 }

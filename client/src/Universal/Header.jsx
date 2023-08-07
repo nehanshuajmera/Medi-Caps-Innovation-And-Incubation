@@ -7,6 +7,7 @@ export default function Header() {
   const navigate = useNavigate();
   const [display, setDisplay] = useState(window.innerWidth > 599 ? true : false);
   const [menue, setmenue] = useState(false);
+  const [toggle, setToggle] = useState(false);
   const { pathname } = useLocation();
   useEffect(() => {
     setmenue(false);
@@ -17,7 +18,7 @@ export default function Header() {
 
       <div className="header">
         <div className="navbar-logo">
-          <a href="/">
+          <a href="/" onClick={()=>setToggle(false)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -48,62 +49,52 @@ export default function Header() {
             </svg>
           </a>
         </div>
-        {display ? <div className="navbar-items-left">
-          <div className="left-items">
-            {/* <NavLink  to="/">Home</NavLink> */}
-            <div>
-              <NavLink to="/About">About</NavLink>
-            </div>
-            <div>
-              <NavLink to="/Offering">Services</NavLink>
-            </div>
-            <div>
-              <a style={{cursor: 'pointer'}} className="miicommunity-hover">MII Community
-                <div className='navbar-blogs-events'>
-                  <div onClick={() => { navigate("/Event") }}>
-                    <h3 >Events</h3>
-                  </div>
-                  <div onClick={() => { navigate("/Article") }}>
-                    <h3>Blogs</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div> : <div className='handburg' onClick={() => { setmenue(!menue) }}>
-          {!menue ? <i className="fa-solid fa-bars-staggered fa"/> : <i className="fa-solid fa-xmark fa"/>}
-        </div>}
-        {display ? <div className="navbar-items-right">
-          {/* <div className="right-items">
-            <NavLink to='https://www.instagram.com/miifoundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
-            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
-            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
-            <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
-          </div> */}
-          <div style={{cursor:'pointer'}} className="right-contact">
-            <NavLink to="/Contact" >Contact Us</NavLink>
-          </div>
-        </div> : <></>}
-      </div>
-      {menue ?
-
-        <div className="navbar-items-for-mobile">
-          <NavLink to="/About">About</NavLink>
-          <NavLink to="/Offering">Services</NavLink>
-          <a to="/Event" className="miicommunity-hover">MII Community
-            <div className='nabar-bloog-events'>
-              <div onClick={() => { navigate("/Event") }}>
-                <h3 >Events</h3>
+        <div className={`navbar-navigation mobile-view ${toggle ? 'mobile-on':''}`}>          
+          <div className={`navbar-items-left` }>
+            <div className="left-items">
+              {/* <NavLink  to="/">Home</NavLink> */}
+              <div onClick={()=>setToggle(false)}>
+                <NavLink to="/About">About</NavLink>
               </div>
-              <div onClick={() => { navigate("/Article") }}>
-                <h3 >Blogs</h3>
+              <div onClick={()=>setToggle(false)}>
+                <NavLink to="/Offering">Services</NavLink>
+              </div>
+              <div >
+                <a style={{cursor: 'pointer'}} className="miicommunity-hover">MII Community
+                  <div className='navbar-blogs-events'>
+                    <div onClick={() => { navigate("/Event") } }>
+                      <h3 >Events</h3>
+                    </div>
+                    <div onClick={() => { navigate("/Article") }}>
+                      <h3>Blogs</h3>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-          </a>
-          <div className="right-contact">
-            <NavLink style={{ color: "#fff" }} to="/Contact" >Contact</NavLink>
+          </div> 
+          <div className={`navbar-items-right` }>
+            {/* <div className="right-items">
+              <NavLink to='https://www.instagram.com/miifoundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="" /></NavLink>
+              <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="" /></NavLink>
+              <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="" /></NavLink>
+              <NavLink to='https://www.linkedin.com/company/mii-foundation/' target='_blank'><img src="https://cdn-icons-png.flaticon.com/512/4494/4494497.png" alt="" /></NavLink>
+            </div> */}
+            <div style={{cursor:'pointer'}} className="right-contact" onClick={()=>setToggle(false)}>
+              <NavLink to="/Contact" >Contact Us</NavLink>
+            </div>
+          </div> 
+        </div>
+        {/*  hamburger btn */}   
+        <div className='hamburger-section' onClick={() => { setmenue(!menue) }}>
+          <div className={`hamburger-btn ${toggle ? '':'menu-active'}`} onClick={()=>setToggle(true)}>
+            <i className={`fa-solid fa-bars-staggered fa `}/> 
           </div>
-        </div> : <></>}
+          <div className={` cross-btn ${toggle ?'menu-active':''}`} onClick={()=>setToggle(false)}>
+            <i  className={`fa-solid fa-xmark fa `}/>
+          </div>
+        </div>     
+      </div>      
     </div>
   )
 }
