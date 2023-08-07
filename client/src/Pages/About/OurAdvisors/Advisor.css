@@ -761,7 +761,15 @@
   -moz-transition: opacity 0.7s;
   transition: opacity 0.7s;
 }
-
+.zl-staff-head{
+  /* for changed section (linkedin icon in sameline) */
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  gap : 1rem;
+}
+.zl-staff-linkedin-icon{
+  text-align: center;
+}
 /* .zl-staff-head:hover {
   opacity: 0.8;
 } */
