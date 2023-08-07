@@ -60,7 +60,7 @@ export default function DetailblogPage() {
   </figure>
   <div className="ad5-container ad5-max-width-adaptive-sm">
     <div className="ad5-text-component ad5-line-height-lg ad5-text-gap-md">
-      <p>{blogs.description}</p>
+      <p style={{whiteSpace:"pre-wrap"}}>{blogs.description}</p>
     </div>
   </div>
 </article>

@@ -17,7 +17,7 @@ const AddBlog = () => {
   
   const [images,setimages]=useState([]);
   const [imageUpload,setImageUpload]=useState(null);
-  
+  const [imaguploadsuccessfully, setimaguploadsuccessfully] = useState(false);
   const checkimg=()=>{
     // console.log(imageUpload);
     if(imageUpload.size>200000){
@@ -37,6 +37,7 @@ const AddBlog = () => {
       images: url
   })
     alert("Image was Succesfully Updated");
+    setimaguploadsuccessfully(true);
   }  
  
   const handleChange = e => {
@@ -49,8 +50,12 @@ const AddBlog = () => {
 
   async function submit() {
     try {
+      if(!imaguploadsuccessfully){
+        alert("IMAGE was not uploaded");
+        return ;
+      }
       await axios.post("/blog/addblog",FormData)
-      .then(()=>{alert("Blog added successfully")})
+      .then(()=>{alert("Blog added successfully"); window.location.reload()})
       .catch((err)=>{alert(err)})
     } catch (err) {
       alert(err);

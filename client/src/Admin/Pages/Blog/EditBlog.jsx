@@ -6,8 +6,8 @@ import { storage } from '../../../firebase';
 import {getDownloadURL, listAll, ref, uploadBytes} from 'firebase/storage';
 import './editblog.css'
 
-export default function EditBlog({props}) {
-
+export default function EditBlog({props,seteditblg}) {
+  const [imaguploadsuccessfully, setimaguploadsuccessfully] = useState(false);
   const [FormData,setFormData]=useState({
     images:"",
     description:"",
@@ -50,8 +50,12 @@ export default function EditBlog({props}) {
 
   async function submit() {
     try {
+      if(!imaguploadsuccessfully){
+        alert("IMAGE was not uploaded");
+        return ;
+      }
       await axios.post(`/blog/updateblog/${props.id}`,FormData)
-      .then(()=>{alert("Blog added successfully")})
+      .then(()=>{alert("Blog Updated successfully"); window.location.reload()})
       .catch((err)=>{alert(err)})
     } catch (err) {
       alert(err);
@@ -100,6 +104,7 @@ export default function EditBlog({props}) {
 
   return (
     <div className="edit-box">
+      <h4 className='close-btn-blog' onClick={()=>{seteditblg(false)}}>close X</h4>
     <div className="blog-img">
       <div className="img-upload">
         <p>Upload image :</p>

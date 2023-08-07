@@ -1,8 +1,12 @@
 import axios from 'axios';
-import React from 'react'
+import React, { useState } from 'react'
 import EditBlog from './EditBlog';
+import { useNavigate } from "react-router-dom";
+
 
 export default function Singleblog(props) {
+  const navigate=useNavigate();
+  const [editblg, seteditblg] = useState(false);
   const deleteblg=async ()=>{
     await axios.get(`/blog/deleteblog/${props.id}`).then((res) => {  alert("Deleted Sucessfully") });
   }
@@ -11,7 +15,14 @@ export default function Singleblog(props) {
   }
   return (
     <>
-      <div className="blog-box">
+      <tr>
+    <td onClick={()=>{navigate(`/detailsblog/${props.id}`)}} style={{cursor:"pointer",textDecoration:"underline"}}>{props.title}</td>
+    <td>{props.description.slice(0,200)}</td>
+    <td><button  className='table-btn' style={{color:props.featured==="True"?"red":"green"}} onClick={()=>{updateblgfeatured()}}><i class="fa-solid fa-jet-fighter-up fa-2x"></i></button></td>
+    <td> <button className='table-btn'onClick={()=>{deleteblg()}}><i className="fa fa-trash fa-2x" aria-hidden="true"/></button></td>
+    <td> <button className='table-btn' onClick={()=>seteditblg(!editblg)}><i className="fa fa-pencil fa-2x" aria-hidden="true"></i></button></td>
+  </tr>
+      {/* <div className="blog-box">
         <div className="blog-img">
           <img src={props.images} alt="blog-img" />
         </div>
@@ -30,7 +41,10 @@ export default function Singleblog(props) {
           </div> 
         </div>
       </div>
-      <EditBlog props={props}/>
+      <EditBlog props={props}/> */}
+      <div className='edit-blg-centre'>
+      {editblg?<EditBlog props={props} seteditblg={seteditblg}/>:null}
+      </div>
     </>
   )
 }

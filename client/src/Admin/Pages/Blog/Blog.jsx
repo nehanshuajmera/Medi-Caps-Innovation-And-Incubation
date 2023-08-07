@@ -38,9 +38,19 @@ const apicall=async ()=>{
       </div>
       <div className="blogs">
         {/* <p>Blogs</p> */}
+        <table>
+  <tr>
+    <th>Topic</th>
+    <th>Details</th>
+    <th>Featured</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+
          {blogs.map((item) => {
-         return <Singleblog id={item._id} title={item.title} description={item.description} images={item.images} authername={item.authername} date={item.date} featured={item.featured}/>
-        })}
+           return <Singleblog id={item._id} title={item.title} description={item.description} images={item.images} authername={item.authername} date={item.date} featured={item.featured}/>
+          })}
+     </table>
       </div>
     </div>
   )
