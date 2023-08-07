@@ -14,9 +14,19 @@ export default function ContactQuery() {
   return (
     <div className="query-component">
          <h1>Query's</h1>
+         <table>
+  <tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Date</th>
+    <th>Idea</th>
+    <th>Message</th>
+  </tr>
         {Query.map((item) => {
          return <SingleContact props={item}/>
         })}
+  </table>
     </div>
   )
 }

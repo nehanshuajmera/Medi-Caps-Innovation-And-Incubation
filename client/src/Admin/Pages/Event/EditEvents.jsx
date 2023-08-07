@@ -6,7 +6,8 @@ import { storage } from '../../../firebase';
 import {getDownloadURL, listAll, ref, uploadBytes} from 'firebase/storage';
 
 
-const EditEvents = ({props}) => {
+const EditEvents = ({props,seteditblg}) => {
+  const [imaguploadsuccessfully, setimaguploadsuccessfully] = useState(false);
   const [FormData,setFormData]=useState({
     images:"",
     description:"",
@@ -40,6 +41,7 @@ const EditEvents = ({props}) => {
       images: url
   })
     alert("Image was Succesfully Updated");
+    setimaguploadsuccessfully(true);
   }
 
   const handleChange = e => {
@@ -51,6 +53,10 @@ const EditEvents = ({props}) => {
   }
   async function submit() {
     try {
+      if(!imaguploadsuccessfully){
+        alert("IMAGE was not uploaded");
+        return ;
+      }
       await axios.post(`/event/updateevent/${props.id}`,FormData)
       .then(()=>{alert("Event Updated successfully")})
       .catch((err)=>{alert(err)})
@@ -106,9 +112,10 @@ const EditEvents = ({props}) => {
     
   return (
         <div className="event-edit">
-          <hr/>
-          <h1 style={{textAlign:"center"}}>Edit <i className="fa fa-pencil" aria-hidden="true"></i></h1>
+          {/* <hr/> */}
+          {/* <h1 style={{textAlign:"center"}}>Edit <i className="fa fa-pencil" aria-hidden="true"></i></h1> */}
     <div className="blog-img">
+    <h4 className='close-btn-event' onClick={()=>{seteditblg(false)}}>close X</h4>
       <div className="img-upload">
         <p>Upload image :</p>
         <input type="file" name="event-img" accept="image/png, image/gif, image/jpeg"  onChange={(event)=>{setImageUpload(event.target.files[0])}} />

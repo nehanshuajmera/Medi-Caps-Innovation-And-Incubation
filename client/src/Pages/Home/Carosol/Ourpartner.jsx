@@ -11,9 +11,9 @@ function Ourpartner() {
           <div className="home-sec6-start">
             <h1 className="home-sec6-h1">Our Partners</h1>
             <Images  setpartner={setpartner}/>
-            <p className="home-sec6-text">
+            {/* <p className="home-sec6-text">
               {partner}
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

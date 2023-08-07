@@ -2,12 +2,13 @@ import React from 'react'
 
 export default function SingleContact({props}) {
   return (
-    <div className='single-query-box'>
-        <h2>Name: {props.name} ,  Phone: {props.phone}</h2>
-        <h2>Email: {props.email}</h2>
-        <h2>Query: {props.query}</h2>
-        <h2>Idea: {props.idea}</h2>
-        <h2>Message: {props.message}</h2>
-    </div>
+    <tr className='single-query-box'>
+        <td>{props.name}</td> 
+        <td>{props.phone}</td>
+        <td>{props.email}</td>
+        <td>{props.query}</td>
+        <td>{props.idea}</td>
+        <td>{props.message}</td>
+    </tr>
   )
 }

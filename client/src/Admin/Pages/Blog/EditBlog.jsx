@@ -38,6 +38,7 @@ export default function EditBlog({props,seteditblg}) {
       images: url
   })
     alert("Image was Succesfully Updated");
+    setimaguploadsuccessfully(true)
   }  
  
   const handleChange = e => {
