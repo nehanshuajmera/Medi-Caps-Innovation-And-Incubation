@@ -11,31 +11,8 @@ export default function Services() {
           <div className="c-4-l-name" onClick={()=>{setcontent("nw")}}><h2>Networking</h2></div>
         </div>
         <div className="c-4-right">
-          {content==="sfi"?<p>Seed-fund investment for an innovation and incubation foundation can be a crucial step in supporting early-stage startups and fostering innovation. Here are some key considerations and steps involved in providing seed-fund investment to such a foundation:
-<br/>
-<br/>
-
-1. Define your investment thesis: Determine the specific areas of innovation or industries you want to focus on. Clarify the types of startups and projects you aim to support. This will help you establish an investment thesis that aligns with the goals of your foundation.
-
-<br/>
-<br/>
-
-2. Establish a selection process: Create a rigorous selection process to identify startups or projects that meet your investment criteria. This process may involve applications, pitch presentations, due diligence, and expert evaluations.
-
-<br/>
-<br/>
-
-3.Set investment criteria: Define the specific parameters you will use to evaluate potential investments. Consider factors such as team expertise, market potential, scalability, competitive advantage, and alignment with your foundation's mission.
-
-<br/>
-<br/>
-
-4. Determine funding structure: Decide on the funding structure for your seed-fund investments. This could involve providing equity investments, convertible notes, or grants. Consider the appropriate level of investment based on the stage and needs of the startups you aim to support.
-
-<br/>
-<br/>
-
-5.Build a network of mentors and advisors: Engage experienced mentors and advisors who can provide guidance and support to the startups in your portfolio. These individuals can offer valuable expertise, connections, and strategic insights.</p>:<></>}
+          {content==="sfi"?<><p style={{ fontWeight: '400', fontSize:'2.2em' }}>
+            Seed-fund investment can be a crucial step in supporting early-stage startups and fostering innovations. MII Foundation helps you decide on the funding structure for your seed-fund investments. This could involve providing equity investments, convertible notes, or grants. Considering the appropriate level of investment based on the stages and needs of the startups </p><p style={{ fontWeight: '700', fontSize:'2.2em' }}> we aim to support</p></>:<></>}
           {content==="cw"?<p>
             
 A co-working space for an Innovation and Incubation Foundation is a fantastic idea to foster creativity, collaboration, and entrepreneurship. Co-working spaces provide a shared working environment where individuals and startups from diverse backgrounds can come together, share resources, and exchange ideas. Here's how such a co-working space can benefit an Innovation and Incubation Foundation:
