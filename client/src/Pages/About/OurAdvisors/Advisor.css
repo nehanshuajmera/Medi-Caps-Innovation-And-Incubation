@@ -768,7 +768,8 @@
   gap : 1rem;
 }
 .zl-staff-linkedin-icon{
-  text-align: center;
+  grid-column: 3/4;
+  text-align: start;
 }
 /* .zl-staff-head:hover {
   opacity: 0.8;
