@@ -65,26 +65,26 @@ export default function ScrollAnimation() {
     observer4.observe(myref4.current);
    
 })
- // X
- const [x, setX] = useState();
+//  // X
+//  const [x, setX] = useState();
 
- // Y
- const [y, setY] = useState();
+//  // Y
+//  const [y, setY] = useState();
 
- // This function calculate X and Y
- const getPosition = (Ref) => {
-   const x = Ref.current.offsetLeft;
-   setX(x);
+//  // This function calculate X and Y
+//  const getPosition = (Ref) => {
+//    const x = Ref.current.offsetLeft;
+//    setX(x);
 
-   const y = Ref.current.offsetTop;
-   setY(y);
- };
-   useEffect(()=>{
-     window.addEventListener("scroll",getPosition(myref2));
-     // console.log(myref2.current.getBoundingClientRect().top); 
-     // var position = document.documentElement
-     // console.log("from top: " , myref2.current.offsetTop);
-   })
+//    const y = Ref.current.offsetTop;
+//    setY(y);
+//  };
+//    useEffect(()=>{
+//      window.addEventListener("scroll",getPosition(myref2));
+//      // console.log(myref2.current.getBoundingClientRect().top); 
+//      // var position = document.documentElement
+//      // console.log("from top: " , myref2.current.offsetTop);
+//    })
 
   return (
     <div className='scroll-animation-homepage'>
