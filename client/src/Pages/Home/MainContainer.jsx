@@ -3,17 +3,17 @@ import './maincontainer.css'
 
 export default function MainContainer() {
   // const [first, setfirst] = useState(second)
-  const [cnt,setcnt]=useState(0);
-  
+  const [cnt, setcnt] = useState(0);
+
   useEffect(() => {
-    if(cnt!==6221){
-      setcnt(cnt+1);
+    if (cnt !== 6221) {
+      setcnt(cnt + 1);
     }
   }, [cnt])
 
-  useEffect(()=>{
+  useEffect(() => {
     setcnt(1);
-  },[])
+  }, [])
   return (
     <div className='main-section'>
 
@@ -52,26 +52,26 @@ export default function MainContainer() {
       </div>
       <div className='main-section-left'>
         <div className="main-section-left-upper">
-          <h1 style={{ fontWeight: '400', fontFamily: 'Inter'}}>Medicaps</h1>
-          <h1 style={{ fontWeight: '400', fontFamily: 'Inter'}}>Innovation and Incubation Foundation</h1>
-          <p style={{ fontWeight: '300', fontFamily: 'Inter'}}>"Unlock your business potential"</p>
-               
+          <h1 style={{ fontWeight: '400', fontFamily: 'Inter' }}>Medicaps</h1>
+          <h1 style={{ fontWeight: '400', fontFamily: 'Inter' }}>Innovation and Incubation Foundation</h1>
+          <p style={{ fontWeight: '300', fontFamily: 'Inter' }}>"Unlock your business potential"</p>
+
         </div>
-        
+
         {/* <div className="main-section-left-down">
           <h1>Participants <div>{cnt}+</div></h1>
           <h1>Registration <div>{cnt}+</div></h1>
           <h1>Startup <div>{cnt}+</div></h1>
         </div> */}
       </div>
-       <div className='put-down-centre'>
+      <div className='put-down-centre'>
         <div class="scroll-prompt">
-    <div class="scroll-prompt-arrow-container">
-        <div class="scroll-prompt-arrow"><div></div></div>
-        <div class="scroll-prompt-arrow"><div></div></div>
-    </div>
-    </div>
-</div>
+          <div class="scroll-prompt-arrow-container">
+            <div class="scroll-prompt-arrow"><div></div></div>
+            <div class="scroll-prompt-arrow"><div></div></div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
