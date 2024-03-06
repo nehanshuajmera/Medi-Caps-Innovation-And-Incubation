@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap');
+
+/* Single-Event full page access */
+.single-event-main-container {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* padding-top: 10vh; */
+}
+
+
+.single-event-section-2-container {
+    display: flex;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    /* background-color: black;
+    color: white; */
+}
+.single-event-section-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section - 2 ( Description Container ) */
+.single-event-section-2-description-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 30px;
+    margin-bottom: 40px;
+    padding: 4px;
+}
+
+.single-event-section-2-description-heading {
+    padding: 10px;
+    margin: 4px;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    font-size: 26px;
+    font-weight: 350;
+    /* letter-spacing: 1px; */
+}
+
+.single-event-section-2-description-paragraph {
+    text-align: center;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Section - 2 ( Data Items ) */
+.single-event-section-2-data-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: space-between;
+    margin: 30px 6px;
+    padding: 4px;
+}
+
+.section-2-small-data-items {
+    display: flex;
+    margin: 0 4px;
+
+}
+
+/* Data Item Image */
+.small-data-items-img {
+    margin: 0 2px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-data-items-text {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    margin: 2px 1px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.small-data-items-text h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 2px;
+}
+
+.small-data-items-text p {
+    margin: 2px;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+/* Section - 3 */
+.single-event-section-3-container {
+    padding: 30px;
+    /* height: 80vh; */
+}
+
+/* Section - 3 ( Description Container ) */
+.single-event-section-3-description-container {
+    margin: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.single-event-section-3-description-heading {
+    font-size: 24px;
+    font-weight: 350;
+    margin: 6px;
+    padding: 2px;
+}
+
+.single-event-section-3-description-paragraph {
+    margin: 2px;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Get in Touch Link */
+.single-event-span-link {
+    color: #000000;
+    font-weight: 400;
+}
+
+/* Sponsor Shoutout */
+.single-event-section-3-sponsors {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+    padding: 10px;
+}
+
+.single-sponsor-heading {
+    margin: 12px auto 0 auto;
+    padding: 2px;
+    padding-bottom: 6px;
+    text-align: center;
+    /* width: 14%; */
+}
+
+.single-sponsor-heading h5 {
+    padding: 4px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.single-sponsor-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.single-event-sponsor-img {
+    width: 20%;
+    margin: 10px 10px 0 10px;
+    padding: 10px 10px 0 10px;
+}
+
+/* Section - 4 */
+.single-event-section-4-container{
+    min-height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 40px; */
+}
+
+.section-4-single-event-heading{
+    text-align: center;
+    margin: 8px;
+    padding: 8px;
+    margin-bottom: 40px;
+}
+
+.section-4-single-event-heading h5{
+    margin: 4px;
+    padding: 4px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.section-4-single-event-heading p{
+    margin: 4px;
+    padding: 4px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.single-event-memories{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 2px; */
+    justify-content: center;
+}
+
+.memories-album-single-event{
+    width: 190px;
+    height: 200px;
+    margin: 2px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.memories-album-single-event:hover{
+    transform: scale(1.5);
+}

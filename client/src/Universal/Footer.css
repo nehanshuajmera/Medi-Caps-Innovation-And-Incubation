@@ -1,0 +1,193 @@
+.footer-pg {
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+    /* padding: 50px; */
+    
+    background-color: black;
+    color: white;
+
+}
+
+.footer-main-box {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    width: 70vw;
+}
+
+.get-in-touch-button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.get-in-touch-button h1 {
+    margin: 5px;
+    padding: 5px;
+    font-size: 80px;
+}
+
+.get-in-touch-button button {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    background: none;
+}
+
+.get-in-touch-button button {
+    --primary-color: red;
+    /* --hovered-color: blue; */
+    --hovered-color: red;
+    position: relative;
+    display: flex;
+    font-weight: 300;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.get-in-touch-button button p {
+    margin: 0;
+    position: relative;
+    font-size: 9vh;
+    color: var(--primary-color);
+    font-weight: 300;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.get-in-touch-button button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+.get-in-touch-button button p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+.get-in-touch-button button:hover::after {
+    width: 100%;
+}
+
+.get-in-touch-button button:hover p::before {
+    width: 100%;
+}
+
+.footer-content-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 30vh;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.navbar-items-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 10px;
+
+}
+.navbar-items-footer a{
+    font-size: 3.5vh;
+    padding: 5px;
+    margin: 4px 20px;
+    color: #ffffff;
+}
+.footer-social-media-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 30px 0 5px;
+    padding: 5px;
+}
+.footer-social-media-links img{
+    width: 35px;
+    padding: 2px;
+    margin: 2px 12px;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .footer-social-media-links{
+    justify-content: flex-start;
+  }
+  .footer-content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+} */
+
+.footer-logo svg{
+    width: 16vh;
+}
+
+
+@media (min-width: 300px) and (max-width: 599px){
+  .get-in-touch-button{
+    padding: 1vh;
+    margin: 2vh;
+    font-size: 18px;
+  }  
+  .get-in-touch-button button p{
+    padding: 1vh;
+    margin: 1vh;
+    font-size: 140%;
+  }
+.footer-content-box{
+  display: block;
+  align-items: center;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+}
+.footer-logo svg{
+    width: 20vh;
+}
+.navbar-items-footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 10px 0%;
+    padding: 0%;
+}
+
+
+.footer-social-media-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 30px 0 5px;
+    padding: 5px;
+}
+.get-in-touch-button h1{
+    /* padding: 1vh; */
+    /* margin: 1vh; */
+    font-size: 40px;
+}
+.get-in-touch-button{
+    padding: 0%;
+    margin: 0%;
+}
+}

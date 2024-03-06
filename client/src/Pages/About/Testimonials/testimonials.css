@@ -1,0 +1,117 @@
+.testimonial-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0px;
+  min-height: 100vh;
+}
+.testimonial-inner-box h1{
+  font-size: 60px;
+  font-weight: 600;
+}
+.testimonial-inner-box{
+  padding: 0px 80px;
+  width: 80%;
+}
+.testimonial-text-content{
+  padding: 60px 0px;
+}
+.testimonial-text-content p{
+  font-size: 30px;
+  color: #999;
+}
+.testimonial-bottom-section img{
+  width: 80px;
+  height: 80px;
+  border-radius: 125%;
+}
+.testimonial-bottom-section{
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial-avtar-container{
+  display: flex;
+}
+.testimonial-name-container{
+  padding: 20px;
+  display: flex;
+  justify-content:center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.testimonial-next-prev-option .nxt-prv-btn{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 125%;
+  width: 80px;
+  cursor: pointer;
+  height: 80px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-next-prev-option{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+@media (min-width:300px) and (max-width:599px){
+  .testimonial-box{
+    padding: 1vh;
+    margin: 2vh;
+  }
+  .testimonial-inner-box{
+    margin: 2vh;
+    padding: 1vh;
+  }
+  .testimonial-inner-box h1{
+    font-size: 30px;
+  }
+  .testimonial-text-content{
+    padding: 1vh;
+    margin: 2vh;
+  }
+  .testimonial-text-content p{
+    font-size: 16px;
+  }
+  .testimonial-bottom-section{
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-avtar-container{
+    margin: 0vh;
+    width: 9vh;
+    
+  }
+  .testimonal-name-avtar{
+    display: flex;
+    padding: 1vh;
+     margin: 2vh;
+     flex: 50%;
+  }
+  .testimonial-name-container{
+    font-size: 10px;
+    flex: 50px;
+  }
+  .testimonial-avtar-container img{
+    width: 8vh;
+    height: 8vh;
+  }
+  .testimonial-next-prev-option{
+    padding: 1vh;
+    margin: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .testimonial-next-prev-option .nxt-prv-btn{
+    padding: 1vh;
+    margin: 2vh;
+    height: 40px;
+   width: 40px;
+  }
+}

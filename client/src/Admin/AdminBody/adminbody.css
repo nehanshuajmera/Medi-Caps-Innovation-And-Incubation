@@ -1,0 +1,47 @@
+.admin-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+}
+.single-admin-option{
+    margin: 2px;
+    background-color: #999;
+    padding: 5px 10px;
+    border-radius: 2%;
+}
+.single-admin-option:hover{
+    background-color: #666;
+    cursor: pointer;
+}
+
+
+.nav-bar{
+   
+    height: 4rem;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.nav-link{
+    /* padding: 10px; */
+}
+.left-align{
+    display: flex;
+    align-items: center;
+}
+.right-align{
+    display: flex;
+    align-items: center;
+}
+.logout-btn{
+    padding: 2px;
+}
+
+.page-active-btn{
+    background-color:black;
+    color: white;
+}

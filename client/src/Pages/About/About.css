@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap');
+
+.about-container {
+    background-color: #ffffff;
+    font-family: Open Sans;
+    /* font-family: ; */
+    min-height: 100%;
+}
+
+.about-hero{
+    min-height: 86vh;
+    margin: 0 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.divide-and-conquer-2 {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    /* height: 50vh; */
+    padding: 8px;
+    /* border: 1px solid red; */
+}
+
+.about-section-2-heading{
+    font-weight: 400;
+    padding: 2px;
+    margin: 2px;
+    margin-bottom: 10px;
+    font-size: 40.95px;
+    letter-spacing: 1px;
+    /* text-align: center; */
+    width: 100%;
+}
+
+.about-section-2-paragraph {
+    margin: 3px;
+    margin-right: 10px;
+    font-size: 25.74px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    /* border: 1px solid green; */
+}
+
+/* @media(max-width: 900px) {
+    .about-section-2 {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+} */
+
+
+@media  (min-width: 300px) and (max-width: 599px){
+   .about-hero{
+    margin: 1vh;
+    padding: 1vh;
+    justify-content: space-around;
+   }
+   .divide-and-conquer-2{
+    padding: 2vh 0vh;
+    margin: 2vh 0vh;
+    text-align: start;
+   }
+   .about-section-2-heading{
+    font-size: 2.2rem;
+    font-weight: 800;
+    /* margin: 1vh; */
+    /* padding: 1vh; */
+    /* text-align: center; */
+   } 
+   .about-section-2-paragraph{
+    font-size: 1.6rem;
+   }
+}

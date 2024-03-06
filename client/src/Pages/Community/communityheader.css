@@ -1,0 +1,36 @@
+.community-header-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.community-header-box a{
+    text-decoration: none;
+    font-size: 3.4vh;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    font-weight: 400;
+    margin: 0 12px;
+    color: black;
+    box-sizing: border-box;
+}
+
+.community-header-box .active {
+    border-bottom: 2px solid #000000;
+}
+
+.community-header-box Navlink:hover {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.community-header-box a:active {
+    color: #000000;
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+    .community-header-box{
+        margin-top: 12vh;
+        margin-bottom: 9vh;
+    }
+}
